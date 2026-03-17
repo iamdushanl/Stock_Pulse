@@ -1,11 +1,11 @@
 # Stock_Pulse
-Stock Market prediction System
+Stock Market Prediction System
 
 
 
 
 
-Availiable Soon
+Available Soon........
 
 
    
