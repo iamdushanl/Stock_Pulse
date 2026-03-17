@@ -1,4 +1,4 @@
-# Stock_Pulse
+# Stock Pulse
 Stock Market Prediction System
 
 
