@@ -1,0 +1,15 @@
+# Ignore large datasets and data files
+Dataset/
+*.zip
+*.xls
+*.xlsx
+*.csv
+*.parquet
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
