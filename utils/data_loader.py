@@ -42,6 +42,7 @@ logger = logging.getLogger(__name__)
 # ══════════════════════════════════════════════════════════════════════════════
 
 DEFAULT_BASE_PATH = r"c:\Users\HP\Documents\Stock_pulse\Dataset"
+BASE_PATH = DEFAULT_BASE_PATH  # Convenience alias used by notebooks
 CACHE_FILENAME = "consolidated_daily_prices.parquet"
 
 # ZIP archive definitions — (zip_name, internal_subfolder)
