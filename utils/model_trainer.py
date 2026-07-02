@@ -74,7 +74,10 @@ def evaluate_models(models, X_test, y_test):
         y_proba = model.predict_proba(X_test)[:, 1]
         
         precision = precision_score(y_test, y_pred, zero_division=0)
-        roc_auc = roc_auc_score(y_test, y_proba)
+        try:
+            roc_auc = roc_auc_score(y_test, y_proba)
+        except ValueError:
+            roc_auc = float('nan')
         
         print(f"\n--- {name} Performance ---")
         print(f"Precision (Uptrend): {precision:.4f}")
