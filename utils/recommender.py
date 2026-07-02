@@ -40,8 +40,15 @@ def generate_recommendations(df_current, model, feature_cols, min_price=1.0, max
     # 4. Rank and Format
     recommendations = df_filtered.sort_values(by='Uptrend_Probability', ascending=False).head(top_n)
     
+    # Add a human-readable confidence level
+    recommendations['Confidence'] = pd.cut(
+        recommendations['Uptrend_Probability'],
+        bins=[0, 0.4, 0.6, 0.8, 1.0],
+        labels=['Low', 'Medium', 'High', 'Very High']
+    )
+    
     output_cols = [
-        'CompanyCode', 'Date', 'Close', 'Uptrend_Probability', 
+        'CompanyCode', 'Date', 'Close', 'Uptrend_Probability', 'Confidence',
         'Vol_63d', 'RSI_14', 'MACD', 'Dist_SMA50'
     ]
     
