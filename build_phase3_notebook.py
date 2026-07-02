@@ -36,7 +36,8 @@ def create_notebook():
     
     # ─── SECTION 2: Imports ──────────────────────────────────────────────
     nb.cells.append(nbformat.v4.new_code_cell(
-'''import pandas as pd
+'''import os
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
