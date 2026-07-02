@@ -12,7 +12,7 @@ def generate_technical_features(df):
     # We will use pandas groupby and apply for calculating indicators per stock
     # To optimize speed, we define a function to apply to each group
     
-    def apply_indicators(group):
+    def apply_indicators(group, company_code):
         group = group.copy()
         
         # 1. Moving Averages
@@ -59,6 +59,12 @@ def generate_technical_features(df):
         group['ROC_10'] = group['Close'].pct_change(periods=10)
         group['ROC_21'] = group['Close'].pct_change(periods=21)
         
+        # 6b. Stochastic Oscillator (14-day)
+        low_14 = group['Low'].rolling(window=14).min()
+        high_14 = group['High'].rolling(window=14).max()
+        group['Stoch_K'] = 100 * (group['Close'] - low_14) / (high_14 - low_14)
+        group['Stoch_D'] = group['Stoch_K'].rolling(window=3).mean()
+        
         # 7. Volatility Features
         group['Vol_21d'] = group['DailyReturn'].rolling(21).std() * np.sqrt(252)
         group['Vol_63d'] = group['DailyReturn'].rolling(63).std() * np.sqrt(252)
@@ -68,11 +74,20 @@ def generate_technical_features(df):
         # Volume ratio (current volume vs 20d average)
         group['Volume_Ratio'] = group['ShareVolume'] / group['Volume_SMA_20'].replace(0, np.nan)
         
+        # Explicitly restore CompanyCode
+        group['CompanyCode'] = company_code
+        
         return group
     
     # Apply the function per company
     # This might take a minute on a large dataset
-    df_feat = df_feat.groupby('CompanyCode', group_keys=False).apply(apply_indicators)
+    # We loop over groupby to avoid Pandas index exclusion behavior and preserve CompanyCode
+    clean_dfs = []
+    for company, group in df_feat.groupby('CompanyCode'):
+        processed_group = apply_indicators(group, company)
+        clean_dfs.append(processed_group)
+        
+    df_feat = pd.concat(clean_dfs, ignore_index=True)
     
     # 9. Time-Based Features (Global)
     df_feat['Year'] = df_feat['Date'].dt.year
