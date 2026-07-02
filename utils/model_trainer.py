@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
-from sklearn.metrics import classification_report, precision_score, roc_auc_score
+from sklearn.metrics import classification_report, precision_score, f1_score, roc_auc_score
 
 def prepare_ml_dataset(df, target_col='Is_Uptrend_3M', feature_cols=None):
     """
@@ -74,6 +74,7 @@ def evaluate_models(models, X_test, y_test):
         y_proba = model.predict_proba(X_test)[:, 1]
         
         precision = precision_score(y_test, y_pred, zero_division=0)
+        f1 = f1_score(y_test, y_pred, zero_division=0)
         try:
             roc_auc = roc_auc_score(y_test, y_proba)
         except ValueError:
@@ -81,11 +82,13 @@ def evaluate_models(models, X_test, y_test):
         
         print(f"\n--- {name} Performance ---")
         print(f"Precision (Uptrend): {precision:.4f}")
+        print(f"F1 Score: {f1:.4f}")
         print(f"ROC-AUC: {roc_auc:.4f}")
         print(classification_report(y_test, y_pred, zero_division=0))
         
         results[name] = {
             'precision': precision,
+            'f1': f1,
             'roc_auc': roc_auc,
             'y_pred': y_pred,
             'y_proba': y_proba
