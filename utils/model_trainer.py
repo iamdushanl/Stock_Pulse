@@ -76,7 +76,7 @@ def evaluate_models(models, X_test, y_test):
         precision = precision_score(y_test, y_pred, zero_division=0)
         roc_auc = roc_auc_score(y_test, y_proba)
         
-        print(f"\\n--- {name} Performance ---")
+        print(f"\n--- {name} Performance ---")
         print(f"Precision (Uptrend): {precision:.4f}")
         print(f"ROC-AUC: {roc_auc:.4f}")
         print(classification_report(y_test, y_pred, zero_division=0))
