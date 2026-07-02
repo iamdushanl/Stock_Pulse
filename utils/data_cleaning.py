@@ -20,6 +20,12 @@ def clean_and_prepare_data(df, df_splits=None, start_year=2001):
     # The early era lacks OHLCV data which is required for technical indicators
     df_clean = df[df['Date'].dt.year >= start_year].copy()
     print(f"Filtered to >= {start_year}. Shape: {df_clean.shape}")
+
+    # Drop duplicates for CompanyCode and Date to avoid duplicate index issues in reindexing
+    # Sort first by ShareVolume descending so that we keep the record with trading volume/activity if it exists
+    df_clean = df_clean.sort_values(by='ShareVolume', ascending=False)
+    df_clean = df_clean.drop_duplicates(subset=['CompanyCode', 'Date'], keep='first')
+    print(f"Removed duplicates. Shape: {df_clean.shape}")
     
     # 2. Sort by Company and Date
     df_clean = df_clean.sort_values(['CompanyCode', 'Date']).reset_index(drop=True)
@@ -65,7 +71,10 @@ def align_trading_calendar(df, max_fill_days=5):
     
     # Process each stock (using a loop for safety, though pandas reindex is faster, 
     # doing it per-stock ensures we don't extend dates beyond a stock's listing life)
-    for company, group in df.groupby('CompanyCode'):
+    total_companies = df['CompanyCode'].nunique()
+    for i, (company, group) in enumerate(df.groupby('CompanyCode'), 1):
+        if i % 50 == 0 or i == total_companies:
+            print(f"  Aligning calendar: {i}/{total_companies} stocks processed", end='\r')
         min_date = stock_ranges.loc[company, 'min']
         max_date = stock_ranges.loc[company, 'max']
         
@@ -106,8 +115,28 @@ def apply_split_adjustments(df, df_splits):
     """
     df_adjusted = df.copy()
     
-    # Ensure date formats
+    # Ensure date formats and column mapping (gracefully handle both Corporate Actions parquet and load_splits outputs)
     df_splits = df_splits.copy()
+    # Normalize column names to uppercase for comparison
+    df_splits.columns = [c.upper() for c in df_splits.columns]
+    
+    # If using load_splits columns, map them:
+    # "COMPANYID" -> "COMPANY ID"
+    # "EFFECTIVEDATE" -> "EFFECTIVE DATE"
+    # "OLDPROPORTION" -> "OLD PROPORTION"
+    # "NEWPROPORTION" -> "NEW PROPORTION"
+    mapping = {
+        "COMPANYID": "COMPANY ID",
+        "EFFECTIVEDATE": "EFFECTIVE DATE",
+        "OLDPROPORTION": "OLD PROPORTION",
+        "NEWPROPORTION": "NEW PROPORTION"
+    }
+    df_splits = df_splits.rename(columns=mapping)
+    
+    if "EFFECTIVE DATE" not in df_splits.columns:
+        print("Warning: EFFECTIVE DATE column not found in splits DataFrame. Prices will remain unadjusted.")
+        return df_adjusted
+        
     df_splits['EFFECTIVE DATE'] = pd.to_datetime(df_splits['EFFECTIVE DATE'], errors='coerce')
     df_splits = df_splits.dropna(subset=['EFFECTIVE DATE', 'OLD PROPORTION', 'NEW PROPORTION'])
     
