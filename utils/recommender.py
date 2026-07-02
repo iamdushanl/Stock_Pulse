@@ -55,7 +55,7 @@ def multi_horizon_recommendations(df_current, models_dict, feature_cols, top_n=5
     """
     recs = {}
     for horizon, model in models_dict.items():
-        print(f"\\nGenerating Top {top_n} {horizon} Recommendations...")
+        print(f"\nGenerating Top {top_n} {horizon} Recommendations...")
         r = generate_recommendations(df_current, model, feature_cols, top_n=top_n)
         recs[horizon] = r
     
