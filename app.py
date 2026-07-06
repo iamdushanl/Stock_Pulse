@@ -228,6 +228,7 @@ def load_model():
     """Load the saved XGBoost model."""
     import joblib
     paths = [
+        os.path.join(r"c:\Users\HP\Documents\Stock_pulse\Dataset\2025 Q4", "xgboost_3m_model.pkl"),
         os.path.join(r"c:\Users\HP\Documents\Stock_pulse\Dataset", "xgboost_3m_model.pkl"),
         os.path.join(r"c:\Users\HP\Documents\Stock_pulse", "xgboost_3m_model.pkl"),
     ]
