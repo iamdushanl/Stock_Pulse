@@ -12,10 +12,11 @@ returns = df_returns['DailyReturn'].values
 
 plt.figure(figsize=(10, 6))
 sns.histplot(returns, bins=100, kde=True, stat="density", color=CSE_COLORS['accent1'], 
-             range=(-0.15, 0.15))
+             binrange=(-0.15, 0.15))
 
 # Fit normal distribution
-mu, std = stats.norm.fit(returns[~np.isnan(returns)])
+valid_returns = returns[np.isfinite(returns)]
+mu, std = stats.norm.fit(valid_returns)
 xmin, xmax = plt.xlim()
 x = np.linspace(xmin, xmax, 100)
 p = stats.norm.pdf(x, mu, std)
@@ -29,8 +30,8 @@ plt.tight_layout()
 plt.show()
 
 # Skewness and Kurtosis
-print(f"Skewness: {stats.skew(returns[~np.isnan(returns)]):.4f}")
-print(f"Kurtosis: {stats.kurtosis(returns[~np.isnan(returns)]):.4f}")
+print(f"Skewness: {stats.skew(valid_returns):.4f}")
+print(f"Kurtosis: {stats.kurtosis(valid_returns):.4f}")
 '''))
     
     cells.append(('markdown', '''> **Insight - Distributions**: The returns distribution exhibits significant excess kurtosis (fat tails) compared to a normal distribution. This implies extreme market moves happen more frequently than a normal model would predict.
@@ -54,7 +55,7 @@ plt.show()
 
 # Cross-stock correlation for top 10 stocks
 top_10 = df_modern.groupby('CompanyCode')['ShareVolume'].sum().nlargest(10).index
-pivot_returns = df_modern[df_modern['CompanyCode'].isin(top_10)].pivot(index='Date', columns='CompanyCode', values='DailyReturn')
+pivot_returns = df_modern[df_modern['CompanyCode'].isin(top_10)].drop_duplicates(subset=['Date', 'CompanyCode']).pivot(index='Date', columns='CompanyCode', values='DailyReturn')
 
 plt.figure(figsize=(10, 8))
 sns.heatmap(pivot_returns.corr(), annot=True, cmap='coolwarm', vmin=-1, vmax=1)
