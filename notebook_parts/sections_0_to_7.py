@@ -224,10 +224,10 @@ Analyzing ASPI and S&P SL20 performance.
     # Returns
     df_indices['Daily_Return'] = df_indices['ASPI'].pct_change()
     
-    monthly_aspi = df_indices['ASPI'].resample('M').last()
+    monthly_aspi = df_indices['ASPI'].resample('ME').last()
     monthly_returns = monthly_aspi.pct_change()
     
-    annual_aspi = df_indices['ASPI'].resample('Y').last()
+    annual_aspi = df_indices['ASPI'].resample('YE').last()
     annual_returns = annual_aspi.pct_change()
     
     fig, axes = plt.subplots(2, 1, figsize=(14, 10))
