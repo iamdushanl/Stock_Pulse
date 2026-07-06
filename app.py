@@ -211,6 +211,7 @@ def load_engineered_data():
 def load_raw_data():
     """Load the cached consolidated daily prices parquet."""
     paths = [
+        os.path.join(r"c:\Users\HP\Documents\Stock_pulse\Dataset\2025 Q4", "consolidated_daily_prices.parquet"),
         os.path.join(r"c:\Users\HP\Documents\Stock_pulse\Dataset", "consolidated_daily_prices.parquet"),
         os.path.join(r"c:\Users\HP\Documents\Stock_pulse", "consolidated_daily_prices.parquet"),
     ]
