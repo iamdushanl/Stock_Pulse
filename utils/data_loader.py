@@ -41,7 +41,7 @@ logger = logging.getLogger(__name__)
 # Constants
 # ══════════════════════════════════════════════════════════════════════════════
 
-DEFAULT_BASE_PATH = r"c:\Users\HP\Documents\Stock_pulse\Dataset"
+DEFAULT_BASE_PATH = r"c:\Users\HP\Documents\Stock_pulse\Dataset\2025 Q4"
 BASE_PATH = DEFAULT_BASE_PATH  # Convenience alias used by notebooks
 CACHE_FILENAME = "consolidated_daily_prices.parquet"
 
@@ -627,6 +627,9 @@ def load_market_stats(base_path: Optional[str] = None) -> pd.DataFrame:
         rename_map[col] = clean
 
     df_data = df_data.rename(columns=rename_map)
+    
+    # ── Deduplicate columns to prevent TypeError in pd.to_numeric ──
+    df_data = df_data.loc[:, ~df_data.columns.duplicated(keep='first')]
 
     # ── Parse date and numeric columns ──
     df_data["Date"] = pd.to_datetime(df_data["Date"], errors="coerce")
