@@ -446,7 +446,7 @@ styled = top_recs.style\\
         'MACD': '{:.4f}',
         'Dist_SMA50': '{:.2%}',
     })\\
-    .applymap(color_probability, subset=['Uptrend_Probability'])\\
+    .map(color_probability, subset=['Uptrend_Probability'])\\
     .set_caption('🤖 AI-Generated Stock Recommendations — Ranked by Uptrend Probability')
 
 display(styled)

@@ -168,7 +168,7 @@ def _parse_early_era_file(file_bytes: bytes, filename: str) -> pd.DataFrame:
     # Remove rows where column 1 contains header/separator strings
     junk_patterns = [
         "SECURITY_DA", "COMP", "CLOSE_PRICE", "PRICE",
-        "----------", "==========",
+        "----------", "==========", "rows",
     ]
     mask = pd.Series(True, index=df.index)
     for pat in junk_patterns:
@@ -413,6 +413,52 @@ def load_all_daily_prices(
     # ── Clean-up ──
     combined["Date"] = pd.to_datetime(combined["Date"], errors="coerce")
     combined = combined.dropna(subset=["Date", "CompanyCode"])
+
+    # ── BUG FIX: Remove dates before 1991 (Unix epoch junk) ──
+    pre_1991 = combined["Date"] < "1991-01-01"
+    if pre_1991.any():
+        logger.warning(
+            "Removing %d rows with Date < 1991-01-01 (epoch junk)",
+            pre_1991.sum(),
+        )
+        combined = combined[~pre_1991]
+
+    # ── BUG FIX: Remove junk CompanyCodes ──
+    junk_codes = {"rows", "nan", "none", "null", ""}
+    junk_mask = combined["CompanyCode"].str.lower().str.strip().isin(junk_codes)
+    if junk_mask.any():
+        logger.warning(
+            "Removing %d rows with junk CompanyCode values",
+            junk_mask.sum(),
+        )
+        combined = combined[~junk_mask]
+
+    # ── BUG FIX: Drop rows where Close is NaN ──
+    close_na = combined["Close"].isna()
+    if close_na.any():
+        logger.warning(
+            "Removing %d rows with NaN Close price", close_na.sum()
+        )
+        combined = combined[~close_na]
+
+    # ── BUG FIX: Deduplicate (Date, CompanyCode) pairs ──
+    # Keep the entry with the highest ShareVolume (primary share class)
+    before_dedup = len(combined)
+    combined["_sort_vol"] = combined["ShareVolume"].fillna(0)
+    combined = combined.sort_values(
+        ["CompanyCode", "Date", "_sort_vol"], ascending=[True, True, False]
+    )
+    combined = combined.drop_duplicates(
+        subset=["Date", "CompanyCode"], keep="first"
+    )
+    combined = combined.drop(columns=["_sort_vol"])
+    after_dedup = len(combined)
+    if before_dedup != after_dedup:
+        logger.warning(
+            "Deduplicated %d rows (kept highest-volume entry per day)",
+            before_dedup - after_dedup,
+        )
+
     combined = combined.sort_values(["CompanyCode", "Date"]).reset_index(
         drop=True
     )

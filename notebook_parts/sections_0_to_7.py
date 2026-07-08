@@ -138,7 +138,7 @@ dups = df[df.duplicated(subset=['CompanyCode', 'Date'], keep=False)]
 print(f"Duplicate records: {len(dups)}")
 
 # Calculate daily return to flag anomalies
-df.sort_values(['CompanyCode', 'Date'], inplace=True)
+df = df.sort_values(['CompanyCode', 'Date']).copy()
 df['DailyReturn'] = df.groupby('CompanyCode')['Close'].pct_change()
 
 # Anomaly flags
@@ -203,9 +203,9 @@ Analyzing ASPI and S&P SL20 performance.
     
     cells.append(('code', '''if not df_indices.empty and 'ASPI' in df_indices.columns:
     df_indices['Date'] = pd.to_datetime(df_indices['Date'], errors='coerce')
-    df_indices.dropna(subset=['Date', 'ASPI'], inplace=True)
-    df_indices.sort_values('Date', inplace=True)
-    df_indices.set_index('Date', inplace=True)
+    df_indices = df_indices.dropna(subset=['Date', 'ASPI']).copy()
+    df_indices = df_indices.sort_values('Date')
+    df_indices = df_indices.set_index('Date')
 
     fig, ax = plt.subplots(figsize=(14, 6))
     ax.plot(df_indices.index, df_indices['ASPI'], color=CSE_COLORS['primary'], label='ASPI')
@@ -255,8 +255,8 @@ Assessing market liquidity trends.
     
     cells.append(('code', '''if not df_market_stats.empty and 'TURNOVER EQUITY-Mn' in df_market_stats.columns:
     df_market_stats['Date'] = pd.to_datetime(df_market_stats['Date'], errors='coerce')
-    df_market_stats.dropna(subset=['Date'], inplace=True)
-    df_market_stats.set_index('Date', inplace=True)
+    df_market_stats = df_market_stats.dropna(subset=['Date']).copy()
+    df_market_stats = df_market_stats.set_index('Date')
     
     fig, ax = plt.subplots(figsize=(14, 6))
     ax.plot(df_market_stats.index, df_market_stats['TURNOVER EQUITY-Mn'], color=CSE_COLORS['teal'], alpha=0.5, label='Daily Turnover')

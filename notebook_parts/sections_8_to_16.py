@@ -42,7 +42,7 @@ print(f"Kurtosis: {stats.kurtosis(valid_returns):.4f}")
 Analyzing relationships between price, volume, and cross-stock correlations.
 '''))
     
-    cells.append(('code', '''df_modern = df[df['Era'] == '2001-2025'].copy()
+    cells.append(('code', '''df_modern = df.loc[df['Era'] == '2001-2025'].copy()
 numeric_cols = ['Open', 'High', 'Low', 'Close', 'TradeVolume', 'ShareVolume', 'Turnover']
 
 corr_matrix = df_modern[numeric_cols].corr()
@@ -94,6 +94,7 @@ plt.tight_layout()
 plt.show()
 
 # Outliers over time
+outliers = outliers.copy()
 outliers['Year'] = outliers['Date'].dt.year
 outlier_counts = outliers.groupby('Year').size()
 
@@ -112,7 +113,8 @@ plt.show()
     cells.append(('markdown', '''## Section 11: Feature Relationship Analysis
 '''))
     
-    cells.append(('code', '''df_modern['LogVolume'] = np.log1p(df_modern['ShareVolume'])
+    cells.append(('code', '''df_modern = df.loc[df['Era'] == '2001-2025'].copy()
+df_modern['LogVolume'] = np.log1p(df_modern['ShareVolume'])
 df_modern['AbsReturn'] = np.abs(df_modern['DailyReturn'])
 
 plt.figure(figsize=(10, 6))
@@ -223,8 +225,7 @@ if not df_indices.empty:
     
     fig = px.line(plot_df, x='Date', y='ASPI', title='Interactive ASPI Chart')
     fig.update_xaxes(rangeslider_visible=True)
-    # fig.show()  # Uncomment to view interactively
-    print("Interactive ASPI chart generated (uncomment fig.show() to view in notebook).")
+    fig.show()
 '''))
     
     cells.append(('markdown', '''> **Insight - Interactivity**: Plotly allows for deep dives into specific crash and rally dates.
