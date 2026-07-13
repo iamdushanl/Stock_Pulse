@@ -19,11 +19,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
+import os
 warnings.filterwarnings('ignore')
 
-from utils.data_loader import load_all_daily_prices, load_splits, BASE_PATH
+from utils.data_loader import BASE_PATH
 from utils.plot_helpers import setup_plotting_style, CSE_COLORS
-from utils.data_cleaning import clean_and_prepare_data
 from utils.features import generate_technical_features
 from utils.targets import generate_targets
 
@@ -32,27 +32,20 @@ pd.set_option('display.max_columns', 100)
 '''))
 
     # Load Data
-    nb.cells.append(nbformat.v4.new_markdown_cell('## 1. Data Loading'))
-    nb.cells.append(nbformat.v4.new_code_cell('''# Load raw data
-df_raw = load_all_daily_prices()
-df_splits = load_splits(BASE_PATH)
-print(f"Raw data shape: {df_raw.shape}")
+    nb.cells.append(nbformat.v4.new_markdown_cell('## 1. Data Loading\nLoading the pre-cleaned, split-adjusted S&P SL 20 dataset from Phase 1.'))
+    nb.cells.append(nbformat.v4.new_code_cell('''# Load cleaned data
+df_clean = pd.read_parquet(os.path.join(BASE_PATH, 'sp20_daily_prices_2001_2025.parquet'))
+print(f"Cleaned data shape: {df_clean.shape}")
 '''))
 
-    # Data Cleaning
-    nb.cells.append(nbformat.v4.new_markdown_cell('## 2. Data Cleaning & Calendar Alignment\nFocusing on the Modern Era (2001-2025) and applying stock split adjustments.'))
-    nb.cells.append(nbformat.v4.new_code_cell('''# Clean the data
-df_clean = clean_and_prepare_data(df_raw, df_splits, start_year=2001)
+    # Data Cleaning (skipped because it's pre-cleaned)
+    nb.cells.append(nbformat.v4.new_markdown_cell('## 2. Verify Stock Split Adjustment\nVerify that the stock split logic applied in Phase 1 worked as expected.'))
+    nb.cells.append(nbformat.v4.new_code_cell('''# Sunshine Holdings (SUN.N0000) split 1 to 3 on 2021-03-31
+sun_clean = df_clean[(df_clean['CompanyCode'] == 'SUN') & (df_clean['Date'].dt.year >= 2020)]
 
-# Verify stock split adjustment using an example company if possible (e.g. SUN)
-# Sunshine Holdings (SUN.N0000) split 1 to 4 on 2025-02-18
-sun_raw = df_raw[(df_raw['CompanyCode'] == 'SUN') & (df_raw['Date'].dt.year >= 2024)]
-sun_clean = df_clean[(df_clean['CompanyCode'] == 'SUN') & (df_clean['Date'].dt.year >= 2024)]
-
-if not sun_raw.empty and not sun_clean.empty:
+if not sun_clean.empty:
     fig, ax = plt.subplots(figsize=(12, 5))
-    ax.plot(sun_raw['Date'], sun_raw['Close'], label='Raw (Unadjusted)', alpha=0.6, linestyle='--')
-    ax.plot(sun_clean['Date'], sun_clean['Close'], label='Cleaned (Adjusted)', linewidth=2)
+    ax.plot(sun_clean['Date'], sun_clean['Close'], label='Cleaned (Adjusted)', linewidth=2, color='green')
     ax.set_title('Stock Split Adjustment Verification: Sunshine Holdings (SUN)')
     ax.legend()
     plt.tight_layout()
@@ -102,7 +95,7 @@ df_final = generate_targets(df_features)
 
 # Target Distribution
 plt.figure(figsize=(10, 5))
-sns.histplot(df_final['Target_Return_3M'].dropna(), bins=100, range=(-1, 2), kde=True, color=CSE_COLORS['primary'])
+sns.histplot(df_final['Target_Return_3M'].dropna(), bins=100, binrange=(-1, 2), kde=True, color=CSE_COLORS['primary'])
 plt.axvline(0, color='red', linestyle='--')
 plt.axvline(0.05, color='green', linestyle='--', label='5% Uptrend Threshold')
 plt.title('Distribution of 3-Month Forward Returns')

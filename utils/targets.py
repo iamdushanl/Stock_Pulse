@@ -45,7 +45,13 @@ def generate_targets(df):
         
         return group
         
-    df_targets = df_targets.groupby('CompanyCode', group_keys=False).apply(apply_targets)
+    target_dfs = []
+    for company, group in df_targets.groupby('CompanyCode'):
+        processed_group = apply_targets(group)
+        processed_group['CompanyCode'] = company
+        target_dfs.append(processed_group)
+        
+    df_targets = pd.concat(target_dfs, ignore_index=True)
     
     print("Target variables generation complete.")
     return df_targets

@@ -66,8 +66,8 @@ def generate_technical_features(df):
         group['Stoch_D'] = group['Stoch_K'].rolling(window=3).mean()
         
         # 7. Volatility Features
-        group['Vol_21d'] = group['DailyReturn'].rolling(21).std() * np.sqrt(252)
-        group['Vol_63d'] = group['DailyReturn'].rolling(63).std() * np.sqrt(252)
+        group['Vol_21d'] = group['DailyReturn_Pct'].rolling(21).std() * np.sqrt(252)
+        group['Vol_63d'] = group['DailyReturn_Pct'].rolling(63).std() * np.sqrt(252)
         
         # 8. Volume Features
         group['Volume_SMA_20'] = group['ShareVolume'].rolling(window=20).mean()
