@@ -1,8 +1,18 @@
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
-from xgboost import XGBClassifier
-from sklearn.metrics import classification_report, precision_score, f1_score, roc_auc_score
+
+try:
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.metrics import classification_report, precision_score, f1_score, roc_auc_score
+    _HAS_SKLEARN = True
+except ImportError:
+    _HAS_SKLEARN = False
+
+try:
+    from xgboost import XGBClassifier
+    _HAS_XGBOOST = True
+except ImportError:
+    _HAS_XGBOOST = False
 
 def prepare_ml_dataset(df, target_col='Is_Uptrend_3M', feature_cols=None):
     """
@@ -39,7 +49,13 @@ def prepare_ml_dataset(df, target_col='Is_Uptrend_3M', feature_cols=None):
 def train_models(X_train, y_train):
     """
     Trains XGBoost and Random Forest classifiers.
+    Requires scikit-learn and xgboost to be installed.
     """
+    if not _HAS_SKLEARN:
+        raise ImportError("scikit-learn is required for model training. Install with: pip install scikit-learn")
+    if not _HAS_XGBOOST:
+        raise ImportError("xgboost is required for model training. Install with: pip install xgboost")
+    
     print("Training Random Forest...")
     rf_model = RandomForestClassifier(
         n_estimators=100, 
@@ -51,13 +67,18 @@ def train_models(X_train, y_train):
     rf_model.fit(X_train, y_train)
     
     print("Training XGBoost...")
+    pos_count = sum(y_train)
+    neg_count = len(y_train) - pos_count
+    # BUG-19 FIX: Guard against ZeroDivisionError when all targets are 0
+    pos_weight = neg_count / max(pos_count, 1)
+    
     xgb_model = XGBClassifier(
         n_estimators=100,
         max_depth=6,
         learning_rate=0.1,
         random_state=42,
         n_jobs=-1,
-        scale_pos_weight=(len(y_train) - sum(y_train)) / sum(y_train) # Handle imbalance
+        scale_pos_weight=pos_weight
     )
     xgb_model.fit(X_train, y_train)
     
@@ -68,6 +89,9 @@ def evaluate_models(models, X_test, y_test):
     """
     Evaluates models focusing on Precision and ROC-AUC.
     """
+    if not _HAS_SKLEARN:
+        raise ImportError("scikit-learn is required for model evaluation.")
+    
     results = {}
     for name, model in models.items():
         y_pred = model.predict(X_test)

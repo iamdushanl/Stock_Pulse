@@ -26,4 +26,4 @@ streamlit>=1.30
 plotly>=5.18
 
 # Utilities
-warnings-filter>=0.1
+# utilities: removed invalid dependency 'warnings-filter' (not on PyPI)

@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import warnings
 
 def clean_and_prepare_data(df, df_splits=None, start_year=2001):
     """
@@ -50,7 +49,7 @@ def clean_and_prepare_data(df, df_splits=None, start_year=2001):
         
     # 6. Final cleanup
     # Re-calculate daily returns after splits and fills
-    df_clean['DailyReturn'] = df_clean.groupby('CompanyCode')['Close'].pct_change()
+    df_clean['DailyReturn_Pct'] = df_clean.groupby('CompanyCode')['Close'].pct_change() * 100
     
     print(f"Data cleaning complete. Final shape: {df_clean.shape}")
     return df_clean

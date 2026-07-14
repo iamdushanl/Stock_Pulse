@@ -56,7 +56,7 @@ plt.show()
 
 # Cross-stock correlation for top 10 stocks by volume
 top_10 = df.groupby('CompanyCode')['ShareVolume'].sum().nlargest(10).index
-pivot_returns = df[df['CompanyCode'].isin(top_10)].pivot(index='Date', columns='CompanyCode', values='DailyReturn_Pct')
+pivot_returns = df[df['CompanyCode'].isin(top_10)].pivot_table(index='Date', columns='CompanyCode', values='DailyReturn_Pct', aggfunc='mean')
 
 plt.figure(figsize=(10, 8))
 sns.heatmap(pivot_returns.corr(), annot=True, cmap='coolwarm', vmin=-1, vmax=1)
@@ -146,7 +146,7 @@ plt.axhline(0, color='black', linewidth=1)
 plt.tight_layout()
 plt.show()
 
-monthly_returns = df.groupby('Month')['DailyReturn_Pct'].mean()
+monthly_returns = df.groupby('Month')['DailyReturn_Pct'].mean().reindex(range(1, 13), fill_value=0)
 months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 plt.figure(figsize=(10, 5))

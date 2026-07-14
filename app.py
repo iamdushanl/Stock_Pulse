@@ -12,7 +12,6 @@ import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 import os
-import sys
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -196,6 +195,7 @@ PLOTLY_TEMPLATE = {
 def load_engineered_data():
     """Load the engineered features parquet file."""
     paths = [
+        os.path.join(r"c:\Users\HP\Documents\Stock_pulse\Dataset\2025 Q4", "engineered_features.parquet"),
         os.path.join(r"c:\Users\HP\Documents\Stock_pulse\Dataset", "engineered_features.parquet"),
         os.path.join(r"c:\Users\HP\Documents\Stock_pulse", "engineered_features.parquet"),
     ]
@@ -286,7 +286,6 @@ if page == "🏠 Home":
     )
     
     df = load_engineered_data()
-    df_raw = load_raw_data()
     
     if df is not None:
         # ── Key Metrics ──────────────────────────────────────────────────

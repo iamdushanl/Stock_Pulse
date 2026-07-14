@@ -43,7 +43,6 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import seaborn as sns
 import warnings
-import os
 warnings.filterwarnings('ignore')
 
 from sklearn.metrics import (

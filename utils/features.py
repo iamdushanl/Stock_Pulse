@@ -89,11 +89,10 @@ def generate_technical_features(df):
         
     df_feat = pd.concat(clean_dfs, ignore_index=True)
     
-    # 9. Time-Based Features (Global)
-    df_feat['Year'] = df_feat['Date'].dt.year
-    df_feat['Month'] = df_feat['Date'].dt.month
-    df_feat['Quarter'] = df_feat['Date'].dt.quarter
-    df_feat['DayOfWeek'] = df_feat['Date'].dt.dayofweek
+    # Note: Time-based features (Year, Month, Quarter, DayOfWeek) are NOT regenerated here
+    # because they already exist in the SP20 parquet with correct types.
+    # DayOfWeek is stored as string names ("Monday", etc.) in the source dataset.
+    # Overwriting with dt.dayofweek (integers) would break the EDA notebook charts.
     
     print("Technical features generation complete.")
     return df_feat
