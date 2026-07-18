@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#415a77"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="260" fill="#f8f9fa"/>
+
+  <!-- step boxes -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <!-- 1 -->
+    <rect x="30" y="70" width="200" height="110" rx="14" fill="#ffffff" stroke="#dee2e6" stroke-width="1.5"/>
+    <text x="130" y="105" font-size="26" text-anchor="middle">📥</text>
+    <text x="130" y="132" font-size="14" font-weight="700" text-anchor="middle" fill="#0d1b2a">Raw CSE Data</text>
+    <text x="130" y="151" font-size="11" text-anchor="middle" fill="#6c757d">34 yrs · ZIP archives</text>
+    <text x="130" y="166" font-size="11" text-anchor="middle" fill="#6c757d">1991 – 2025</text>
+
+    <path d="M235,125 L275,125" stroke="#415a77" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <!-- 2 -->
+    <rect x="280" y="70" width="200" height="110" rx="14" fill="#ffffff" stroke="#dee2e6" stroke-width="1.5"/>
+    <text x="380" y="105" font-size="26" text-anchor="middle">🧹</text>
+    <text x="380" y="132" font-size="14" font-weight="700" text-anchor="middle" fill="#0d1b2a">Cleaning</text>
+    <text x="380" y="151" font-size="11" text-anchor="middle" fill="#6c757d">Split adjustments,</text>
+    <text x="380" y="166" font-size="11" text-anchor="middle" fill="#6c757d">calendar alignment</text>
+
+    <path d="M485,125 L525,125" stroke="#415a77" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <!-- 3 -->
+    <rect x="530" y="70" width="200" height="110" rx="14" fill="#ffffff" stroke="#dee2e6" stroke-width="1.5"/>
+    <text x="630" y="105" font-size="26" text-anchor="middle">📐</text>
+    <text x="630" y="132" font-size="14" font-weight="700" text-anchor="middle" fill="#0d1b2a">Feature Engineering</text>
+    <text x="630" y="151" font-size="11" text-anchor="middle" fill="#6c757d">RSI, MACD, Bollinger,</text>
+    <text x="630" y="166" font-size="11" text-anchor="middle" fill="#6c757d">ATR, SMA, targets</text>
+
+    <path d="M735,125 L775,125" stroke="#415a77" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <!-- 4 -->
+    <rect x="780" y="70" width="200" height="110" rx="14" fill="#ffffff" stroke="#00b4d8" stroke-width="2"/>
+    <text x="880" y="105" font-size="26" text-anchor="middle">🤖</text>
+    <text x="880" y="132" font-size="14" font-weight="700" text-anchor="middle" fill="#0d1b2a">XGBoost Model</text>
+    <text x="880" y="151" font-size="11" text-anchor="middle" fill="#6c757d">Time-series split</text>
+    <text x="880" y="166" font-size="11" text-anchor="middle" fill="#6c757d">2001–22 train / 23–25 test</text>
+
+    <path d="M985,125 L1025,125" stroke="#415a77" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <!-- 5 -->
+    <rect x="1030" y="70" width="140" height="110" rx="14" fill="#0d1b2a"/>
+    <text x="1100" y="105" font-size="26" text-anchor="middle">📊</text>
+    <text x="1100" y="132" font-size="14" font-weight="700" text-anchor="middle" fill="#ffffff">Dashboard</text>
+    <text x="1100" y="151" font-size="11" text-anchor="middle" fill="#e0e1dd">Streamlit</text>
+    <text x="1100" y="166" font-size="11" text-anchor="middle" fill="#e0e1dd">live rankings</text>
+  </g>
+
+  <text x="600" y="225" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#6c757d">
+    Phase 1: EDA  ·  Phase 2: Feature Engineering  ·  Phase 3: Modeling &amp; Recommendation
+  </text>
+</svg>
