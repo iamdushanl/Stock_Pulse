@@ -253,6 +253,6 @@ University final-year project — Colombo Stock Exchange data used under academi
 
 <div align="center">
 
-**Built with ❤️ by [Dushan Lakruwan](https://github.com/iamdushanl)**
+**Built with ❤️ by [Dushan Liyanage](https://github.com/iamdushanl)**
 
 </div>
