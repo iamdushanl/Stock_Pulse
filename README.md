@@ -74,30 +74,6 @@ Full write-ups for all 16 sections — data quality checks, outlier detection, f
 
 ---
 
-## 📸 Dashboard Screenshots
-
-> The dashboard reads from a locally-generated `engineered_features.parquet` and a trained model file — both are produced by running the notebooks and are **not** committed to the repo (see [`.gitignore`](.gitignore)). Once you've run the pipeline locally, drop your own screenshots into a `screenshots/` folder using the filenames below and they'll render right here.
-
-<div align="center">
-
-| Home | Stock Explorer |
-|---|---|
-| ![Home](screenshots/home.png) | ![Stock Explorer](screenshots/stock_explorer.png) |
-
-| AI Recommendations | Model Performance |
-|---|---|
-| ![AI Recommendations](screenshots/ai_recommendations.png) | ![Model Performance](screenshots/model_performance.png) |
-
-</div>
-
-**To generate these yourself:**
-```bash
-streamlit run app.py
-```
-Then screenshot each of the 4 pages from the sidebar nav (🏠 Home, 📊 Stock Explorer, 🤖 AI Recommendations, 📈 Model Performance) and save them into a new `screenshots/` folder using the exact filenames above — the table renders automatically once they exist.
-
----
-
 ## 🏗️ Architecture
 
 <img src="assets/pipeline.svg" alt="Stock Pulse pipeline architecture" width="100%"/>
