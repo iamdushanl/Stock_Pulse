@@ -27,7 +27,6 @@
           fill="url(#chartFill)"/>
     <path d="M0,220 L40,205 L80,215 L120,180 L160,190 L200,150 L240,165 L280,120 L320,140 L360,95 L400,110 L440,70 L480,90 L520,55 L550,75"
           fill="none" stroke="#00b4d8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- a few candlesticks under the line -->
     <g stroke-width="2">
       <line x1="60" y1="230" x2="60" y2="260" stroke="#2dc653"/>
       <rect x="53" y="238" width="14" height="16" fill="#2dc653"/>
@@ -46,19 +45,19 @@
   <g transform="translate(60,95)">
     <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#00b4d8">📈</text>
     <text x="42" y="0" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-1">Stock Pulse</text>
-    <text x="4" y="45" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#e0e1dd" opacity="0.9">AI-Powered Stock Recommendation Engine</text>
-    <text x="4" y="72" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#e0e1dd" opacity="0.9">for the Colombo Stock Exchange</text>
+    <text x="4" y="45" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#e0e1dd" opacity="0.9">Exploratory Data Analysis of the Colombo Stock Exchange</text>
+    <text x="4" y="72" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#e0e1dd" opacity="0.9">34 years of market data (1991–2025)</text>
   </g>
 
   <!-- bottom tag pills -->
   <g font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">
-    <rect x="60" y="220" width="118" height="30" rx="15" fill="#ffffff" fill-opacity="0.08"/>
-    <text x="76" y="239" fill="#e0e1dd">XGBoost · ML</text>
+    <rect x="60" y="220" width="150" height="30" rx="15" fill="#2dc653" fill-opacity="0.18"/>
+    <text x="76" y="239" fill="#8fedaa">✓ Phase 1: EDA Complete</text>
 
-    <rect x="188" y="220" width="150" height="30" rx="15" fill="#ffffff" fill-opacity="0.08"/>
-    <text x="204" y="239" fill="#e0e1dd">34 Years of CSE Data</text>
+    <rect x="220" y="220" width="150" height="30" rx="15" fill="#ffffff" fill-opacity="0.08"/>
+    <text x="236" y="239" fill="#e0e1dd">Phase 2: In Progress</text>
 
-    <rect x="348" y="220" width="140" height="30" rx="15" fill="#ffffff" fill-opacity="0.08"/>
-    <text x="364" y="239" fill="#e0e1dd">Streamlit Dashboard</text>
+    <rect x="380" y="220" width="130" height="30" rx="15" fill="#ffffff" fill-opacity="0.08"/>
+    <text x="396" y="239" fill="#e0e1dd">Phase 3: Planned</text>
   </g>
 </svg>
