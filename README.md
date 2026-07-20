@@ -4,7 +4,7 @@
 
 # 📈 Stock Pulse
 
-**Exploratory data analysis of 34 years of Colombo Stock Exchange (CSE) trading history — the foundation for an upcoming ML-based stock recommendation system.**
+**Exploratory data analysis of 25 years of Colombo Stock Exchange (CSE) trading history — the foundation for an upcoming ML-based stock recommendation system.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
@@ -20,7 +20,7 @@
 
 ## 🧭 Overview
 
-**Stock Pulse** is a data science project analyzing 34 years of historical trading data (1991–2025) from the Colombo Stock Exchange (CSE), working toward an ML-powered stock recommendation system.
+**Stock Pulse** is a data science project analyzing 25 years of historical trading data (2001–2025) from the Colombo Stock Exchange (CSE), working toward an ML-powered stock recommendation system.
 
 **Where it stands right now:** Phase 1 — a full exploratory data analysis across 300+ listed companies — is complete. Feature engineering (Phase 2) and the modeling/recommendation engine (Phase 3) are in active development, and a Streamlit dashboard UI has been scaffolded ahead of them. This README reflects that real state rather than describing features that aren't live yet — the sections below are grounded in what's actually been run and verified.
 
@@ -58,7 +58,7 @@ Real output from `01_CSE_Exploratory_Data_Analysis.ipynb`, run against the full 
 </div>
 
 **What the notebook covers, section by section:**
-- Data loading from 34 years of yearly ZIP archives across two distinct schema eras
+- Data loading from 25 years of yearly ZIP archives across two distinct schema eras
 - Data quality assessment and descriptive statistics across 300+ companies
 - Time-series analysis of market indices, trading volume, and individual stocks
 - Distribution, correlation, and outlier analysis
@@ -154,15 +154,28 @@ jupyter notebook 01_CSE_Exploratory_Data_Analysis.ipynb
 | **Dashboard** | Streamlit | Planned |
 
 ---
+## 👥 Project Team
+
+This repository is part of a **3rd-year university group project** focused on building an ML-powered stock recommendation system using historical Colombo Stock Exchange (CSE) data.
+
+### My Contribution
+- ✅ Designed and completed the complete Phase 1 Exploratory Data Analysis (EDA)
+- ✅ Developed the data loading and preprocessing pipeline for the historical CSE dataset
+- ✅ Created the visualizations and statistical analysis presented in this repository
+- ✅ Authored the project documentation (README)
+
+Future phases—including feature engineering, machine learning models, recommendation engine, and dashboard integration—are being developed collaboratively by the project team.
 
 ## 📄 License
 
-University final-year project — Colombo Stock Exchange data used under academic license. Code is released under the [MIT License](LICENSE).
+University 3rd-year group project — Colombo Stock Exchange data used under academic license. Code is released under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by [Dushan Lakruwan](https://github.com/iamdushanl)**
+**Academic Group Project**
+
+EDA and documentation by **Dushan Liyanage**
 
 </div>
