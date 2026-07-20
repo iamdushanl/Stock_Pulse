@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Stock Pulse Banner" width="100%"/>
+<img src="assets/banner.png" alt="Stock Pulse Banner" width="100%"/>
 
 # 📈 Stock Pulse
 
