@@ -4,7 +4,7 @@ This pipeline collects a separate snapshot of public CSE information. It does no
 
 ## Why a separate dataset?
 
-Stockpulse needs more than daily OHLCV data to support its medium-term growth and long-term wealth-creation engines. This collection layer creates auditable inputs for:
+Stockpulse needs more than daily OHLCV data to support its medium-term growth and long-term wealth-creation engines. The existing utils/data_loader.py already supports additional local CSE workbooks: dividends, splits, listing/de-listing history, market indices/statistics, GICS sector data, sector market capitalization and sector ratios. Export these historical sources first with scripts/build_historical_enrichment.py. The online collector adds a separate current CSE public-site snapshot. Together they create auditable inputs for:
 - security and sector reference data;
 - current company profile/summary snapshots;
 - market/sector summaries and index feeds;
@@ -19,6 +19,29 @@ Stockpulse needs more than daily OHLCV data to support its medium-term growth an
 4. Announcements and reports must be timestamped by publication/available date. A document about a prior financial period is only usable by a model after it became public.
 5. Check CSE terms, robots/access rules, copyright and permitted academic/research use before bulk collection or redistribution. Do not bypass authentication, access controls, rate limits, or anti-bot protections.
 6. The first run is a schema-discovery run. Review the raw JSON and collection_manifest.json before relying on normalized output.
+
+## Export existing historical CSE workbooks
+
+The repository loader expects these auxiliary source files alongside the daily-price ZIPs:
+- 07Market Indices - Daily.xls
+- 11Market Statistics-Daily.xls
+- 16 List of Quoted Securities And Issued Quantity.xls
+- 05Sub Division (Share Splits).xls
+- 06New Listings & De-listings.xls
+- 39GICS-Daily.xlsx
+- 22Sector Market Capitalisation.xls
+- 01Dividends.xls
+- 25Sector Ratios.xls
+
+Run this from the repository root, replacing the source path with the actual local Dataset folder:
+
+```bash
+python scripts/build_historical_enrichment.py --source "/path/to/Dataset/2025 Q4"
+```
+
+This writes Parquet and CSV copies under Dataset/enrichment/cse_historical/ plus a manifest. Missing or malformed workbooks are recorded as errors.
+
+## Collect current CSE website snapshots
 
 ## Setup
 
