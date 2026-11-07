@@ -26,14 +26,15 @@ USER_AGENT = "StockpulseAcademicResearch/1.0 (CSE public data; respectful low-ra
 TIMEOUT = 45
 PAUSE_SECONDS = 0.4
 
-GET_ENDPOINTS = ("allSecurityCode", "cntSecurity", "listAllSectors", "smd/categories")
+GET_ENDPOINTS = ("smd/categories",)
 POST_ENDPOINTS = (
-    "marketStatus", "marketSummery", "aspiData", "snpData", "aspi", "spsl",
-    "marketIndices", "allSectors", "returnAspiSnp", "GICSSectorSummery",
-    "dailyMarketSummery", "tradeSummary", "topGainers", "mostActiveVolumes",
-    "getContributors", "getContributorsChart", "approvedAnnouncement",
+    "allSecurityCode", "cntSecurity", "listAllSectors", "marketStatus",
+    "marketSummery", "aspiData", "snpData", "allSectors", "dailyMarketSummery",
+    "tradeSummary", "todaySharePrice", "topGainers", "topLooses",
+    "mostActiveTrades", "getNewListingsRelatedNoticesAnnouncements",
+    "getBuyInBoardAnnouncements", "approvedAnnouncement",
     "getFinancialAnnouncement", "circularAnnouncement", "directiveAnnouncement",
-    "getNonComplianceAnnouncements",
+    "getNonComplianceAnnouncements", "detailedTrades",
 )
 
 
@@ -93,13 +94,13 @@ class CSEClient:
         })
         self.pause = pause
 
-    def request_json(self, endpoint: str, method: str = "POST", params=None):
+    def request_json(self, endpoint: str, method: str = "POST", params=None, data=None):
         url = f"{BASE}/api/{endpoint}"
         last_error = None
         for attempt in range(4):
             try:
                 response = self.session.request(
-                    method, url, params=params, timeout=TIMEOUT
+                    method, url, params=params, data=data, timeout=TIMEOUT
                 )
                 response.raise_for_status()
                 payload = response.json()
@@ -149,13 +150,21 @@ def main():
     run_meta = {"source": BASE, "started_at_utc": utc_now(), "collector": "Stockpulse CSE public-data collector"}
 
     # Master universe and sector taxonomy.
-    universe = client.request_json("allSecurityCode", "GET")
+    universe = client.request_json("allSecurityCode", "POST")
     write_json(raw / "allSecurityCode.json", universe)
     securities = find_list(universe) or []
-    sectors = client.request_json("listAllSectors", "GET")
+    sectors = client.request_json("listAllSectors", "POST")
     write_json(raw / "listAllSectors.json", sectors)
-    internal_ids = client.request_json("cntSecurity", "GET")
+    internal_ids = client.request_json("cntSecurity", "POST")
     write_json(raw / "cntSecurity.json", internal_ids)
+
+    # Category dictionary is a GET endpoint in the current public-site API.
+    try:
+        categories = client.request_json("smd/categories", "GET")
+        write_json(raw / "smd_categories.json", categories)
+    except Exception as exc:
+        logging.warning("Could not collect announcement categories: %s", exc)
+        categories = {"_collection_error": str(exc)}
 
     # Public market state, indices, sector metrics and aggregate market activity.
     market = {}
@@ -185,9 +194,9 @@ def main():
         for item in active:
             symbol = str(item["symbol"])
             safe_symbol = safe_name(symbol)
-            for endpoint in ("companyInfoSummery", "companyProfile"):
+            for endpoint in ("companyInfoSummery",):
                 try:
-                    payload = client.request_json(endpoint, "POST", params={"symbol": symbol})
+                    payload = client.request_json(endpoint, "POST", data={"symbol": symbol})
                     write_json(raw / "companies" / safe_symbol / f"{endpoint}.json", payload)
                     if endpoint == "companyInfoSummery" and isinstance(payload, dict):
                         info = payload.get("reqSymbolInfo") or {}
