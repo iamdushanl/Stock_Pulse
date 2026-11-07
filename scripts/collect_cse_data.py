@@ -225,6 +225,10 @@ def main():
     circular_rows = []
     for endpoint, destination in (
         ("approvedAnnouncement", document_rows),
+        ("getNewListingsRelatedNoticesAnnouncements", document_rows),
+        ("getBuyInBoardAnnouncements", document_rows),
+        ("directiveAnnouncement", document_rows),
+        ("getNonComplianceAnnouncements", document_rows),
         ("getFinancialAnnouncement", report_rows),
         ("circularAnnouncement", circular_rows),
     ):
