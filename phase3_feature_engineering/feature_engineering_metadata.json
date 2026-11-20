@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2026-11-19T11:31:30.803820+00:00",
+  "total_trading_records": 86950,
+  "total_companies": 20,
+  "date_range": {
+    "start": "2002-01-02 00:00:00",
+    "end": "2025-12-31 00:00:00"
+  },
+  "engine_01_short_term_trading": {
+    "file": "features_01_short_term_trading.parquet",
+    "total_features": 65,
+    "primary_focus": "Top 50 technical indicators, volume-price breakouts, volatility, corporate catalysts",
+    "prediction_horizons": [
+      "5-day",
+      "20-day",
+      "60-day"
+    ]
+  },
+  "engine_02_medium_term_growth": {
+    "file": "features_02_medium_term_growth.parquet",
+    "total_features": 36,
+    "primary_focus": "Earnings acceleration, YoY growth, operating margin expansion, GARP valuation",
+    "prediction_horizons": [
+      "3-month (60d)",
+      "6-month (120d)",
+      "1-year (252d)"
+    ]
+  },
+  "engine_03_long_term_wealth": {
+    "file": "features_03_long_term_wealth.parquet",
+    "total_features": 26,
+    "primary_focus": "High ROE/ROIC moat, fortress balance sheet, Graham margin of safety, downside risk",
+    "prediction_horizons": [
+      "6-month (120d)",
+      "1-year (252d)",
+      "multi-year compounding"
+    ]
+  }
+}

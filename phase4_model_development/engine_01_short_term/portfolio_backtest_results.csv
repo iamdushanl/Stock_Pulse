@@ -1,0 +1,4 @@
+﻿target_horizon,selected_best_model,test_period,net_cagr_pct,aspi_cagr_pct,excess_cagr_pct,net_sharpe_ratio,max_drawdown_pct,win_rate_pct,mean_turnover_pct,transaction_cost_deduction_pct
+Fwd_Return_5d,Random_Forest,2023-2025,426.85,47.16,379.69,1.22,-17.61,65.26,21.47,0.24
+Fwd_Return_20d,LightGBM,2023-2025,223.22,46.67,176.55,1.05,-14.52,69.57,33.91,0.38
+Fwd_Return_60d,Ridge_Regression,2023-2025,79.3,54.93,24.37,1.75,-2.97,71.43,51.43,0.58

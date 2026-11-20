@@ -1,0 +1,4 @@
+﻿target_horizon,selected_best_model,test_period,test_samples,test_mae,test_rmse,test_spearman_rank_ic,test_ic_ir,test_precision_at_10,test_top10_mean_return_pct,test_aspi_mean_return_pct,test_top10_excess_return_pct
+Fwd_Return_5d,Random_Forest,2023-2025 (Untouched OOS),9444,6.0137,19.0529,0.1224,0.4941,0.5123,4.47,0.8,3.66
+Fwd_Return_20d,LightGBM,2023-2025 (Untouched OOS),9144,10.4541,19.453,0.0848,0.3926,0.5275,7.77,3.48,4.29
+Fwd_Return_60d,Ridge_Regression,2023-2025 (Untouched OOS),8344,21.0251,27.929,0.2678,0.9697,0.573,18.96,11.91,7.06

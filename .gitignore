@@ -1,10 +1,23 @@
 # Ignore large datasets and data files
 Dataset/
+01_existing_cse_sources/
+cse_live/documents/
+cse_live/raw_json/
 *.zip
 *.xls
 *.xlsx
-*.csv
 *.parquet
+*.pdf
+*.PDF
+
+# General CSV ignore, but keep lightweight summary reports and metadata
+*.csv
+!03_schemas/*.csv
+!cse_live/*.csv
+!phase2_extraction/**/*.csv
+!phase3_5_validation/**/*.csv
+!phase4_model_development/**/*.csv
+!docs/**/*.csv
 
 # Python cache
 __pycache__/

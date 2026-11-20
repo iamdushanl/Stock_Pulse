@@ -1,0 +1,5 @@
+market_regime,trading_days,mean_spearman_rank_ic,precision_at_10,annualized_net_cagr_pct,net_sharpe_ratio,max_drawdown_pct,mean_turnover_pct
+Bull Market Regime (ASPI > SMA50),334,0.0778,0.5293,98.65,2.76,-8.3,30.0
+Correction / Bear Regime (ASPI < SMA50),135,0.1055,0.4459,-17.19,-1.56,-13.94,40.0
+High Volatility Regime (Vol > Median),234,0.0721,0.4756,66.2,1.61,-16.63,38.2
+Low Volatility Regime (Vol < Median),234,0.097,0.535,49.47,1.22,-13.35,30.0

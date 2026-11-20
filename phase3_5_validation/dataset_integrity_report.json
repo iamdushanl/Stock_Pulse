@@ -1,0 +1,72 @@
+{
+  "audit_timestamp_utc": "2026-11-19T11:40:10.617912+00:00",
+  "dataset_structure_clarification": {
+    "observation_type": "Stock-Date Panel Observations",
+    "total_observations_per_matrix": 86950,
+    "total_unique_trading_dates": 5121,
+    "total_unique_companies": 20,
+    "average_trading_days_per_company": 4347.5,
+    "is_86950_unique_dates": false,
+    "explanation": "86,950 represents total stock-day panel observations (20 companies across 5,121 unique market trading dates from 2002 to 2025)."
+  },
+  "matrix_dimensions": {
+    "features_01_short_term_trading": {
+      "rows": 86950,
+      "cols": 65
+    },
+    "features_02_medium_term_growth": {
+      "rows": 86950,
+      "cols": 36
+    },
+    "features_03_long_term_wealth": {
+      "rows": 86950,
+      "cols": 26
+    }
+  },
+  "date_ranges": {
+    "features_01_short_term_trading": {
+      "start": "2002-01-02 00:00:00",
+      "end": "2025-12-31 00:00:00"
+    },
+    "features_02_medium_term_growth": {
+      "start": "2002-01-02 00:00:00",
+      "end": "2025-12-31 00:00:00"
+    },
+    "features_03_long_term_wealth": {
+      "start": "2002-01-02 00:00:00",
+      "end": "2025-12-31 00:00:00"
+    }
+  },
+  "duplicate_observations_check": {
+    "features_01_short_term_trading": 0,
+    "features_02_medium_term_growth": 0,
+    "features_03_long_term_wealth": 0
+  },
+  "shared_column_consistency": {
+    "Close": {
+      "present_in": [
+        "features_01_short_term_trading",
+        "features_02_medium_term_growth",
+        "features_03_long_term_wealth"
+      ],
+      "max_absolute_difference": 0.0,
+      "is_identical": true
+    },
+    "Turnover": {
+      "present_in": [
+        "features_01_short_term_trading",
+        "features_02_medium_term_growth"
+      ],
+      "max_absolute_difference": 0.0,
+      "is_identical": true
+    },
+    "Fwd_Return_60d": {
+      "present_in": [
+        "features_01_short_term_trading",
+        "features_02_medium_term_growth"
+      ],
+      "max_absolute_difference": 0.0,
+      "is_identical": true
+    }
+  }
+}

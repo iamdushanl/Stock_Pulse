@@ -1,0 +1,3825 @@
+C T HOLDINGS PLC
+CONDENSED INTERIM FINANCIAL STATEMENTS
+FOR THE SIX MONTHS ENDED
+30 SEPTEMBER 2026
+Contents
+Statement of profit or loss and other comprehensive income - Group 02
+Statement of profit or loss and other comprehensive income - Company 03
+Statement of financial position 04
+Statement of changes in equity 05
+Statement of cash flows 06
+Segment information 07
+Explanatory notes 09
+Corporate information IBC
+02
+Statement of Profit or Loss and
+Other Comprehensive Income
+Group
+For the three months ended For the six months ended
+30-Sep 30-Sep Var. 30-Sep 30-Sep Var.
+In thousands of rupees 2026 2025 % 2026 2025 %
+Revenue 76,739,337 6 5,915,981 1 6.00 153,115,785 1 32,765,017 15.00
+Cost of sales (66,568,195) (57,265,513) (16.00) ( 133,439,939) (115,679,512) (15.00)
+Gross profit 10,171,142 8 ,650,468 1 8.00 19,675,846 1 7,085,505 15.00
+Other income 839,689 8 00,635 5 .00 1,560,092 1 ,524,497 2.00
+Distribution expenses (2,990,962) (2,484,799) (20.00) ( 5,541,638) (4,976,501) (11.00)
+Administrative expenses (2,333,467) (2,129,182) (10.00) ( 4,642,160) (4,041,479) (15.00)
+Results from operating activities 5,686,402 4 ,837,122 1 8.00 11,052,140 9 ,592,022 15.00
+Finance income 154,973 1 24,789 2 4.00 322,183 2 77,190 16.00
+Finance expenses (1,427,919) (1,073,096) (33.00) ( 2,652,892) (2,195,518) (21.00)
+Net finance costs (1,272,946) (948,307) (34.00) ( 2,330,709) (1,918,328) (21.00)
+Share of profit of equity accounted investees, net of tax 33,407 7 6,783 (56.00) 79,434 1 64,297 (52.00)
+Profit before taxation 4,446,863 3 ,965,599 1 2.00 8,800,865 7 ,837,992 12.00
+Tax on profit for the period (1,451,791) (1,227,801) (18.00) ( 2,792,218) (2,335,716) (20.00)
+Profit after tax on profit 2,995,072 2 ,737,798 9 .40 6,008,647 5 ,502,276 9.00
+Tax effect of dividends paid to equity holders - - - ( 632,352) (535,147) (18.00)
+Profit for the period 2,995,072 2 ,737,798 9 .40 5,376,295 4 ,967,129 8.00
+Other comprehensive income - net of tax
+Items that will not be re-classified subsequently to profit or loss:
+Net change in fair value of FVOCI financial assets (55,162) 1 1,123 (596.00) ( 5,605) 1 7,370 (132.00)
+Share of other comprehensive income of associates (31,737) (66,682) 5 2.00 ( 56,623) (220,391) 74.00
+Total other comprehensive income - net of tax (86,899) (55,559) (56.00) ( 62,228) (203,021) 69.00
+Total comprehensive income 2,908,173 2 ,682,239 8 .00 5,314,067 4 ,764,108 12.00
+Profit for the period attributable to
+Owners of the parent 2,116,770 1 ,938,079 9 .00 4,164,233 3 ,519,943 18.00
+Non-controlling Interest 878,302 7 99,719 1 0.00 1,212,062 1 ,447,186 (16.00)
+Profit for the period 2,995,072 2 ,737,798 9 .40 5,376,295 4 ,967,129 8.00
+Total comprehensive income attributable to
+6
+Owners of the parent 2,032,009 1 ,879,724 8 .00 4,102,993 3 ,312,724 24.00 2 0
+2
+Non-controlling Interest 876,164 8 02,515 9 .00 1,211,074 1 ,451,384 (17.00) re
+b
+Total comprehensive income 2,908,173 2 ,682,239 8 .00 5,314,067 4 ,764,108 12.00 m e
+tp
+e
+S
+Earnings per share (Rs.) 10.51 9 .62 9 .00 20.68 1 7.48 18.00 0
+3
+s
+tn
+e
+Dividends per share (Rs.) - - *10.50 **10.00 m
+e
+ta
+tS
+* Second interim dividend for the year 2025/26. la
+** Second interim dividend for the year 2024/25. C L
+ic
+n a
+P n iF
+S m
+G N ire
+I tn
+D
+L O H
+I
+d e s n
+T
+e
+d n
+o
+C C
+03
+Statement of Profit or Loss and
+Other Comprehensive Income
+Company
+For the three months ended For the six months ended
+30-Sep 30-Sep Var. 30-Sep 30-Sep Var.
+In thousands of rupees 2026 2025 % 2026 2025 %
+Revenue - - - - - -
+Cost of sales - - - - - -
+Gross profit - - - - - -
+Other income 7,100 150 4,633.00 2,346,143 2,147,518 9 .00
+Administrative expenses (47,249) (51,387) 8 .00 (105,879) (83,456) ( 27.00)
+Results from operating activities (40,149) (51,237) 2 2.00 2,240,264 2,064,062 9 .00
+Finance income 5,597 4,573 2 2.00 8,585 11,422 ( 25.00)
+Finance expenses (1,001) (7,351) 8 6.00 (1,030) (7,370) 8 6.00
+Net finance costs 4,596 (2,778) 265.00 7,555 4,052 8 6.00
+Profit before taxation (35,553) (54,015) 3 4.00 2,247,819 2,068,114 9 .00
+Tax on profit for the period - - - -
+Profit for the period (35,553) (54,015) 3 4.00 2,247,819 2,068,114 9 .00
+Other comprehensive income - net of tax
+Items that will not be re-classified subsequently to profit or loss:
+Net change in fair value of FVOCI financial assets (47,744) 1,424 ( 3,453.00) (2,178) 2,807 ( 178.00)
+Total other comprehensive income - net of tax (47,744) 1,424 ( 3,453.00) (2,178) 2,807 ( 178.00)
+Total comprehensive income (83,297) (52,591) ( 58.00) 2,245,641 2,070,921 8 .00
+Profit for the period attributable to
+Owners of the parent (35,553) (54,015) 3 4.00 2,247,819 2,068,114 9 .00
+Non-controlling Interest - - - - - -
+Profit for the period (35,553) (54,015) 3 4.00 2,247,819 2,068,114 9 .00
+Total comprehensive income attributable to
+6
+2
+0 2 Owners of the parent (83,297) (52,591) ( 58.00) 2,245,641 2,070,921 8 .00
+re Non-controlling Interest - - - - - -
+b
+m
+e Total comprehensive income (83,297) (52,591) ( 58.00) 2,245,641 2,070,921 8 .00
+tp
+e
+S
+0 3 Earnings per share (Rs.) (0.18) (0.27) 3 3.00 11.16 10.27 9 .00
+s
+tn
+e
+m Dividends per share (Rs.) - - *10.50 **10.00
+e
+ta
+tS
+la * Second interim dividend for the year 2025/26.
+C L
+ic
+n a ** Second interim dividend for the year 2024/25.
+P n iF
+S m
+G
+N
+ire
+I tn
+D
+L O H
+I
+d e s n
+e
+T d n
+o
+C C
+04
+Statement of Financial Position
+Group Company
+As at 30-Sep 31-Mar 30-Sep 31-Mar
+In thousands of rupees 2026 2026 2026 2026
+(Audited) (Audited)
+Assets
+Non-current assets
+Property, plant & equipment 59,502,489 57,095,341 2,102 1,998
+Right of use assets 21,471,005 20,113,476 26 35
+Investment property 17,145,227 17,144,234 1,392,006 1,392,006
+Intangible assets 1,921,290 1,844,223 688,467 688,467
+Investments in subsidiaries - - 1,676,950 1,656,801
+Investments in equity accounted investees 6,701,358 6,678,814 5,586,105 5,586,105
+Other financial assets 1,831,904 1,837,509 239,328 241,506
+Biological assets 37,240 27,170 - -
+Total non-current assets 1 08,610,513 1 04,740,767 9,584,984 9,566,918
+Current assets
+Inventories 28,726,670 29,345,656 - -
+Biological assets 55,150 38,829 - -
+Trade and other receivables 17,030,855 16,979,435 8,740 6,473
+Amounts due from subsidiaries - - 22,666 21,552
+Amounts due from other related parties 5,364 132,690 - -
+Other financial assets 211,781 201,934 77,312 40,312
+Cash and cash equivalents 8,312,744 6,814,231 255,263 148,355
+Total current assets 54,342,564 53,512,775 363,981 216,692
+Total assets 1 62,953,077 1 58,253,542 9,948,965 9,783,610
+Equity and liabilities
+Equity attributable to owners of the parent
+Stated capital 6,489,758 6,489,758 6,489,758 6,489,758
+Reserves 6,793,245 6,797,862 253,956 256,134
+Retained earnings 26,095,355 24,005,381 2,633,586 2,500,540
+Total equity attributable to equity holders of the parent 39,378,358 37,293,001 9,377,300 9,246,432
+Non-controlling interest 16,281,542 16,401,579 - -
+Total equity 55,659,900 53,694,580 9,377,300 9,246,432
+Liabilities
+Non-current liabilities
+Interest bearing loans and borrowings 26,846,175 25,877,907 29 28
+Employee benefits 3,256,515 2,947,336 80,089 80,088
+Trade and other payables 315,065 261,114 - -
+Deferred tax liabilities 3,578,659 3,791,316 164,617 164,617
+Total non-current liabilities 33,996,414 32,877,673 244,735 244,733
+Current liabilities
+Trade and other payables 39,793,161 40,806,633 17,269 23,486
+Current tax liabilities 6,073,678 5,706,327 - -
+Amounts due to subsidiaries - - - -
+6
+2
+Amounts due to other related parties 50,949 48,036 - - 0
+2
+Dividends payable 309,661 225,165 309,661 225,165 re b
+m
+Interest bearing loans and borrowings 27,069,314 24,895,128 - 43,794 e
+tp
+Total current liabilities 73,296,763 71,681,289 326,930 292,445 e S
+0
+Total liabilities 1 07,293,177 1 04,558,962 571,665 537,178 3
+Total equity & liabilities 1 62,953,077 1 58,253,542 9,948,965 9,783,610
+stn
+e
+m
+Net Asset Value per Share (Rs.) 195.52 185.16 46.56 45.91 e
+ta
+tS
+The Board of Directors is responsible for the preparation and presentation of these IcertifythattheseFinancialStatements havebeen la
+Financial Statements. The Financial Statements have been approved by the Board of prepared in accordance with the requirements of C L icn a
+Directorson06November2026. theCompaniesActNo7of2007. P n iF
+S m
+G N ire
+V
+(S
+R
+ig
+P
+n
+a
+e
+g
+d
+e
+.)
+P
+(S
+ri
+i
+y
+g
+a
+n
+n
+e d
+E
+.
+d
+)
+irisinghe S
+(S
+C
+ig
+N
+ne
+ile
+d
+s
+.) I D
+L O H
+tn I
+d e sn
+Deputy Chairman / Managing Director Senior Independent Director Executive Director T
+e
+d n
+o
+C C
+05
+Statement of Changes in Equity
+Group Attributable to the owners of the parent
+Non-controlling
+Stated Revaluation Fair value Retained Total Interest Total
+In thousands of rupees Capital Reserve Reserve Earnings
+For the period ended 30 September 2025
+Balance at 1 April 2025 6 ,489,758 6 ,513,361 1 37,538 1 9,533,126 3 2,673,783 14,580,142 4 7,253,925
+Profit for the period - - - 3 ,519,943 3 ,519,943 1 ,447,186 4 ,967,129
+Other comprehensive income - - 1 3,172 (220,391) (207,219) 4 ,198 ( 203,021)
+Total comprehensive income for the year - - 1 3,172 3 ,299,552 3 ,312,724 1 ,451,384 4 ,764,108
+Transactions with owners directly recorded in equity
+Contributions by & distributions to owners
+Acquisition of additional interest from non-controlling interests - - - 29,383 29,383 (67,568) ( 38,185)
+Subsidiary dividend to non-controlling interest - - - 28,505 28,505 ( 868,998) ( 840,493)
+Dividends paid - - - (2,014,070) (2,014,070) - ( 2,014,070)
+Balance as at 30 September 2025 6 ,489,758 6 ,513,361 1 50,710 2 0,876,496 3 4,030,325 15,094,960 4 9,125,285
+For the period ended 30 September 2026
+Balance as at 1 April 2026 6 ,489,758 6 ,513,361 2 84,501 2 4,005,381 3 7,293,001 16,401,579 5 3,694,580
+Profit for the period - - - 4 ,164,233 4 ,164,233 1 ,212,062 5 ,376,295
+Other comprehensive income - - (4,617) (56,623) (61,240) (987) (62,227)
+Total other comprehensive income for the year - - (4,617) 4 ,107,610 4 ,102,993 1 ,211,075 5 ,314,068
+Transactions with owners directly recorded in equity
+Contributions by & distributions to owners
+Acquisition of additional interest from non-controlling interests - - - 14,893 14,893 (35,042) (20,149)
+Subsidiary dividend to non-controlling interest - - - 82,244 82,244 ( 1,296,070) (1,213,826)
+Dividends paid - - - (2,114,773) (2,114,773) - (2,114,773)
+Balance as at 30 September 2026 6 ,489,758 6 ,513,361 2 79,884 2 6,095,355 3 9,378,358 16,281,542 5 5,659,900
+Company Stated Revaluation Fair value Retained Total
+In thousands of rupees Capital Reserve Reserve Earnings
+For the period ended 30 September 2025
+Balance at 1 April 2025 6 ,489,758 - 1 11,318 2 ,545,136 9 ,146,212
+6202
+rebm
+etpeS
+P
+O
+D
+B
+r
+i
+a
+t
+v
+o
+h
+l
+i
+a
+f
+e
+d
+it
+n
+r
+e
+f
+c
+c
+n
+o
+e
+o
+d
+r
+m
+s
+a
+t h
+s
+p
+p
+e
+a
+r
+a
+e
+i
+p
+d
+t
+h
+e
+3
+e
+r
+0
+n
+io
+s
+d
+S
+iv
+e
+e
+p t
+in
+e
+c
+m
+o
+b
+m
+e
+e
+r 2025 6 , 4 8 9 , 7
+-
+-
+-
+58
+-
+-
+-
+- 1 1
+2
+4
+,
+,
+8
+1
+-
+-
+0
+2
+7
+5
+( 2
+2
+2
+,
+,
+,
+0
+0
+5
+1
+6
+9
+4
+8
+9
+,
+,
+,
+0
+1
+1
+-
+7
+1
+8
+0
+4
+0
+) ( 2
+2
+9
+,
+,
+,
+0
+0
+2
+1
+6
+0
+2
+4
+8
+3
+,
+,
+,
+,
+8
+0
+1
+0
+0
+7
+1
+6
+7
+0
+4
+3
+)
+03
+stnem
+For the period ended 30 September 2026
+C
+L
+P
+etatS
+laicnaniF
+B
+P
+O
+D
+r
+a
+i
+t
+v
+o
+h
+l
+i
+a
+f
+e
+d
+it
+n
+r
+e
+f
+c
+c
+n
+o
+e
+o
+d
+r
+m
+s
+a
+t h
+t
+p
+p
+e
+a
+r
+1
+e
+i
+p
+d
+A
+h
+e
+e
+p
+r
+n
+i
+r
+o
+s
+i
+d
+l
+i v
+2
+e
+0 2
+in
+5
+come
+6 , 4 8 9 , 7
+-
+-
+-
+58 -
+-
+-
+-
+2 5
+( 2
+6
+,
+,
+1
+1
+-
+-
+7
+3
+8
+4
+)
+( 2
+2
+2
+,
+,
+,
+1
+5
+2
+1
+0
+4
+4
+0
+7
+,
+,
+,
+7
+5
+8
+-
+7
+4
+1
+3
+0
+9
+) ( 2
+9
+2
+,
+,
+,
+1
+2
+2
+1
+4
+4
+(2
+4
+6
+7
+,
+,
+,
+,
+1
+7
+4
+8
+7
+7
+3
+1
+8
+3
+2
+9
+)
+)
+S G N
+I
+D
+L
+O
+H
+T
+C
+m iretnI
+desnednoC
+Balance as at 30 September 2026 6 ,489,758 - 2 53,956 2 ,633,586 9 ,377,300
+06
+Statement of Cash Flows
+Group Company
+For the six months ended 30-Sep 30-Sep 30-Sep 30-Sep
+In thousands of rupees 2026 2025 2026 2025
+Cash flows from operating activities
+Profit before tax 8,800,865 7,837,992 2,247,819 2,068,114
+Adjustments for:
+Depreciation of property, plant & equipment 2,750,890 2,354,007 45 46
+Amortisation of right of use assets 1,129,489 1,041,501 9 10
+Net adjustment of ROU asset and liability - 16,006 - -
+Amortisation of intangible assets 73,762 68,872 - -
+Interest income (322,183) (277,190) (8,585) (11,422)
+Profit on sale of property, plant & equipment (14,037) (5,412) - -
+Dividend income (4,372) (3,306) (2,340,858) (2,147,218)
+Finance costs 2,652,892 2,195,518 2 3
+Share of (profit) / loss on equity accounted investees, net of tax (79,434) (164,297) - -
+Impairment for trade receivables 7,793 (4,126) - -
+Impairment for inventories 37,584 (4,413) - -
+Provision for obligation on defined benefit plan 630,433 436,738 - 3,788
+Usage of biological assets (2,092) (13,245) - -
+Change in fair value of biological assets (58,504) 4,577 - -
+Cash generated from/(used) in operating activities before working capital 15,603,086 13,483,222 (101,568) (86,679)
+Change in inventories 581,402 (398,391) - -
+Change in trade and other receivables (1,635,431) (531,247) (2,267) (259)
+Change in amounts due from related parties 127,326 73,236 (1,114) (3,884)
+Change in trade and other payables (957,628) 1,688,840 (6,217) (25,938)
+Change in amounts due to related parties 2,913 5,745 - -
+Cash generated from/(used) in operating activities 13,721,668 14,321,404 (111,166) (116,760)
+Interest paid (1,345,623) (1,056,120) - -
+Income tax paid (3,268,596) (3,073,876) - -
+Defined benefit plan payments (321,254) (84,989) - -
+Net cash generated from/(used) in operating activities 8,786,195 10,106,419 (111,166) (116,760)
+Cash flows from investing activities
+Proceeds from sale of property, plant and equipment 24,535 22,286 - -
+Interest received 320,233 277,222 8,585 11,422
+Dividends received 4,372 3,306 2,340,858 2,147,218
+Acquisition of property, plant and equipment (5,168,536) (3,018,972) (149) (332)
+Acquisition and construction of investment property (993) (4,152) - -
+Acquisition of non-controlling interest in subsidiary (20,149) (38,185) (20,149) (38,185)
+Acquisition of intangible assets (150,829) (84,705) - -
+A
+P
+(
+N
+C
+P
+P
+A
+c
+r
+r
+r
+e
+a
+o
+d
+o
+o
+q
+t
+s
+c
+d
+c
+c
+u
+h
+c
+e
+e
+e
+i
+i
+t
+a
+s
+e
+i
+e
+e
+f
+o
+s
+i
+l
+d
+d
+d
+t
+o
+n
+i
+h
+s
+s
+s
+o
+w
+)
+/
+/
+n
+g
+f
+(
+(
+/
+s
+r
+R
+R
+e
+D
+o
+o
+f
+e
+e
+n
+m
+f
+i
+r
+s
+p
+p
+e
+o
+b
+p
+a
+a
+r
+s
+i
+m
+o
+o
+a
+y
+y
+a
+l
+s
+t
+m
+m
+o
+l
+e
+f
+e
+a
+i
+g
+e
+e
+d
+n
+l
+o
+i
+n
+n
+c
+a
+o
+f
+f
+t
+t
+a
+r
+n
+f
+)
+)
+b
+o
+l
+o
+c
+o
+o
+i
+m
+a
+o
+t
+i
+f
+f
+h
+n
+s
+lo
+/
+s
+l
+e
+g
+s
+o
+(
+h
+g
+u
+r
+e
+n
+a
+o
+i
+s
+t
+f
+c
+g
+s
+i
+c
+r
+e
+n
+a
+t
+t
+t
+d
+a
+l
+e
+i
+t
+v
+e
+a
+n
+r
+i
+i
+r
+m
+s
+n
+c
+t
+m
+i
+s
+i
+)
+e
+a
+b
+e
+i
+s
+l
+b
+n
+o
+t
+a
+s
+o
+v
+r
+s
+r
+r
+e
+o
+r
+s
+o
+s
+w
+e
+w
+t
+t
+i
+i
+n
+s
+i
+n
+n
+g
+g
+g
+s
+s
+activities (
+3
+4 ,
+,
+9
+7
+3
+6
+3
+3
+9
+(
+(
+7
+8
+6
+1
+9
+9
+,
+,
+,
+,
+,
+,
+0
+9
+8
+9
+1
+5
+0
+6
+4
+9
+6
+0
+9
+3
+7
+5
+8
+0
+)
+)
+)
+(
+(
+2
+1
+(
+,
+,
+7
+2
+4
+(
+1
+9
+5
+8
+9
+4
+3
+0
+8
+9
+6
+1
+,
+,
+,
+,
+,
+,
+5
+0
+8
+3
+3
+6
+5
+0
+8
+2
+5
+1
+0
+0
+3
+4
+4
+8
+)
+)
+)
+)
+2 , 2
+(
+9
+3
+2
+7
+,
+,
+1
+0
+-
+-
+-
+-
+4
+00
+5
+)
+2 , 1
+( 9
+2
+9
+0
+,
+,
+3
+1
+-
+-
+-
+-
+2
+2
+5
+3
+)
+6202
+rebm
+etpeS
+03
+stnem
+L
+D
+S
+N
+e
+u
+i
+e
+v
+a
+b
+t
+i
+s
+d
+s
+c
+e
+e
+i
+a
+d
+n
+s
+p
+ia
+d
+h
+a
+r
+y
+y
+p
+g
+m
+a
+d
+e
+i
+e
+i
+d
+n
+v
+n
+e
+i
+t
+d
+t
+o
+r
+s
+e
+a
+s
+n
+t
+h
+e
+d
+a
+d
+p
+r e
+f
+a
+r
+h
+i
+o
+d
+o
+m
+l
+t
+d
+o
+/
+e
+( u
+n
+rs
+o
+s
+n
+e
+-
+d
+c o
+in
+n
+)
+t r
+f
+o
+in
+lli
+a
+n
+n
+g
+c
+i
+i
+n
+n
+t
+g
+e r
+a
+e
+c
+s
+t
+t
+ivities
+(
+(
+(
+(
+2
+2
+1
+1
+,
+,
+,
+,
+1
+0
+2
+2
+8
+3
+1
+8
+3
+0
+3
+8
+,
+,
+,
+,
+0
+2
+8
+7
+9
+7
+2
+0
+5
+7
+6
+3
+)
+)
+)
+)
+(
+(
+(
+1
+2
+6
+(
+,
+,
+,
+8
+0
+4
+8
+7
+1
+7
+4
+5
+4
+9
+0
+,
+,
+,
+,
+3
+0
+7
+4
+5
+7
+9
+9
+2
+0
+9
+3
+)
+)
+)
+)
+(
+(
+2
+2
+,
+,
+0
+0
+3
+3
+0
+0
+,
+,
+2
+2
+-
+-
+7
+7
+7
+7
+)
+)
+(
+(
+2
+2
+,
+,
+0
+1
+1
+1
+4
+3
+,
+,
+0
+3
+-
+-
+7
+9
+0
+5
+)
+)
+C
+L
+P
+etatS
+laicnaniF
+N
+C
+N
+C
+e
+a
+e
+a
+t
+s
+t
+s
+h
+i
+h
+i
+n
+n
+c
+a
+a
+c
+r
+n
+n
+r
+e
+e
+d
+d
+a
+a
+s
+c
+c
+s
+e
+a
+a
+e
+s
+s
+/
+i
+h
+h
+(
+n
+d
+e
+e
+e
+c
+q
+q
+c
+a
+r
+u
+u
+s
+e
+h
+i
+i
+a
+v
+v
+s
+a
+a
+a
+e
+l
+l
+n
+e
+e
+)
+d
+n
+n
+i n
+t
+t
+c
+s
+s
+a
+c
+a
+a
+s
+a
+t
+t
+h
+s h
+1
+3
+e
+0
+a
+A
+q
+n
+S
+u
+p
+d
+e
+i
+r
+v
+i
+p
+c
+l
+a
+t
+a
+l
+e
+e
+s
+m
+n
+h
+t
+b
+e
+s
+e
+q
+r
+uivalents
+2
+3
+2
+6
+,
+,
+,
+,
+5
+5
+5
+0
+3
+1
+3
+4
+0
+9
+0
+9
+,
+,
+,
+,
+4
+4
+4
+8
+8
+1
+8
+9
+3
+4
+3
+7
+5
+6
+,
+,
+9
+9
+4
+3
+1
+1
+5
+6
+3
+3
+6
+9
+,
+,
+,
+,
+0
+0
+0
+1
+7
+7
+6
+3
+0
+0
+6
+6
+1
+1
+1
+2
+5
+0
+5
+5
+0
+4
+0
+5
+,
+,
+,
+,
+7
+5
+7
+2
+0
+6
+0
+6
+2
+1
+2
+3
+(
+(
+4
+3
+1
+1
+1
+1
+3
+2
+0
+0
+2
+2
+,
+,
+,
+,
+0
+0
+4
+3
+3
+3
+2
+9
+1
+1
+8
+7
+)
+)
+S G N
+I
+D L
+O H
+T
+C
+m iretnI
+desnednoC
+07
+Segment Information
+Retail Food and Beverage & Restaurants
+Manufacturing
+For the period ended 30-Sep 30-Sep 30-Sep 30-Sep 30-Sep 30-Sep
+In thousands of rupees 2026 2025 2026 2025 2026 2025
+Revenue
+Gross revenue 110,228,601 97,077,176 45,895,007 38,280,410 7,822,632 6,608,672
+Eliminations of inter segment revenue ( 122,232) ( 110,488) (11,316,204) (9,585,348) - -
+External revenue 110,106,369 96,966,688 34,578,803 28,695,062 7,822,632 6,608,672
+Segment result
+Results from operating activities 4,733,746 4,322,882 4,927,589 3,920,612 1,250,155 1,250,188
+Food and Beverage &
+Retail Restaurants
+Manufacturing
+As at 30-Sep 30-Sep 30-Sep 30-Sep 30-Sep 30-Sep
+In thousands of rupees 2026 2025 2026 2025 2026 2025
+Segment assets
+Segment non-current assets
+Property, plant & equipment 29,148,969 27,120,608 11,309,953 10,645,823 2,989,586 2,497,359
+Right of use assets 18,334,789 15,032,022 267,446 86,882 1,822,838 1,614,602
+Investment property - - 493,838 252,820 - -
+Intangible assets 84,494 91,142 677,439 685,863 670,824 536,544
+Other financial assets - - 565 316 560 310
+Biological assets - - 37,240 - - -
+Total segment non-current assets 47,568,252 42,243,772 12,786,481 11,671,704 5,483,808 4,648,815
+Current assets
+Inventories 17,510,666 15,929,059 10,656,449 9,501,973 508,746 385,326
+Biological assets - - 55,150 47,123 - -
+Trade and other receivables 6,395,493 6,364,430 8,345,774 6,656,850 410,460 467,744
+Amounts due from other related parties 24,417 21,752 10,843 8,548 - -
+Other financial assets - - 134,469 128,588 - -
+Cash and cash equivalents 2,838,407 3,892,427 3,511,716 2,398,856 852,319 1,224,941
+Total segment current assets 26,768,983 26,207,668 22,714,401 18,741,938 1,771,525 2,078,011
+Total segment assets 74,337,235 68,451,440 35,500,882 30,413,641 7,255,333 6,726,826
+Segment liabilities
+Non-current liabilities
+Interest bearing loans and borrowings 20,799,668 18,739,511 197,722 136,716 2,117,230 1,857,329
+Employee benefits 1,522,379 1,311,707 278,824 232,658 - -
+6202
+rebm
+etpeS
+T
+D
+T
+r
+o
+e
+a
+t
+f
+d
+e
+a
+e
+r
+l
+r
+s
+e
+a
+e
+d
+n
+g
+d
+t
+m
+a
+o
+x
+e
+t h
+l
+n
+i
+e
+a
+t
+r
+b
+n
+p
+il
+o
+i
+a
+ti
+n
+y
+e
+a
+-
+s
+c
+b
+u
+le
+r
+s
+rent liabilities 2 1
+(
+,
+4
+9
+1
+0
+2
+9
+,
+,
+2
+8
+-
+1
+3
+7
+0
+)
+1 9
+(
+,
+3
+6
+6
+8
+5
+5
+,
+,
+5
+6
+-
+2
+9
+7
+1
+)
+1 , 3
+8
+2
+5
+9
+2
+,
+,
+4
+9
+-
+9
+4
+1
+5
+1 , 3
+9
+5
+8
+7
+8
+,
+,
+4
+0
+-
+2
+5
+9
+5
+2 , 0
+( 7
+4
+1
+5
+,
+,
+2
+9
+-
+6
+6
+7
+3
+)
+1 , 8
+( 4
+0
+9
+8
+,
+,
+0
+2
+-
+3
+9
+2
+7
+)
+03
+stnem
+C
+Tr
+u
+a
+r
+d
+r
+e
+e n
+a
+t
+n
+l
+d
+ia
+o
+b
+th
+il
+e
+it
+r
+i e
+p
+s
+ayables 27,058,727 25,889,671 9,238,806 8,166,830 1,921,833 1,700,821
+etatS C
+Bo
+u
+r
+r
+r
+r
+o
+e
+w
+nt
+i n
+ta
+g
+x
+s
+liabilities 1
+6
+,
+,
+6
+3
+8
+4
+8
+8
+,
+,
+8
+1
+1
+1
+1
+4
+1
+8
+,
+,
+7
+0
+9
+4
+1
+9
+,
+,
+2
+3
+3
+2
+6
+0
+2
+6
+,
+,
+7
+3
+7
+5
+5
+2
+,
+,
+9
+3
+3
+1
+7
+6
+2
+4
+,
+,
+6
+4
+3
+4
+0
+0
+,
+,
+5
+6
+1
+5
+2
+0
+9
+5
+3
+4
+5
+2
+,
+,
+1
+4
+0
+0
+3
+5
+9
+2
+4
+9
+6
+5
+,
+,
+6
+9
+4
+7
+4
+0
+C
+L P
+S G N
+I
+D L
+O
+H
+T
+C
+laicnaniF
+m iretnI
+desnednoC
+A
+T
+T
+o
+o
+m
+t
+t
+o
+a
+a
+u
+l
+l
+n
+s
+s
+t
+e
+e
+s
+g
+g
+d
+m
+m
+u
+e
+e
+e
+n
+n
+to
+t
+t
+c
+l
+o
+i
+u
+a
+th
+b
+r
+e
+r
+i
+e
+l
+r
+i
+n
+t
+r
+i
+e
+t
+e
+l
+s
+l
+a
+ia
+te
+b
+d
+il i
+p
+t
+a
+ie
+r
+s
+ties
+3
+5
+5
+7
+,
+,
+1
+0
+1
+2
+2
+7
+7
+2
+,
+,
+,
+9
+7
+3
+5
+8
+0
+8
+8
+6
+3
+5
+5
+5
+,
+,
+7
+4
+4
+2
+1
+1
+7
+1
+,
+,
+,
+8
+5
+6
+6
+5
+3
+5
+6
+8
+1
+1
+8
+9
+,
+,
+3
+6
+6
+9
+7
+6
+,
+,
+0
+5
+-
+5
+5
+9
+0
+1
+1
+5
+6
+,
+,
+2
+5
+3
+9
+7
+5
+,
+,
+9
+4
+-
+9
+2
+2
+0
+3
+5
+,
+,
+3
+4
+9
+4
+9
+5
+,
+,
+3
+3
+-
+4
+0
+1
+4
+2
+4
+,
+,
+9
+7
+4
+5
+3
+1
+,
+,
+4
+7
+-
+3
+3
+5
+2
+08
+Segment Information
+Real Estate Entertainment Group
+For the period ended 30-Sep 30-Sep 30-Sep 30-Sep 30-Sep 30-Sep
+In thousands of rupees 2026 2025 2026 2025 2026 2025
+Revenue
+Gross revenue 533,009 157,112 363,940 309,864 164,843,189 142,433,234
+Eliminations of inter segment revenue (288,968) (34,026) - - (11,727,404) (9,729,862)
+Corporate and other unallocated operating profit/(loss) - 61,645
+External revenue 244,041 123,086 363,940 309,864 153,115,785 132,765,017
+Segment result
+Results from operating activities (28,313) (126,171) 90,778 76,122 10,973,954 9,443,633
+Corporate and other unallocated operating profit/(loss) 78,186 148,389
+Total results from operating activities 11,052,140 9,592,022
+Real Estate Entertainment Group
+As at 30-Sep 30-Sep 30-Sep 30-Sep 30-Sep 30-Sep
+In thousands of rupees 2026 2025 2026 2025 2026 2025
+Segment assets
+Non-current assets
+Property, plant & equipment 5,257,870 5,831,416 444,208 159,153 49,150,586 46,254,359
+Right of use assets 177,071 182,641 184,236 179,562 20,786,380 17,095,708
+Investment property 16,093,185 11,826,633 - - 16,587,023 12,079,453
+Intangible assets - - 5,238 325 1,437,995 1,313,874
+Other financial assets - - - - 1,125 626
+Biological assets - - - - 37,240 -
+Total segment non-current assets 21,528,126 17,840,689 633,682 339,040 88,000,349 76,744,020
+Current assets
+Inventories 4,584 3,902 13,308 8,407 28,693,753 25,828,666
+Biological assets - - - - 55,150 47,123
+Trade and other receivables 1,166,718 1,068,085 40,124 8,062 16,358,569 14,565,171
+Amounts due from other related parties 47,032 69,488 2,148 7,420 84,440 107,208
+Other financial assets - 46,337 - - 134,469 174,925
+Cash and cash equivalents 102,764 30,497 296,450 95,138 7,601,656 7,641,859
+Total segment current assets 1,321,098 1,218,309 352,030 119,026 52,928,037 48,364,952
+Total segment assets 22,849,224 19,058,999 985,712 458,067 140,928,386 125,108,972
+Corporate and other unallocated assets 22,024,691 22,203,395
+Total assets 162,953,077 147,312,367
+Segment liabilities
+Non-current liabilities
+Interest bearing loans and borrowings 2,413,026 1,175,882 623,423 269,463 26,151,069 22,178,901
+Employee benefits 15,504 96,208 4,781 3,498 1,821,488 1,644,071
+T
+D
+T
+r
+o
+e
+a
+t
+f
+d
+e
+a
+e
+r
+l
+r
+s
+e
+a
+e
+d
+n
+g
+d
+t
+m
+a
+o
+x
+e
+t h
+l
+n
+i
+e
+a
+t
+r
+b
+n
+p
+il
+o
+i
+a
+ti
+n
+y
+e
+a
+-
+s
+c
+b
+u
+le
+r
+s
+rent liabilities
+2
+5
+,
+,
+5
+2
+3
+4
+9
+1
+7
+1
+5
+,
+,
+,
+7
+2
+0
+0
+9
+6
+4
+9
+5
+1
+3
+,
+,
+7
+2
+1
+8
+4
+8
+6
+1
+3
+,
+,
+,
+4
+8
+3
+1
+5
+4
+7
+3
+6
+6 2 8 , 2
+-
+-
+04 2 7 2 , 9
+-
+-
+61 3 1
+2
+,
+,
+2
+9
+3
+0
+1
+1
+4
+7
+5
+,
+,
+,
+7
+1
+0
+8
+6
+6
+7
+5
+5
+2 6
+2
+,
+,
+3
+3
+1
+6
+5
+8
+6
+9
+3
+,
+,
+,
+2
+9
+3
+3
+1
+4
+1
+3
+6
+6202
+rebm
+etpeS
+C
+Tr
+u
+a
+r
+d
+r
+e
+e n
+a
+t
+n
+l
+d
+ia
+o
+b
+th
+il
+e
+it
+r
+i e
+p
+s
+ayables 535,551 482,875 126,293 88,763 38,881,210 36,328,960
+03
+stnem
+C
+Bo
+u
+r
+r
+r
+r
+o
+e
+w
+nt
+i n
+ta
+g
+x
+s
+liabilities
+4 , 7 2 8 , 8
+1
+9
+2
+8
+3
+4 , 5 0 0 , 1 2
+7
+4
+3
+1 4 9 , 0
+-
+49 6 1 , 6
+-
+75 1 8
+5
+,
+,
+1
+3
+2
+9
+0
+9
+,
+,
+7
+9
+8
+7
+2
+4
+1 7
+5
+,
+,
+3
+3
+4
+6
+7
+8
+,
+,
+7
+4
+3
+6
+9
+5 etatS
+A
+T
+T C
+T
+o
+o
+o
+m
+o
+t
+t
+t
+r
+o
+a
+a
+a
+p
+u
+l
+l
+l
+o
+n
+s
+s
+l
+r
+i
+a
+t
+e
+e
+a
+s
+t
+g
+g
+b
+e
+d
+m
+m
+i l
+a
+u
+it
+n
+e
+e
+e
+i
+d
+e
+n
+n
+t
+s
+o
+t
+t o
+c
+l t
+o
+i h
+u
+a
+t
+e
+h
+b
+r
+r
+e
+r
+i
+e
+l
+r
+u i
+n
+t n
+r
+i
+e
+t
+e a
+l
+s
+l
+l
+a
+l
+i
+o
+a
+te
+c
+b
+d
+a
+il
+t
+i
+c
+e
+t
+o
+i
+d
+e
+m
+s
+lia
+p
+b
+a
+i
+n
+li
+i
+t
+e
+ie
+s
+s 1 0
+5
+,
+,
+5
+2
+5
+6
+5
+4
+,
+,
+8
+5
+-
+7
+7
+1
+2 4
+8
+,
+,
+9
+2
+8
+2
+3
+4
+,
+,
+0
+9
+-
+7
+2
+2
+5
+3
+9
+0
+3
+2
+3
+2
+8
+,
+,
+,
+9
+1
+6
+8
+8
+4
+5
+9
+3
+1
+4
+6
+4
+1
+8
+1
+8
+,
+,
+,
+9
+9
+5
+7
+3
+3
+3
+4
+5
+1 0
+6
+9 1
+7
+2
+3 3
+,
+,
+, ,
+2
+4
+6 6
+9
+5
+5 3
+5
+3
+2
+7 5
+0
+,
+,
+, ,
+,
+1
+9
+7 4
+9
+7
+1
+0 7
+4
+7
+5
+2 5
+9
+5
+8 1
+9
+9
+5 2
+8
+,
+, ,
+,
+0
+4 7
+1
+7
+4 4
+8
+3
+5
+1 5
+7
+0
+,
+, ,
+,
+,
+3
+5 5
+0
+1
+3
+6 1
+8
+7
+7
+8 4
+2
+3 C
+L P
+S G N I
+D L O
+H
+T
+C
+laicnaniF
+m iretnI
+desnednoC
+09
+Explanatory Notes
+01. Basis of Preparation
+TheseFinancialStatementsofCTHoldingsGroup,preparedinaccordancewiththeSriLankaAccountingStandards(SLFRSs)forthequarterended30September2026,areprovisionaland
+subject to Audit.
+TheseFinancialStatementshavebeenpreparedinaccordancewithSriLankaAccountingStandardNo.34–InterimFinancialStatementsandusethesameaccountingpoliciesandpresentationas
+in the Financial Statements for the year ended 31 March 2026. The Group has not adopted any other standard, interpretation or amendment that has been issued but is not yet effective.
+Freehold Land and Investment Property are respectively shown at the values in existence as at the last date of valuation. Other investments are reflected at values in existence as at the reporting
+date.
+02. Fair Value Measurement and Related Fair Value Disclosures
+Thefairvaluesofallthefinancialassetsandfinancialliabilitiesrecognisedduringtheperiodwerenotmateriallydifferentfromthetransactionpricesatthedateofinitialrecognition.Therewereno
+transfersbetweenLevel1andLevel2andnotransfersintooroutofLevel3categoriesasperthefairvaluehierarchy,duringtheyear.ThefairvaluechangesonfinancialinstrumentsinLevel3
+category was properly recorded in the statement of other comprehensive income.
+Fairvaluationwasdoneasof30September2026forallunquotedequitysharesclassifiedasLevel3withinthefairvaluehierarchyaccordingtofairvaluationmethodology,Fairvaluewouldnot
+significantly vary if one or more than inputs were changed.
+03. Stated Capital
+Stated Capital of the Company as at 30 September 2026 is represented by 201,406,978 ordinary shares.
+04. Market Price Per Share
+For the quarter ended 30 September 2026 2025 Change Change
+(Rs.) (Rs.) (Rs.) (%)
+Last Traded 5 49.75 672.00 ( 122.25) (18.19%)
+Highest 6 04.00 752.00 ( 148.00) (19.68%)
+Lowest 5 20.00 540.00 ( 20.00) (3.70%)
+05. Directors’ Shareholdings
+As at 30 September 2026 2025
+(No's) (No's)
+Louis Page
+- Direct Holding 11,000 1 1,000
+- Indirect Holding (through Odeon Holdings (Ceylon) (Pvt) Ltd) 100,919,624 9 2,529,012
+Ranjit Page 955,107 1 9,155,521
+Joseph Page 3,969,172 5 ,869,172
+Dr. A Aravinda Page 971,884 9 71,884
+M I Abdul Wahid - -
+Priyan Edirisinghe - -
+Ms. M. M. Page 1 1,584,686 1 0,097,807
+W.P.C. Wickramaratne - -
+Z.H. Mohamedally 1 0,000 N/A
+Mrs. C. I. Malwatte - -
+Suren De Silva - -
+6202
+rebm
+S C Niles
+1 1 8 ,4 7
+5
+7
+6
+,
+,
+9
+4
+5
+8
+8
+5
+1 2 8 , 6 9
+5
+0
+6
+,
+,
+8
+4
+8
+8
+1
+5
+etpeS
+06. Ultimate Beneficial Ownership
+03
+stnem
+The ultimate beneficial owner of the CT Holdings PLC is Mr. Louis Page.
+C
+L
+P
+etatS
+laicnaniF
+07. P
+A
+S
+S
+u
+h
+h
+s
+a
+a
+b
+a
+r
+r
+l
+t
+e
+e
+i c
+h
+h
+3
+o
+o
+0
+S
+l
+l
+h
+d
+d
+S
+e
+i
+a
+n
+e
+r
+r
+g
+p
+s
+e
+t
+h
+(
+(
+e
+%
+N
+o
+m
+o
+l
+)
+d
+b
+'s
+i
+e
+n
+)
+r
+g
+3
+3
+1
+,
+.
+2
+1
+4
+0
+0
+7
+2
+1
+%
+6
+2
+1
+4
+,
+.
+2
+4
+2
+0
+5
+3
+2
+6
+%
+5
+S G N
+I
+D
+L
+O
+H
+T
+C
+m iretnI
+desnednoC
+F
+A
+l
+c
+o
+c
+a
+o
+t
+r
+a
+d
+d
+in
+ju
+g
+s
+ly
+t
+,
+e d
+th
+m
+e
+a
+C
+r
+o
+k
+m
+et
+p
+c
+a
+a
+n
+p
+y
+i t
+c
+a
+o
+lis
+m
+a
+p
+ti
+l
+o
+ie
+n
+s
+(
+w
+R
+i
+s
+th
+.' 0
+th
+0
+e
+0 )
+Minimum Public Holding requirement of the Main B o a r d a
+4
+s
+2
+p
+,
+e
+7
+r
+8 9
+O
+,2
+p
+0
+tio
+9
+n 1 o f S e
+3
+c
+2
+t
+,
+i
+7
+o
+8
+n
+8
+7
+,3
+.1
+0
+3
+1
+.1 (a) of the CSE Listing Rules.
+09
+Explanatory Notes
+08. Top 20 Shareholders
+As at 30 September 2026 2025
+No's % No's %
+Odeon Holdings (Ceylon) (Private) Ltd 100,919,624 50.11% 98,297,012 48.81%
+The Late Mr. Anthony A. Page 1 7,501,287 8.69% 17,501,287 8.69%
+Miss. M.M. Page 1 1,434,686 5.68% 10,097,807 5.01%
+Sir Chittampalam A Gardiner Trust 1 0,120,004 5.02% 10,120,004 5.02%
+Employees' Provident Fund 7 ,686,987 3.82% 7,686,987 3.82%
+Lion Brewery (Ceylon) PLC 5 ,068,580 2.52% - 0.00%
+Mr. J.C. Page 3 ,969,172 1.97% 5,869,172 2.91%
+Rubber Investment Trust Ltd 3 ,442,517 1.71% - 0.00%
+Ceylon Guardian Investment Trust PLC 3 ,334,511 1.66% - 0.00%
+Ceylon Investment PLC 3 ,334,510 1.66% - 0.00%
+Ceylon Beverage Holdings PLC 3 ,167,860 1.57% - 0.00%
+Citibank Hong Kong S/A Hostplus Pooled Superannuation Trust 2 ,429,518 1.21% 2 ,436,647 1.21%
+Mrs A.M.L. Page 2 ,150,443 1.07% 1 ,003,234 0.50%
+Mrs. M.A. Page 1 ,905,011 0.95% - 0.00%
+Carson Cumberbatch PLC 1 ,900,720 0.94% - 0.00%
+SSBT-Australian Retiremennt Trust Pty Ltd As Trustee For Australian Retirement Trust 1 ,614,809 0.80% - 0.00%
+Mrs. C.P Muttukumaru 1 ,067,430 0.53% 9 03,189 0.45%
+Mrs. T. Selvaratnam 1 ,060,250 0.53% 2 ,210,250 1.10%
+Dr. A. Aravindakumar Page 9 71,884 0.48% 9 71,884 0.48%
+Mr. V.R. Page 9 55,107 0.47% 1 9,412,705 9.64%
+Mr. P.E. Muttukumaru 6 60,000 0.33% 6 58,000 0.33%
+Mrs. D. Grimshaw 5 78,070 0.29% 5 78,070 0.29%
+Mrs. A.M. De Alwis 4 23,200 0.21% 4 20,600 0.21%
+SSBT-Sunsuper Pty. Ltd. As Trustee For Sunsuper Superannuation Fund N/A - 2 ,074,531 1.03%
+Senthilverl Holdings (Pvt) Ltd N/A - 1 ,520,456 0.75%
+Mr. A.I. Dominic N/A - 1 ,449,940 0.72%
+Mrs. A.M. Basnayake N/A - 1 ,147,209 0.57%
+The Galle Face Hotel Co Ltd. N/A - 9 15,503 0.45%
+1 85,696,180 92.20% 1 85,274,487 91.99%
+Others 15,710,798 7.80% 16,132,491 8.01%
+Total 201,406,978 100.00% 201,406,978 100.00%
+09. Tax expense
+F
+In
+o
+t
+r
+h
+t
+o
+h
+u
+e
+s a
+q
+n
+u
+d
+a
+s
+r t
+o
+e
+f
+r
+r
+e
+u
+n
+pe
+d
+e
+e
+s
+d 30 September 2026
+Group
+2025 2026
+Company
+2025
+6202
+rebm
+S t a t
+I
+D
+e
+n
+e
+m
+c
+f
+o
+e
+e
+m
+r
+n
+r
+e
+e
+t
+d
+o
+ta
+f
+t
+x
+a
+P
+x
+r o
+ch
+fi
+a
+t
+r
+o
+g
+r
+e /
+L
+(r
+o
+e
+s
+v
+s
+ersal)
+3
+3
+(
+,
+,
+2
+6
+4
+3
+2
+12
+7
+4
+,
+,
+,
+2
+5
+6
+2
+7
+5
+7
+0
+7)
+3
+2
+(
+,
+,
+3
+2
+8
+5
+7
+84
+5
+0
+,
+,
+,
+3
+8
+4
+2
+6
+6
+8
+3
+5)
+-
+-
+-
+-
+-
+-
+etpeS
+03
+stnem
+10. Contingent liabilities
+etatS
+11. C
+T
+A
+R H
+f
+A
+in
+h
+d
+l
+o
+s a
+l
+a
+e
+d
+v
+m
+p
+5
+n
+e
+i
+e
+n
+i
+,
+c
+p
+n
+d
+4
+r
+g
+i
+c
+a
+a
+6
+s
+T
+o
+r
+l
+s 6
+h
+a
+a
+m
+s
+o
+a
+M
+x
+t
+t
+u
+i
+e
+r
+a
+v
+e
+g n
+A
+t
+e
+e
+t
+h
+c
+a
+d
+r
+m
+t e
+t
+f
+x
+e
+,
+i
+p s
+e
+g
+t
+N
+a
+c
+r p
+n
+u
+o
+o
+i
+o
+e
+t
+l
+r
+f
+s
+s
+n
+c e
+e
+1
+.
+c
+t s
+h
+s
+i
+4
+e
+v s
+a
+s
+e i
+v
+o
+o
+s
+l
+e
+f
+y n
+io
+.
+2
+a
+b
+n
+0
+l
+e
+0
+a
+e
+c
+2
+d
+l
+n
+a
+v
+h
+i
+c
+i
+m
+c
+a
+a
+e
+v
+e
+lc
+,
+e
+d
+u
+th
+b
+l
+u
+a
+e
+e
+n
+te
+e
+d
+M
+d
+n
+e
+a
+,
+r
+c
+n
+f
+t
+o
+o
+a
+h
+n
+r
+g
+e
+t
+a
+e
+e
+I
+l
+m
+s
+l
+n
+p
+t
+l
+e
+a
+e
+e
+n
+d
+n
+r
+t
+d
+io
+b
+is
+d
+y
+R
+s
+c
+e
+t
+,
+h
+o
+v
+b
+e
+n
+e
+a
+f
+n
+D
+i
+s
+d
+u
+e
+e
+e
+e
+d
+p
+n
+a
+A
+t
+o
+r
+t
+c
+n
+t
+h
+m
+t ,
+a
+th
+e
+t
+N
+e
+n
+t
+o
+h
+t
+n
+.
+e
+o
+u
+1
+f
+t
+m
+0
+a
+In
+x
+b
+o
+l
+e
+a
+c
+f
+r
+n
+o
+2
+o
+d
+n
+0
+f
+c
+0
+R
+s
+e
+6
+e
+h
+s
+v
+a
+s
+a
+e
+r
+i
+n
+o
+e
+n
+d
+n
+s
+u
+s
+A
+e
+in
+.
+a
+c
+i
+t
+r
+T
+s
+,
+e
+h
+s
+N
+e
+a
+u
+o
+p
+e
+c
+.
+p
+o
+a
+2
+li
+n
+s
+c
+4
+t
+a
+i
+a
+n
+o
+b
+t
+g
+f
+l
+3
+e
+e
+2
+0
+n
+0
+a
+t
+S
+1
+n
+l
+7
+d
+e
+ia
+,
+p
+a
+b
+t
+a
+e
+s
+il
+s
+i
+m
+t
+s
+ie
+w
+u
+b
+s
+e
+c
+e
+h
+l
+r
+f
+l
+o
+2
+a
+n
+r
+0
+s
+o
+t
+2
+h
+t
+l
+6
+e
+h
+ia
+.
+e
+b
+C
+i
+V
+o
+lit
+m
+a
+ie
+lu
+p
+s
+e
+a
+w
+n
+A
+o
+y
+d
+u
+a
+d
+ld
+n
+e
+d
+d
+ar
+G
+T
+is
+r
+a
+e
+o
+x
+.
+u
+A
+c
+p
+o
+c
+i
+n
+c
+n
+o
+c
+r
+e
+r
+e
+d
+s
+s
+i
+s
+n
+p
+i
+g
+o
+e
+l
+c
+n
+y
+t
+/
+,
+e
+o
+n
+x
+f
+o
+e
+t
+m
+h
+p
+e
+r
+p
+o
+s
+t
+v
+i
+e
+o
+is
+n
+a
+io
+m
+c
+n
+l
+o
+a
+h
+u
+im
+n
+as
+t
+e
+t
+d
+b
+o
+e
+u
+R
+e
+n
+s
+n
+de
+2
+m
+r
+1
+a
+t
+5
+h
+d
+e
+M
+e
+V
+n
+in
+a
+a
+t
+l
+h
+n
+u
+d
+e
+e C
+L P
+S G N
+I D
+L
+O
+H
+T
+C
+laicnaniF
+m iretnI
+desnednoC
+(Blank Page)
+Corporate Information
+Name of Company Related Party
+C T Holdings PLC
+Priyan Edirisinghe (Chairman )
+Suren De Silva
+Registration No Chulantha Wickramaratne
+PQ 210
+Exchange Listing
+Registered Office Colombo Stock Exchange
+No 8, Sir Chittampalam A Gardiner Mawatha,
+Telephone: +94 11 2431243 Auditors
+Email: info@ctholdings.lk KPMG, Chartered Accountants
+Fax: +94 11 2447956
+Postal Address: P.O. Box 327, Colombo
+Tax Consultants
+Deloitte, Chartered Accountants
+Legal Form
+Quoted Public Company with limited liability incorporated Bankers
+in Sri Lanka on 29th September 1928 and re-registered Cargills Bank PLC
+under the Companies Act No. 07 of 2007 Commercial Bank of Ceylon PLC
+Hatton National Bank PLC
+Nations Trust Bank PLC
+Board of Directors Sampath Bank PLC
+Louis Page (Chairman) Standard Chartered Bank
+Ranjit Page (Deputy Chairman / Managing Director)
+Priyan Edirisinghe (Senior Independent Director)
+Joseph Page
+Dr. A Aravinda Page
+Imtiaz Abdul Wahid
+Suren De Silva
+Chulantha Wickramaratne
+Marianne Page
+Zakir Mohamedally
+Indira Malwatte
+Sanjay Niles (Executive Director)
+Company Secretary
+Hemali Ellawala
+Audit Committee
+Priyan Edirisinghe (Chairman)
+Suren De Silva
+Chulantha Wickramaratne
+Remuneration Committee
+Priyan Edirisinghe (Chairman)
+Louis Page
+Chulantha Wickramaratne
+Nominations & Governance Committee
+Priyan Edirisinghe (Chairman)
+Louis Page
+Suren De Silva

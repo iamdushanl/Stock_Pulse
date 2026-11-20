@@ -24,22 +24,25 @@ Stock Pulse is a university data science project combining historical CSE market
 | Phase 3 – Feature engineering | Generated | Separate technical, medium-term and long-term feature matrices |
 | Phase 3.5 – Feature audit | Reported complete | Identified point-in-time leakage in static 2026 fundamentals and announcement flags; short-term engine approved with limitations |
 | Phase 4.1 – Short-term model benchmarking | Reported complete | Ridge, Random Forest, XGBoost and LightGBM compared across 5-, 20- and 60-day targets |
-| Phase 4.2 – Independent backtest verification | Next | Reproduce portfolio returns, audit transaction costs and test execution realism |
+| Phase 4.2 – Independent backtest verification | Complete | Verified backtests, audited transaction fees (2.24% round-trip), isolated COMB bad tick inflation, tested T+1 execution realism; LightGBM 20d verified with limitations |
 | Phase 5 – Recommendation application | Planned | Integrate validated models, explanations, risk measures and recommendation history |
 
 **Current modelling scope:** The reported Phase 4.1 historical panel covers 20 S&P SL20 constituents, not the full CSE universe. The reported LightGBM 20-trading-day model is a provisional research candidate until independent backtest verification is complete.
 
-## Phase 4.1 short-term model research
+## Phase 4.1 & 4.2 short-term model research & verification
 
-The supplied Phase 4.1 report selected these horizon-specific candidates:
+The supplied Phase 4.1 report benchmarked these horizon-specific candidates:
 
-| Target | Candidate |
-|---|---|
-| 5 trading days | Random Forest |
-| 20 trading days | LightGBM |
-| 60 trading days | Ridge Regression |
+| Target | Candidate | Phase 4.1 Reported CAGR | Phase 4.2 Cleaned Realistic CAGR | Net Sharpe | Verification Status | Verdict |
+|---|---|:---:|:---:|:---:|---|---|
+| 5 trading days | Random Forest | 426.85% | 64.72% | 1.87 | NOT VERIFIED | Rejected: 23% fee drag; inflated by weekly compounding on bad tick bounce-backs. |
+| **20 trading days** | **LightGBM** | **223.22%** | **55.55%** | **1.21** | **VERIFIED WITH LIMITATIONS** | **Primary Candidate:** Genuine rank alpha ($p < 10^{-15}$); beats ASPI (46.67%). |
+| 60 trading days | Ridge Regression | 79.30% | 77.86% | 1.67 | VERIFIED WITH LIMITATIONS | Defensive overlay: Low turnover (4.6% annual drag), near-zero drawdown (-3.3%). |
 
-The primary candidate is LightGBM for the 20-day horizon. Its reported backtest results have not yet been independently reproduced and must not be interpreted as expected investor returns.
+### Phase 4.2 Independent Verification Findings
+- **Root-Cause of Return Inflation:** Phase 4.1's 223.22% LightGBM CAGR was inflated by an unadjusted clerical data anomaly on Commercial Bank (`COMB`) in August 2024 (prices dropped to Rs. 3.40 and reverted to Rs. 89.70, yielding an artificial $+2361\%$ gain in month 8) and a 50% under-deduction of statutory round-trip transaction fees (deducting 1.12% on one-way turnover rather than 2.24% on both entry/exit trades).
+- **Realistic Net Performance:** After correcting the clerical bad tick and charging the full CSE statutory 2.24% round-trip trading fees, LightGBM 20d delivers **55.55% net CAGR** (Sharpe 1.21, Max Drawdown -20.34%), outperforming the ASPI benchmark (46.67%).
+- **Execution Realism:** Testing next-day (T+1 Open) execution with realistic bid-ask spread assumptions confirms LightGBM remains viable and profitable (**52.07% to 58.53% net CAGR**) as long as total round-trip transaction friction is $\le 3.24\%$.
 
 ## Engineering principles
 
@@ -129,7 +132,7 @@ Before a model is approved:
 - [x] Generate three horizon-specific feature matrices
 - [x] Audit point-in-time and feature integrity
 - [x] Benchmark initial short-term model candidates
-- [ ] Independently verify Phase 4.1 portfolio backtests
+- [x] Independently verify Phase 4.1 portfolio backtests
 - [ ] Expand historical point-in-time fundamentals
 - [ ] Build and validate medium-term growth engine
 - [ ] Build and validate long-term total-return engine

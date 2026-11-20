@@ -1,0 +1,145 @@
+{
+  "source": "https://www.cse.lk/",
+  "api_base": "https://www.cse.lk/api/",
+  "started_at_utc": "2026-11-11T10:32:54.754642+00:00",
+  "endpoints": {
+    "allSecurityCode": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:32:56.002868+00:00",
+      "record_count": 331
+    },
+    "cntSecurity": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:32:57.828804+00:00",
+      "record_count": 369
+    },
+    "listAllSectors": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:32:58.891110+00:00",
+      "record_count": 22
+    },
+    "marketStatus": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:00.091886+00:00",
+      "record_count": 0
+    },
+    "marketSummery": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:01.185362+00:00",
+      "record_count": 0
+    },
+    "aspiData": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:02.255610+00:00",
+      "record_count": 0
+    },
+    "snpData": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:03.335284+00:00",
+      "record_count": 0
+    },
+    "allSectors": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:04.423489+00:00",
+      "record_count": 22
+    },
+    "dailyMarketSummery": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:05.489586+00:00",
+      "record_count": 2
+    },
+    "tradeSummary": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:07.197689+00:00",
+      "record_count": 292
+    },
+    "todaySharePrice": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:08.271630+00:00",
+      "record_count": 10
+    },
+    "topGainers": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:09.333938+00:00",
+      "record_count": 10
+    },
+    "topLooses": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:10.399737+00:00",
+      "record_count": 10
+    },
+    "mostActiveTrades": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:11.479951+00:00",
+      "record_count": 10
+    },
+    "getNewListingsRelatedNoticesAnnouncements": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:12.576088+00:00",
+      "record_count": 275
+    },
+    "getBuyInBoardAnnouncements": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:13.651853+00:00",
+      "record_count": 214
+    },
+    "approvedAnnouncement": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:15.406335+00:00",
+      "record_count": 63
+    },
+    "getFinancialAnnouncement": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:16.539394+00:00",
+      "record_count": 80
+    },
+    "circularAnnouncement": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:17.604926+00:00",
+      "record_count": 5
+    },
+    "directiveAnnouncement": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:19.304317+00:00",
+      "record_count": 5
+    },
+    "getNonComplianceAnnouncements": {
+      "status": "ok",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-11T10:33:20.384759+00:00",
+      "record_count": 6
+    }
+  },
+  "warnings": [
+    "CSE API is undocumented and reverse-engineered; endpoint payloads may change.",
+    "Current company profile values are snapshots, not historical point-in-time fundamentals.",
+    "Report PDFs require extraction, review, and publication-date-aware normalization before ML use."
+  ],
+  "finished_at_utc": "2026-11-11T10:41:39.259871+00:00",
+  "security_count": 331,
+  "active_equity_symbols_considered": 281,
+  "company_profile_snapshots": 281,
+  "document_records": 648,
+  "download_documents_enabled": true,
+  "documents_downloaded": 90
+}

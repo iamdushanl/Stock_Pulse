@@ -1,0 +1,185 @@
+{
+  "source_archive": "Dataset.zip",
+  "source_files": [
+    {
+      "file": "01_existing_cse_sources/20Foreign Activity - Monthly.xlsx",
+      "bytes": 85895,
+      "sha256": "ee130d34165e11fd43f7ea7eb2f6f3de8603d24817f318c664b558c15b889fc7"
+    },
+    {
+      "file": "01_existing_cse_sources/25Sector Ratios.xls",
+      "bytes": 501760,
+      "sha256": "47d7f18eaf4faf31e556448fb91092d79eca631a97d8e21788b3c245d3211c8a"
+    },
+    {
+      "file": "01_existing_cse_sources/15CDS Activities - Annual.xls",
+      "bytes": 44032,
+      "sha256": "97eceeaedd642bc8228790d2e00780f4054bf6e2f806716926bbbdfe1b6c5b68"
+    },
+    {
+      "file": "01_existing_cse_sources/16 List of Quoted Securities And Issued Quantity.xls",
+      "bytes": 1260544,
+      "sha256": "1cabc06b860f68755747e560e5b47ec8a5aebf5d64322fce78931ec522c9d910"
+    },
+    {
+      "file": "01_existing_cse_sources/12Market Statistics - Monthly.xlsx",
+      "bytes": 173701,
+      "sha256": "8225f69cb2cfa69a9ebf987b4f1ac4242bd35da88b5af0ea18fe53ddd983af2b"
+    },
+    {
+      "file": "01_existing_cse_sources/13 Market Statistics - Annual.xls",
+      "bytes": 82432,
+      "sha256": "a00f97a3dfd67e790badfcada45774ffebeaebb4265367f25375506325546843"
+    },
+    {
+      "file": "01_existing_cse_sources/38Foreign Holding-Annual.xlsx",
+      "bytes": 356172,
+      "sha256": "dbde265b929666037b9046ba3c6a16ec930d8fd2def9a312c1eb071b0ed7d523"
+    },
+    {
+      "file": "01_existing_cse_sources/27Sector Foreign Purchases & Sales - Monthly.xlsx",
+      "bytes": 204004,
+      "sha256": "e895027a07a1be3fa0aeb4cbf9998c531ed7722611e37b17bd59f79da8210bb3"
+    },
+    {
+      "file": "01_existing_cse_sources/32Daily Shares Price List -2011-2020.zip",
+      "bytes": 24604147,
+      "sha256": "fc7003d233ead1f68e0337ed6246233031d35607e74cdb36c359c4de89e80ec4"
+    },
+    {
+      "file": "01_existing_cse_sources/14CDS Activities - Monthly.xlsx",
+      "bytes": 101598,
+      "sha256": "ae720bf6da41cd7ead771f0281ce0cb1df0619cbe3a57d201f5908907b152afd"
+    },
+    {
+      "file": "01_existing_cse_sources/10Market Ratios - Daily.xls",
+      "bytes": 546816,
+      "sha256": "9150ab0176cfe2685027d058ee4dd0a061d132b84feddb25dc033c5724c3c5b9"
+    },
+    {
+      "file": "01_existing_cse_sources/31Daily Shares Price List -2001-2010.zip",
+      "bytes": 10972729,
+      "sha256": "45c86257fa7efbe18e93f96dca7e19d07a2862e7f98ce42c1dd6271ea3753156"
+    },
+    {
+      "file": "01_existing_cse_sources/08Market Indices - Monthly.xls",
+      "bytes": 349696,
+      "sha256": "d5abeeee50a5e8af38d097b237dbeda9e26e70804c6f8687a5eda5d1c30d5c99"
+    },
+    {
+      "file": "01_existing_cse_sources/06New Listings & De-listings.xls",
+      "bytes": 3443200,
+      "sha256": "7ad5a12b290f57cba3fb16360aff83e1373bbf9f4545638794009a5d1015460f"
+    },
+    {
+      "file": "01_existing_cse_sources/37Block Trades (Crossings)-Quarterly.xlsx",
+      "bytes": 999378,
+      "sha256": "42f8a412a062a1d3767867e70ddb2a2fecfe812a0f895d1bb38bac088a9b7df0"
+    },
+    {
+      "file": "01_existing_cse_sources/SP20_CSE_Dataset_2001_2025_Adjusted.xlsx",
+      "bytes": 10330573,
+      "sha256": "e2d130163f9a1b5a818d650182b5842a2f0f35373c34a542f2d4d12654fbf105"
+    },
+    {
+      "file": "01_existing_cse_sources/21Market Capitalisation of Listed Companies.xls",
+      "bytes": 1004032,
+      "sha256": "082cbcd0d5ec5b1e456d3529ad7d5349d787c7646ea5f42edd700873a390a2e5"
+    },
+    {
+      "file": "01_existing_cse_sources/SP20_CSE_Dataset_2001_2025.xlsx",
+      "bytes": 10537930,
+      "sha256": "8e68be24a66983712f3700a98623072224b0bcf050bbb9da6494e2c63c36c8ca"
+    },
+    {
+      "file": "01_existing_cse_sources/04Rights Issues.xls",
+      "bytes": 699392,
+      "sha256": "342dd451e9139e24361b82566e4483d240d692212b445cd9d16d6093f6f11f05"
+    },
+    {
+      "file": "01_existing_cse_sources/11Market Statistics-Daily.xls",
+      "bytes": 1388032,
+      "sha256": "ff2ee3544e64f7e4581aa53c288a6b4c9c3b539b74d4087aebed61710eb41e0c"
+    },
+    {
+      "file": "01_existing_cse_sources/30Daily Shares Price List - 1991-2000.zip",
+      "bytes": 2586726,
+      "sha256": "eeb4678319a3add9ebd815a7b8c0d1209970ff896abcfa9199f18592633b1f94"
+    },
+    {
+      "file": "01_existing_cse_sources/29 Beta Value.xls",
+      "bytes": 1995776,
+      "sha256": "35089581b505d5f4f9e8c31f0354eef57ddb27599ea68887fae41b64f96631d3"
+    },
+    {
+      "file": "01_existing_cse_sources/24Sector Trading Statistics - Annual.xls",
+      "bytes": 189952,
+      "sha256": "eee5521c290f7b9d1d9cc3ec9524da0652a57db253ba0096cd1de62d959085e8"
+    },
+    {
+      "file": "01_existing_cse_sources/05Sub Division (Share Splits).xls",
+      "bytes": 194560,
+      "sha256": "e423c5106a31de948ec0f597ff3abc66e39644619f46911cbdf798fe91b55ad5"
+    },
+    {
+      "file": "01_existing_cse_sources/19Corporate Debt Monthly Highest, Lowest & Closing Prices.xls",
+      "bytes": 310272,
+      "sha256": "193793380278aad3a9698acdf6ca3ec00a5d2afd0f63f53a00c91ff6a57b455b"
+    },
+    {
+      "file": "01_existing_cse_sources/33Daily Shares Price List -2021-2025.zip",
+      "bytes": 15642610,
+      "sha256": "939439d04fdd33ba6d6733e3f5b8d33c06fe47e217a3c1491f35b741af5a0da3"
+    },
+    {
+      "file": "01_existing_cse_sources/07Market Indices - Daily.xls",
+      "bytes": 2731520,
+      "sha256": "e6da2060a60eb47a12b7706ea303f039326c73b1442e1719e0cc2205d3f01575"
+    },
+    {
+      "file": "01_existing_cse_sources/03Capitalization of Reserves (Bonus Issues).xls",
+      "bytes": 479232,
+      "sha256": "9124a357d8ee83f52bda33e85ba9027cef7cb60fba071ed968bdb3b37532f344"
+    },
+    {
+      "file": "01_existing_cse_sources/01Dividends.xls",
+      "bytes": 1493504,
+      "sha256": "90ce7ff4eabd62edbe7a5ce4eb945ddd9402d8edb3028a686058ae8f003d1ba3"
+    },
+    {
+      "file": "01_existing_cse_sources/02Scrip Dividends.xls",
+      "bytes": 276480,
+      "sha256": "8904457df7a049c59002aed3e1f490e4c80720c75ca6b1ca91d53c0e19861e87"
+    },
+    {
+      "file": "01_existing_cse_sources/26Sector Domestic & Foreign Analysis.xls",
+      "bytes": 424448,
+      "sha256": "60f2a7cb67c3ef8e7b0d2a1c08814adaefefeb29e0c4750e608b2668b17268b4"
+    },
+    {
+      "file": "01_existing_cse_sources/09Total Returns Indices - Daily.xls",
+      "bytes": 1802240,
+      "sha256": "d2f9bac4f4ead40773c1fc85a5b7497a6c06df5d752b6eee12545f63fb38eace"
+    },
+    {
+      "file": "01_existing_cse_sources/18 Debt Trading Statistics - Monthly.xlsx",
+      "bytes": 45441,
+      "sha256": "05bee30c44ceeebc78b31e960ff4c1f16452f3b63627bf679837b5e7dca9f532"
+    },
+    {
+      "file": "01_existing_cse_sources/23Sector Trading Statistics - Monthly.xls",
+      "bytes": 500224,
+      "sha256": "46c24e9ea08bb95c86239798672f52522242617bab246c571cab259743fb0830"
+    },
+    {
+      "file": "01_existing_cse_sources/39GICS-Daily.xlsx",
+      "bytes": 2071716,
+      "sha256": "f1c28282c951f125fa7b7086d7d59731df943b7dc91ed681ff43a4ce7f4b9d82"
+    },
+    {
+      "file": "01_existing_cse_sources/22Sector Market Capitalisation.xls",
+      "bytes": 360448,
+      "sha256": "2a1c831ea41c93fb88e66c5cd15a742721ac11a9817ddcc04c204e63f746c438"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+Page 2
+DIALOG AXIATA PLC
+Statementof financial position
+(all amountsarein Sri Lanka Rupees thousands)
+Group Company
+As at 30 September 31 December 30 September 31 December
+2026 2025 2026 2025
+(Reviewed) (Audited) (Reviewed) (Audited)
+ASSETS
+Non-current assets
+Intangible assets 48,233,084 42,233,321 38,826,146 33,208,814
+Contract costs assets 10,389,274 11,767,495 2,977,865 3,159,678
+Property, plant and equipment 141,798,997 141,688,633 111,588,709 108,109,849
+Right-of-use assets 11,034,235 9,415,848 10,665,214 9,072,717
+Deferred tax asset 250,566 225,931 - -
+Investment in subsidiaries - - 40,983,648 40,675,068
+Other financial assets 3,854,468 3,533,279 1,000,000 -
+215,560,624 208,864,507 206,041,582 194,226,126
+Current assets
+Inventories 2,483,801 1,792,975 551,544 304,732
+Trade and other receivables 39,045,797 37,788,321 22,140,305 24,387,112
+Other financial assets 9,507,342 7,979,184 84,582 100,304
+Cash and cash equivalents 20,575,063 19,050,199 17,675,248 14,995,399
+71,612,003 66,610,679 40,451,679 39,787,547
+Total assets 287,172,627 275,475,186 246,493,261 234,013,673
+EQUITY
+Capital and reserves attributable to equity holders
+Stated capital 39,905,563 39,905,563 39,905,563 39,905,563
+Reserves 51,962,384 50,224,636 29,944,844 34,410,608
+Non-controlling interest 8,500 (117,471) - -
+Total equity 91,876,447 90,012,728 69,850,407 74,316,171
+LIABILITIES
+Non-current liabilities
+Borrowings 16,800,000 15,482,402 15,600,000 13,146,186
+Contract liabilities 8,308,613 6,106,728 7,190,492 5,069,234
+Deferred income 156,515 228,865 156,515 228,865
+Lease liabilities 11,223,538 9,427,146 10,845,662 9,151,770
+Other financial liabilities 582,124 300,997 - -
+Employee benefit payables 2,457,523 2,218,377 1,763,244 1,580,298
+Provision for other liabilities 8,979,263 4,957,418 8,551,413 4,536,320
+Deferred tax liability 4,492,267 3,660,828 2,258,890 1,800,000
+52,999,843 42,382,761 46,366,216 35,512,673
+Current liabilities
+Trade and other payables 72,606,639 67,114,369 82,651,997 70,800,091
+Borrowings 47,311,601 61,003,632 33,924,449 43,891,953
+Other financial liabilities 5,319,901 3,318,810 - -
+Lease liabilities 1,981,443 1,812,334 1,941,973 1,707,607
+Contract liabilities 12,100,828 8,367,771 10,041,364 6,442,759
+Current income tax liabilities 2,975,925 1,462,781 1,716,855 1,342,419
+142,296,337 143,079,697 130,276,638 124,184,829
+Total liabilities 195,296,180 185,462,458 176,642,854 159,697,502
+Total equity and liabilities 287,172,627 275,475,186 246,493,261 234,013,673
+Net assets per share (Rs.) 9.99 9.78 7.59 8.08
+The notes on pages 8to 14form an integral part of these financial statements.
+I certify that these financial statements have been prepared in compliance with the requirements of the Companies Act, No. 07of 2007.
+Sim Siew Shan
+Group Chief Financial Officer
+The Board of Directors is responsible for the preparation and presentation of these financial statements.
+David Nai Pek Lau Supun Weerasinghe
+Chairman Director
+Date: 10November2026

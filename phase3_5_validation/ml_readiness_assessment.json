@@ -1,0 +1,60 @@
+{
+  "generated_at_utc": "2026-11-19T11:40:10.617912+00:00",
+  "audit_scope": "Stockpulse Phase 3 Feature Matrices Audit",
+  "overall_system_readiness": "PARTIALLY_READY_ENGINE_01_ONLY",
+  "engines_assessment": {
+    "engine_01_short_term_trading": {
+      "status": "READY_WITH_LIMITATIONS",
+      "prediction_horizon": "0 to 3 months (5d, 20d, 60d forward targets)",
+      "readiness_score_pct": 85.0,
+      "strengths": [
+        "Top 50 technical indicators are 100% calculated, mathematically verified, and strictly look-ahead free.",
+        "86,950 continuous daily trading observations across 20 leading CSE equities over a 25-year sample (2002-2025).",
+        "Forward return targets (5d, 20d, 60d) correctly calculated with terminal bar masking.",
+        "Parabolic SAR (PSAR) successfully implemented and validated in technical_indicators_v2.py."
+      ],
+      "limitations_and_prerequisites": [
+        "Open price is missing for 60.56% of historical rows (pre-2011); model pipeline must impute Open = Close_prev for gap calculations.",
+        "November 2026 corporate announcement flags (has_recent_dividend, etc.) must be DROPPED or ZEROED during historical backtesting to prevent look-ahead bias.",
+        "High collinearity among moving averages (SMA_10, EMA_9, etc.) requires feature pruning before training linear models."
+      ],
+      "proceed_to_phase4_recommendation": "APPROVED to proceed with baseline ML models (XGBoost / LightGBM) on technical and volume features, excluding static announcement flags."
+    },
+    "engine_02_medium_term_growth": {
+      "status": "NOT_READY",
+      "prediction_horizon": "3 to 12 months (60d, 120d, 252d forward targets)",
+      "readiness_score_pct": 30.0,
+      "strengths": [
+        "Fundamental ratio formulas audited and standardized.",
+        "60d, 120d, and 252d forward price return targets are mathematically verified and clean."
+      ],
+      "critical_blockers": [
+        "POINT-IN-TIME CAUSALITY VIOLATION: Single Q2 FY2027 interim statement (published Nov 2026) was statically broadcast across all 2002-2025 historical dates.",
+        "SEVERE MISSINGNESS: Only 4 of the 20 SP20 companies (CFIN, DIAL, HHL, SINS) overlap with the Phase 2 interim report collection, leaving 79.29% of rows with null fundamentals.",
+        "Lacks historical quarterly financial statements panel (2002-2025) needed to evaluate earnings growth at historical recommendation dates."
+      ],
+      "proceed_to_phase4_recommendation": "HALTED. Cannot train medium-term growth models on 2002-2025 historical data until historical quarterly statements are collected, or must restrict modeling strictly to modern cross-sectional ranking (post-Nov 2026)."
+    },
+    "engine_03_long_term_wealth": {
+      "status": "NOT_READY",
+      "prediction_horizon": "1 to 5+ years (120d, 252d, multi-year compounding targets)",
+      "readiness_score_pct": 25.0,
+      "strengths": [
+        "Graham Number and Margin of Safety formulas verified accurate.",
+        "Long-term price targets (120d, 252d, 504d, 756d, 1260d) are technically feasible on the 25-year price series."
+      ],
+      "critical_blockers": [
+        "Requires multi-year fundamental history (5-year historical ROE/ROIC stability, 5-year CAGR, book value compounding) which cannot be derived from a single interim quarter.",
+        "79.29% missingness across SP20 universe.",
+        "Point-in-time leak of 2026 fundamentals onto 2002-2025 rows.",
+        "Lacks historical cash dividend reinvestment stream for true Total Shareholder Return (TSR)."
+      ],
+      "proceed_to_phase4_recommendation": "HALTED. Long-term wealth creation engine requires 5-year audited financial history panel and dividend cash flow series before training."
+    }
+  },
+  "actionable_remediation_roadmap": {
+    "step_1_unblock_engine_01": "Drop the static 2026 corporate announcement columns from features_01_short_term_trading.parquet; impute Open with prior Close; integrate PSAR v2; proceed to Phase 4 trading models.",
+    "step_2_unblock_engine_02": "Collect historical quarterly disclosures for the 20 SP20 companies (2015-2025) from CSE archives to build a true point-in-time fundamental panel.",
+    "step_3_unblock_engine_03": "Digitize 5-year annual reports (2020-2025) and dividend histories to calculate 5-year average ROIC, dividend sustainability, and true TSR."
+  }
+}

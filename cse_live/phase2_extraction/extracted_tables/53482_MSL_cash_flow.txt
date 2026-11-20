@@ -1,0 +1,209 @@
+Mercantile Shipping Company PLC
+I N T E R I M F I N A N C I A L S T A T E M E N T S
+STATEMENT OF CASH FLOWS Group Company
+For the period ended 30 September 2026 2025 2026 2025
+Rs. Rs. Rs. Rs.
+Unaudited Unaudited Unaudited Unaudited
+Cash Flows from/(used in) Operating Activities
+Profit/(Loss) before tax 2,602,845 958,868 2,602,845 993,668
+Adjustment For
+Depreciation 24,731 1,305,012 2 4,731 1,305,012
+Fair Value Adjustment of Investments 35,700 (35,700) 3 5,700 (35,700)
+Finance Cost 127,675 1 9,363 127,675 19,363
+Finance Income (1,910,408) (1,780,101) (1,910,408) (1,780,101)
+Provision for Gratuity 188,944 - 188,944 -
+Dividend Income Received - (30,345) - (30,345)
+Operating Profit/(Loss) before Working Capital Changes 1,069,487 437,097 1,069,487 471,897
+(Increase)/Decrease in Trade and Other Receivables (4,468,470) 84 (4,468,470) 84
+(Increase)/Decrease in Advance and Prepayment 264,541 158,365 264,541 158,365
+Increase/(Decrease) in Trade and Other Payables (615,378) (365,118) (615,378) (399,918)
+Cash Generated from/(Used in) Operations (3,749,820) 230,428 (3,749,820) 230,428
+Finance Cost Paid (127,675) (19,363) (127,675) (19,363)
+Income Tax (Paid)/Credit ( 857,812) (1,183,446) (857,812) (1,183,446)
+Net Cash Generated from/(Used in) Operating Activities (4,735,307) (972,381) (4,735,307) (972,381)
+Cash Flows from/(used in) Investing Activities
+Finance Income Received 3,129,709 3,237,510 3,129,709 3,237,510
+Investment in Fixed Deposits (2,816,738) (2,909,369) (2,816,738) (2,909,369)
+Acquisition of Property, Plant & Equipment - (197,850) - ( 197,850)
+Dividend Received - 3 0,345 - 30,345
+Net Cash Generated from/(Used in) Investing Activities 312,971 160,636 312,971 160,636
+Net Cash Generated from/(Used in) Financing Activities - - - -
+Net Increase/(Decrease) in Cash and Cash Equivalents (4,422,336) (811,745) (4,422,336) (811,745)
+Cash and Cash Equivalents at the beginning of the period 39,914 890,113 (38,976) 811,223
+Cash and Cash Equivalents at the end of the period (4,382,422) 7 8,368 (4,461,312) (522)
+Cash and Cash Equivalents 402,631 377,153 323,741 298,263
+Bank Ovedraft (4,785,053) (298,785) (4,785,053) (298,785)
+(4,382,422) 7 8,368 (4,461,312) (522)
+The Notes to the Financial Statements on page 7 and page 8 form an integral part of Interim Financial Statements.
+Page 6
+MERCANTILE SHIPPING COMPANY PLC
+Notes to the Interim Financial Statements for the period ended 30 September 2026
+01 CORPORATE INFORMATION
+Mercantile Shipping Company PLC ("Company") is a Public Limited Company, incorporated and domiciled in Sri Lanka
+and listed on the Colombo Stock Exchange. The registered office and the principal place of business are located at
+No.108, Aluthmawatha Road, Colombo 15.
+02 INTERIM CONSOLIDATED FINANCIAL STATEMENTS
+The Interim Consolidated Financial Statements of Mercantile Shipping Company PLC for the period ended 30 Septem-
+ber 2026 comprises of the Company and its fully owned subsidiary, Mercantile Global Shipping Limited (together
+“Group). Mercantile Global Shipping Limited is currently not in operation. The Interim Financial Statements are not au-
+dited. Where necessary, comparative figures have been re-classified to conform with the current period’s presentation.
+03 BASIS OF PREPARATION
+3.1 Basis of preparation
+The interim condensed consolidated financial statements for the period ended 30 September 2026 have been prepared in
+accordance with LKAS 34 Interim Financial Reporting and provide the information required by the Colombo Stock Ex-
+change. These Interim Financial Statements have not been audited. Accounting Policies and Method of Computations
+followed in the Annual Report for the year ended 31 March 2026 have been adopted.
+The interim condensed consolidated financial statements do not include all the information and disclosures required in
+the Annual Financial Statements, and should be read in conjunction with the annual consolidated financial statements as
+at 31 March 2026.
+3.2 Fair value measurement and related fair value disclosures
+The following methods and assumptions were used to estimate the fair values-Investment Properties, Quoted Investment
+Cash and short-term deposits, trade and other receivables and trade payable approximate their carrying amounts largely
+due to the short-term maturities of these instruments except Investment Properties which are valued on every 31st March.
+Fair value of quoted equity shares are based on market prices available in Colombo stock exchange at the reporting date.
+There were no transfers between Level 1 and Level 2 and no transfers into or out of Level 3 categories as per the fair
+value hierarchy, during the period.
+Fair Value Hierarchy the Group uses the following hierarchy for determining and disclosing the fair value of financial
+instruments by valuation technique:
+Level 1: quoted (unadjusted) prices in active markets for identical assets or liabilities.
+Level 2: other techniques for which all inputs that have a significant effect on the recorded fair value are observable, ei-
+ther directly or indirectly.
+Level 3: techniques which use inputs that have a significant effect on the recorded fair value that are not based on
+observable market data.
+04 CONTINGENT LIABILITIES/ASSETS
+There are no contingent assets or liabilities as at the balance sheet date except for the following:
+. √ Group has legal claim of INR 58,153,46 against the Chennai Port Trust, which includes the recovery of a deposit with
+applicable interest, repair cost and loss of charter hire made in 2004. The Madras High Court ruled in favour of the Group
+in 2021.The Chennai Port Trust has filed an appeal against the judgement, which remains pending at the reporting date.
+05 EVENTS OCCURRING AFTER THE REPORTING DATE
+There have been no material events occurring after the reporting date that require adjustments to or disclosure in these
+Interim Financial Statements.
+Page 7
+Mercantile Shipping Company PLC
+I N T E R I M F I N A N C I A L S T A T E M E N T S
+Notes to the Interim Financial Statements for Quarter ended 30 September 2026
+06 SHARE INFORMATION
+06.1 STATED CAPITAL
+Fully Paid Ordinary Shares 2026 2025
+Number Rs. Number Rs.
+As at 30 September 2,844,990 37,262,606 2,844,990 37,262,606
+06.2 Tading prices at the Colombo Stock Exchange during the Interim Period
+2026 2025
+Rs. Rs.
+Highest Price during the Quarter-20.08..2026 210.00 820.50
+Lowest Price during the Quarter-06.08.2026 176.50 252.25
+Last traded price - 30.09.2026 194.50 607.25
+06.3 Minimum Public Holding As A Continuous Listing Requirement Listed on the Main Board
+30.09.2026 30.09.2025
+Rs. Rs.
+Float adjusted market capitalisation (Rs) 277,855,817 656,122,694
+Public Holding 50.39% 37.98%
+Nubmber of Public shareholders 1478 852
+Net Asset Value Per share Rs. 137.52 27
+07 Ratios 30.09.2026 30.09.2025
+Return on Equity % 0.01 0.00
+Return on Assets % 0.00 1%
+Current Ratio 4.3 3.88
+Gearing Ratio % 40.2 18%
+08 Other Current Financial Assets 30.09.2026 30.09.2025
+Rs. Rs.
+Group/Company Group/Company
+Term Deposits 50,997,333 47,693,857
+Quoted Shares 621,180 756,840
+51,618,513 48,450,697
+The Notes to the Financial Statements on page 7 and page 8 form an integral part of Interim Financial Statements.
+Page 8
+MERCANTILE SHIPPING COMPANY PLC
+Related Party Transactions Review Committee Meeting - 09 November 2026
+Quarter ended 30.09.26 Quarter ended 30.06.26
+Subsidiary Affiliates Subsidiary Affiliates
+Mercantile Mercantile
+Mercantile
+Nature of Transaction Marine Mercantile Global Marine
+Global Shipping
+Management Shipping Ltd Management
+Ltd
+Ltd Ltd
+Balance as at beginning of the Qtr (25,807,839) 2,122,810 (25,807,839) -
+Rent Charged - 4,988,460 - 4 ,988,460
+Rent Received - (2,324,520) - (2,579,085)
+Settlement of Liabilites by the Company - - - -
+10% W H T Charge on Rent - (258,280) - (286,565)
+Transfer of Other Payables - -
+Balance as at end of the Qtr (25,807,839) 4,528,470 (25,807,839) 2 ,122,810
+Investment Property at 108, Aluthmawatha Road Colombo 15 leased to Mercantile Marine Management for 05 Years with effect from
+1.4.2026 and it's aggregate remaing Lease rental value is Rs. 95,890,672 at the end of the period.
+Outstanding balancesas at the period end are unsecured and interest free settlement in cash.
+Disclosure in terms of Section 9.14.8 (2) of the Listing Rules of Colombo Stock Exchange
+Nature of
+Transaction &
+aggregate Terms and
+Aggregate value of Related
+value of related Conditions of
+Party Transactions as a % of
+Name of the Related Party Relationship party the Related
+Net Revenue / Income
+transactions Party
+(Company / Consolidated)
+entered into Transactions
+during the
+period
+Affiliate / Normal
+Rent Income -
+Mercantile Marine Management Ltd significant 79% of Company's Revenue commercial
+Rs.9,976,920
+shareholder terms.
+Page 9
+Mercantile Shipping Company PLC
+I N T E R I M F I N A N C I A L S T A T E M E N T S
+SHARE INFORMATION
+Top 20 Shareholders List as at 30 September 2026
+Name of the Shareholder No of Shares %
+1 REEDEREI EUGEN FRIEDERICH GMBH SCHIFFAHRTSGESELLSCHAFT 812,542 28.56
+2 MERCANTILE MARINE MANAGEMENT LIMITED 593,580 20.86
+3 HEMAS HOLDINGS PLC 484,334 17.02
+4 CEYLON SHIPPING CORPORATION LIMITED 238,506 8.38
+5 STATE STREET MUNICH C/O SSBT-DEG-DEUTSCHE INVESTITIONS-UND 238,259 8.37
+ENTWICKLUNGSGESELLSCHAFT MBH
+6 NATURUB EXPORTS INTERNATIONAL (PRIVATE) LIMITED 25,135 0.88
+7 MR.TISSA ELEPERUMA 23,411 0.82
+8 MRS. DANTHANARAYANA BADALMESTRIGE DON DEEPANI DANTHANARAYANA 11,500 0.40
+9 MR.HORANAGE NILANANDA SENAKA KUMARA 10,300 0.36
+10 MR. LEVWANDUWA LIYANAGE DON DINUSHA SAMPATH 9,807 0.34
+11 PEOPLE'S LEASING & FINANCE PLC/L.P.HAPANGAMA 9,056 0.32
+12 MR. PRIYANKA MANJULA PATHIRAJA / MRS.D.A.O. KANDAMUDALI 7,798 0.27
+13 MR. SUBRAMANIYAM INDRAKUMAR 7,625 0.27
+14 MR. PANDUWAWALA KANKANAMALAGE AMENDRA DINUKA PERERA 7,611 0.27
+15 MR.HEWA COLAMBAGE DAMITH SRILAL 7,058 0.25
+16 DR. MERENNEGE DILAN ANUSH FERNANDO 6,828 0.24
+17 MR. PALLAWALA MOHOTTIGE CHAMINDA NISHANTHA PALLAWALA 6,796 0.24
+18 MR. WEERASINGHE ARACHCHIGE SARATH WEERASINGHE 6,692 0.24
+19 SAMPATH BANK PLC/NAVARA CAPITAL LIMITED 6,000 0.21
+20 MR. PONNAMPERUMAGE DUSHANTA KUMAR FERNANDO 5,941 0.21
+SUB TOTAL 2,518,779 88.53
+OTHERS 326,211 11.47
+GRAND TOTAL 2,844,990 100.00
+Directors Shareholding as of 30 September 2026
+Capt. Klaus Kriwat Nil
+Thomas Kriwat Nil
+Hettiarachchige Ranjith Kumara Wickramatileka 1,000
+Capt. Rohan Edward Guy Codipilly 4,162
+Mallawarachchige Sarathchandra Perera Gunawardena Nil
+Panambara Arachchilage Nandasena Nil
+Chathura Chanaka Wickramatileka Nil
+Prasanna Saman Kumara Watawala Nil
+Walimuni Devage Lal Jayantha Kulasooriya Nil
+Chintaka Parakrama Punyajith Gamalath Hapudeniya Nil
+Non Public Shareholding as at 30 September 2026 No of Shares %
+Issued Share Capital 2,844,990 100%
+Directors and their Spouses
+Mr. H.A.R.K Wickrematileka 1,000 0.00
+Capt. R E G Codipilly 4,162 0.15%
+5,162
+More than 10%
+REEDEREI EUGEN FRIEDERICH GMBH SCHIFFAHRTSGESELLSCHAFT 812,542 28.56%
+MERCANTILE MARINE MANAGEMENT LTD 593,580 20.86%
+1,406,122
+Non Public Shareholding 1,411,284 49.61%
+Public Shareholding 1,433,706 50.39%
+Page 10

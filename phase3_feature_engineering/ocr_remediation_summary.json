@@ -1,0 +1,18 @@
+{
+  "generated_at_utc": "2026-11-19T11:26:48.738706+00:00",
+  "total_facts_original_2c": 2453,
+  "remediated_facts_added": 48,
+  "total_facts_enriched": 2489,
+  "unique_companies": 78,
+  "remediated_companies": [
+    "LHL",
+    "NEH",
+    "EML",
+    "JETS",
+    "CTLD",
+    "MSL",
+    "ALHP",
+    "TKYO"
+  ],
+  "validation_rate": "97.55%"
+}

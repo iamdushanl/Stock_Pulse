@@ -1,0 +1,4 @@
+strategy,horizon_days,phase4_1_reported_cagr_pct,reproduced_raw_cagr_pct,reproduced_sharpe,reproduced_max_dd_pct,cleaned_anomaly_free_cagr_pct,cleaned_sharpe,cleaned_max_dd_pct,inflation_delta_pct,primary_inflation_driver
+LightGBM_20d,20,223.22,223.22,1.05,-14.52,55.55,1.21,-20.34,167.67,COMB clerical price collapse in Aug 2024 (+2361% anomaly) + 50% under-deduction of round-trip trade fees
+Random_Forest_5d,5,426.85,426.85,1.22,-17.61,64.72,1.87,-20.2,362.13,COMB (+2588%) in Aug 2024 & JKH (+1343%) in Oct 2024 artificial bounces compounded weekly
+Ridge_Regression_60d,60,79.3,79.3,1.75,-2.97,77.86,1.67,-3.3,1.44,Broad CSE ASPI bull market (ASPI grew 54.9% annualized) + moderate fee adjustment

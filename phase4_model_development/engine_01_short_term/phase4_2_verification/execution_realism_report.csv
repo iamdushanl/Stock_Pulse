@@ -1,0 +1,8 @@
+execution_scenario,fill_timing,one_way_fee_pct,half_spread_bps,total_drag_per_turnover_pct,final_nav,net_cagr_pct,excess_over_aspi_pct,execution_viability
+"1. Cleaned Baseline (Same-Day Close, Statutory Fee)",T+0 Close,1.12,0,2.24,2.23,55.08,8.41,FEASIBLE
+2. Next-Day Open Execution (T+1 Open),T+1 Open,1.12,0,2.24,2.32,58.53,11.86,FEASIBLE
+3. Next-Day Close Execution (T+1 Close),T+1 Close,1.12,0,2.24,2.37,60.54,13.87,FEASIBLE
+4. Next-Day Open + 50 bps Half-Spread,T+1 Open,1.12,50,3.24,2.15,52.07,5.4,FEASIBLE
+5. Next-Day Open + 100 bps Half-Spread,T+1 Open,1.12,100,4.24,1.99,45.84,-0.83,MARGINAL/UNPROFITABLE
+6. High Slippage Stress (1.50% One-Way Cost),T+1 Open,1.5,50,4.0,2.03,47.31,0.64,FEASIBLE
+7. Severe Friction Stress (2.00% One-Way Cost),T+1 Open,2.0,100,6.0,1.74,35.43,-11.24,MARGINAL/UNPROFITABLE

@@ -1,0 +1,41 @@
+STATEMENT OF CASH FLOWS
+All amounts in Sri Lankan Rupees thousands
+For the nine month ended 30 September 2026 2025
+Operating activities
+Profit before tax 2,202,970 1,336,090
+Adjustments:
+Depreciation 157,313 78,833
+Usage of biological assets 846,194 653,624
+Loss on disposal of property, plant and equipment - 20
+Exchange loss / (gain) 859 (3,990)
+Interest income (603,497) (452,840)
+Interest expenses 16,772 6,929
+Changes in working capital
+-Trade and other receivables (48,866) (350,329)
+-Inventories (281,895) 12,126
+-Trade and other payables (150,220) 105,609
+-Amount due from related companies (331,932) (144,252)
+-Amount due to related companies (254,173) (102,543)
+Employee benefits 13,500 6,300
+Cash generated from operations 1,567,025 1,145,577
+Exchange (loss) / gain (859) 3,990
+Interest received 706,108 510,610
+Interest paid (16,772) (6,929)
+Employee benefits paid (3,440) (2,344)
+Tax paid (623,174) (355,385)
+Net cash generated from operating activities 1,628,888 1,295,519
+Investing activities
+Purchase of property, plant and equipment (255,687) (258,007)
+Purchase of biological assets (896,038) (507,570)
+Net cash used in investing activities (1,151,725) (765,577)
+Financing activities
+Dividend paid (941,800) (706,350)
+Short-term investment - 4,903,445
+Net cash (used in) / generated from financing activities (941,800) 4,197,095
+(Decrease) / increase in cash and cash equivalents (464,637) 4,727,037
+Movement in cash and cash equivalents
+At the beginning of the year 8,422,155 64,459
+(Decrease) / increase for the period (464,637) 4,727,037
+Balance at the end of the period 7,957,518 4,791,496
+Interim Financial Statements
+Three Acre Farms PLC | 7

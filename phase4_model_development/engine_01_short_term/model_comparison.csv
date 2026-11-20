@@ -1,0 +1,13 @@
+﻿target_horizon,model_name,avg_validation_rmse,avg_spearman_rank_ic,avg_top10_excess_return_pct,avg_net_cagr_pct,avg_net_sharpe_ratio,fold_1_ic,fold_2_ic
+Fwd_Return_5d,Ridge_Regression,20.4428,0.1142,43.96,1050.26,0.98,0.1402,0.0881
+Fwd_Return_5d,Random_Forest,12.3327,0.1444,101.87,119446.57,1.31,0.163,0.1257
+Fwd_Return_5d,XGBoost,12.4071,0.1133,102.19,103999.11,1.32,0.117,0.1096
+Fwd_Return_5d,LightGBM,10.6951,0.1241,101.87,98092.07,1.23,0.143,0.1053
+Fwd_Return_20d,Ridge_Regression,27.0887,0.1274,111.83,1145.32,0.84,0.1405,0.1142
+Fwd_Return_20d,Random_Forest,22.9605,0.1195,110.81,1070.4,0.81,0.0646,0.1745
+Fwd_Return_20d,XGBoost,22.3908,0.1399,111.67,1097.45,0.88,0.0928,0.187
+Fwd_Return_20d,LightGBM,20.0172,0.1648,111.21,1055.66,0.86,0.1174,0.2121
+Fwd_Return_60d,Ridge_Regression,40.6235,0.1694,126.15,191.09,0.89,0.1463,0.1926
+Fwd_Return_60d,Random_Forest,31.2859,0.1181,124.69,178.36,0.82,0.0807,0.1556
+Fwd_Return_60d,XGBoost,30.9868,0.1559,127.47,190.5,0.86,0.1018,0.21
+Fwd_Return_60d,LightGBM,29.1316,0.019,122.62,167.48,0.5,-0.0057,0.0436

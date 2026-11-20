@@ -1,0 +1,289 @@
+ODEL PLC | Interim Report | 2026/2027 Page ~ 5 ~
+CASH FLOW STATEMENT
+Six months ended 30th September 2026
+Group Unaudited Unaudited
+2026/27 2025/26
+LKR LKR
+CASH FLOWS FROM / (USED IN) OPERATING ACTIVITIES
+Net profit/(loss) before Income tax expense ( 1,414,145,675) ( 1,662,145,806)
+Adjustments for
+D epreciation & amortizations 1 36,861,350 1 49,476,875
+Intangible assets amortization 8 4,822 2 6,934,822
+Finance costs 888,788,428 1,130,812,907
+Finance income ( 4,628,972) ( 3,428,187)
+Amortization of right of use assets 353,209,369 293,450,766
+(Profit) / loss on disposal of property, plant & equipment ( 2,173,422) 8,769,664
+Derecognision / Adjutment for ROU asset / liability ( 5,460,600) 100,779,667
+Provision for impairment - 210,311,961
+Provision for define benefit plans 15,867,953 10,104,508
+Operating profit before working capital changes ( 31,596,747) 2 65,067,177
+Decrease/(Increase) in inventories 3 70,029,335 ( 34,077,959)
+Decrease/(Increase) in trade and other receivables ( 157,563,879) 931,522,983
+Decrease/(Increase) in dues from related parties ( 330,703,908) ( 1,321,166,621)
+Decrease/(Increase) in other financial assets 2 85,197,407 2 25,112,021
+Decrease/(Increase) in other current/non current assets ( 120,406,899) ( 253,316,156)
+(Decrease)/Increase in dues to related parties 1 ,588,677,780 2 ,030,883,504
+(Decrease)/Increase in trade payables (361,224,457) 9 9,185,268
+(Decrease)/Increase in other payables 1,185,899,795 992,187,041
+(Decrease)/Increase in other current/non current liabilities (159,879,011) ( 1,840,447)
+Cash generated from operations 2 ,268,429,416 2 ,933,556,811
+Finance costs paid ( 746,446,212) ( 945,276,512)
+Defined benefit plan costs paid ( 3,666,709) ( 14,685,676)
+Income tax paid/Dividend Tax Paid ( 5,755,303) ( 48,097,245)
+Net cash from/(used in) operating activities 1 ,512,561,193 1 ,925,497,378
+CASH FLOWS FROM / (USED IN) INVESTING ACTIVITIES
+Acquisition of property, plant & equipment ( 292,029,177) ( 98,667,478)
+Investment in capital projects ( 618,141,590) ( 454,883,293)
+Finance income 4 ,628,972 3 ,428,187
+Proceed from disposal of fixed assets 2 ,612,610 1 ,055,085
+Net cash flows from/(used in) investing activities ( 902,929,186) ( 549,067,499)
+CASH FLOWS FROM / (USED IN) FINANCING ACTIVITIES
+Proceeds from interest bearing borrowings (MTL) 4 ,205,044,484 -
+Repayment of interest bearing borrowings (MTL) ( 208,477,728) ( 124,361,616)
+Proceeds from / Repayment of short term borrowings (net) ( 3,659,686,419) ( 1,075,733,266)
+Payment of operating lease rentals ( 440,180,219) ( 454,061,696)
+Net cash flows from/(used in) financing activities ( 103,299,882) ( 1,654,156,579)
+Net increase/(decrease) in cash and cash equivalents 5 06,332,125 ( 277,726,700)
+Cash and cash equivalents at the beginning of the period ( 1,202,604,274) ( 1,310,095,918)
+Cash and cash equivalents at the end of the period_Note 01 ( 696,272,149) ( 1,587,822,619)
+Note_01
+Cash and bank balances 2 87,489,407 2 67,927,673
+Bank Overdraft_included in Interest bearing borrowings ( 983,761,556) ( 1,855,750,292)
+Cash and cash equivalents at the end of the period ( 696,272,149) ( 1,587,822,619)
+ODEL PLC | Interim Report | 2026/2027 Page ~ 10 ~
+CASH FLOW STATEMENT
+Six months ended 30th September 2026
+Company Unaudited Unaudited
+2026/27 2025/26
+LKR LKR
+CASH FLOWS FROM / (USED IN) OPERATING ACTIVITIES
+Net profit/(loss) before Income tax expense ( 1,129,089,794) ( 1,048,112,405)
+Adjustments for
+D epreciation 7 7,804,528 7 9,329,207
+Intangible assets amortization 8 4,822 8 4,822
+Finance costs 614,974,683 642,587,991
+Finance income (62,683,152) (31,869,183)
+Amortization of right of use assets 2 10,098,824 162,686,996
+(Profit) / loss on disposal of property, plant & equipment ( 2,173,422) 4,473,682
+Derecognision of ROU asset / liability ( 559,515) -
+Provision for define benefit plans 11,350,510 7,862,365
+Operating profit before working capital changes ( 280,192,518) ( 182,956,525)
+Decrease/(Increase) in inventories 1 38,330,121 ( 150,839,093)
+Decrease/(Increase) in trade and other receivables ( 381,780,573) (128,308,045)
+Decrease/(Increase) in dues from related parties ( 670,315,926) ( 323,871,640)
+Decrease/(Increase) in other current financial assets 1 3,541,024 ( 8,763,447)
+(Decrease)/Increase in dues to related parties 1 ,571,602,597 9 36,123,650
+(Decrease)/Increase in trade payables 49,432,375 2,390,533
+(Decrease)/Increase in other payables 756,606,022 329,329,038
+Cash generated from operations 1 ,197,223,123 4 73,104,472
+Finance costs paid ( 529,900,943) ( 561,980,828)
+Defined benefit plan costs paid ( 2,826,757) ( 11,303,420)
+Income tax paid/Dividend Tax Paid ( 7,115,716) ( 7,938,523)
+Net cash from/(used in) operating activities 6 57,379,708 ( 108,118,299)
+CASH FLOWS FROM / (USED IN) INVESTING ACTIVITIES
+Acquisition of property, plant & equipment ( 199,278,751) ( 60,569,060)
+Finance income 6 2,683,152 3 1,869,183
+Proceed from disposal of fixed assets 2 ,612,610 1 ,055,085
+Net cash flows from/(used in) investing activities ( 133,982,989) ( 27,644,793)
+CASH FLOWS FROM / (USED IN) FINANCING ACTIVITIES
+Proceeds from long term interest bearing borrowings (MTL) 2 ,732,192,968 -
+Repayment of long term interest bearing borrowings (MTL) ( 208,477,728) ( 108,524,482)
+Proceeds from / Repayment of short term borrowings (net) ( 2,307,025,058) 1 85,707,779
+Payment of operating lease rentals ( 271,380,397) ( 238,222,225)
+Net cash flows from/(used in) financing activities ( 54,690,215) ( 161,038,928)
+Net increase/(decrease) in cash and cash equivalents 4 68,706,504 ( 296,802,019)
+Cash and cash equivalents at the beginning of the period ( 933,152,094) ( 845,732,850)
+Cash and cash equivalents at the end of the period _ Note 01 ( 464,445,590) ( 1,142,534,869)
+Note_01
+Cash and bank balances 2 55,679,847 1 70,314,692
+Bank Overdraft_included in Interest bearing borrowings ( 720,125,438) ( 1,312,849,561)
+Cash and cash equivalents at the end of the period ( 464,445,590) ( 1,142,534,869)
+ODEL PLC | Interim Report | 2026/2027 Page ~ 11 ~
+NOTES TO THE FINANCIAL STATEMENT
+Six months ended 30th September 2026
+1 Odel PLC is a limited liability company incorporated and domiciled in Sri Lanka whose shares are publicly traded in the Colombo Stock
+Exchange. The registered office of Odel PLC is located at No 475/32, Kotte Road, Rajagiriya.
+2 The financial statements for the period ended 30th September 2026, includes the company referring to Odel PLC, as the holding company
+and the Group referring to the companies whose accounts have been consolidated therein.
+3 Market Price per share
+Quarter ended 30-Sep-2026 30-09-2025
+LKR LKR
+Highest : 12.20 12.60
+Lowest : 10.10 10.40
+Closing : 10.70 11.70
+4 The Interim Financial Statements of the Company and Group have been prepared on the basis of the same accounting policies and methods
+applied for the year ended 31st March 2026, which is in compliance with LKAS 34 -'Interim Financial Reporting' and all figures are subject to
+audit.
+5 The presentation and classification of the financial statements of the previous year have been amended, where relevant, for better
+presentation and to be comparable with those of the current year.
+6 Stated capital is represented by number of shares in issue as given below;
+Ordinary shares held 2026 2025
+As at 30th September 538,369,934 538,369,934
+Weighted average number of shares as at the reporting date is 538,369,934 538,369,934
+The percentage of shares held by the public as at 30th September 2026 was 1.19% (2025 ~ 1.19%). The number of shareholders
+representing the public holding was 5,045 (2025 ~ 4,921)
+Market Capitalisation of public share holding is LKR 68,818,270 (2025 - LKR 75,249,884)
+7 The numbers of shares held by the directors are as follows.
+Name of the Director 30 Sep 2026
+Mr. A.K Pathirage 96,584
+Mr. H.K Kaimal Nil
+Mr. I. Furkan Nil
+Mr. D.Y Christostom Nil
+Dr. M.W.T.A Mendis Nil
+ODEL PLC | Interim Report | 2026/2027 Page ~ 12 ~
+NOTES TO THE FINANCIAL STATEMENT
+Six months ended 30th September 2026
+8 Twenty largest shareholders of the company as at the reporting date as follows.
+No Name No of Shares Percentage %
+1 SOFTLOGIC RETAIL HOLDINGS (PRIVATE) LIMITED 531,841,736 98.79
+2 MRS. ELAINE BRYNHILDE HELGA ANIL PERERA / Mr. D.C.D.L.S.D. PERERA 527,000 0.10
+3 MERCANTILE INVESTMENTS AND FINANCE PLC 300,000 0.06
+4 MR. MOHAMED HUSSAIN NASSIM HUSSAIN 241,912 0.04
+5 TANGERINE TOURS (PVT) LIMITED 225,600 0.04
+6 PEOPLE'S LEASING & FINANCE PLC/MR.D.M.P.DISANAYAKE 210,958 0.04
+7 Mr. CALISTUS NIMALANATHAN PAKIANATHAN 205,649 0.04
+8 MR. AMARAKOON MUDIYANSELAGE WEERASINGHE 132,400 0.02
+9 MR. WEERASINGHE ARACHCHIGE SANTHUSHITHA CHATHUMADHURA 100,000 0.02
+10 PEOPLES BANK/ASOKA KARIYAWASAM PATHIRAGE 96,584 0.02
+11 PEOPLE'S LEASING & FINANCE PLC/DR.H.S.D.SOYSA & MRS.G.SOYSA 89,934 0.02
+12 SAMPATH BANK PLC/ANDARADENIYA ESTATE PRIVATE LIMITED 79,501 0.01
+13 ASSETLINE FINANCE PLC/M.S.HIRIPITIYA 70,000 0.01
+14 MR. GONNAGE LUCIAN SENARATH LIVERA 64,600 0.01
+15 ASHYAKI HOLDINGS (PVT) LTD 56,200 0.01
+16 SAKUVI INVESTMENT TRUST (PVT) LTD 55,000 0.01
+17 MR. PANNALA KOTTALBADDA ARACHCHIGE MUDANTHA MAHESHAKA PANNALA 52,000 0.01
+18 MR. INDIKA PRASAD GALHENAGE 50,100 0.01
+19 MR. DILIP SUDHIRA JAYAWICKRAMA 50,000 0.01
+20 HETTIGODA INDUSTRIES (PVT) LTD 50,000 0.01
+9 There were no significant contingent liabilities at the date of the statement of financial position except for following
+a) Odel PLC has executed letter of credits for 49,205,230 LKR (146,734 USD)
+b) Softlogic Brands (Pvt) Ltd has executed letter of credits for 18,414,705 LKR (69,727 SGD)
+10 Total value of capital commitments as at reporting period as follows,
+a) Odel Properties One (Pvt) Ltd which is a fully owned subsidiary of Odel PLC, has entered into agreements with;
+i. China Construction Third Engineering Bureau Co, Ltd for 9,811 Mn on commercial development at Ward Place. As at the
+reporting date, the estimated value of the work done is Rs 7,583 Mn
+ii. Non contracted capital commitments
+Estimated non contracted commitment for the above project will be Rs 4,500 Mn.
+ODEL PLC | Interim Report | 2026/2027 Page ~ 13 ~
+NOTES TO THE FINANCIAL STATEMENT
+Six months ended 30th September 2026
+11 Related party transactions Group Company
+2026/27 2025/26 2026/27 2025/26
+LKR LKR LKR LKR
+Ultimate Parent
+Slae of goods - - - -
+Purchase of goods - - - -
+Rendering of services - 5,040,000 - 5,040,000
+Receiving of services 9,245,977 5 2,967,580 - -
+Guarantee fees paid - - - -
+Companies Under Common Control
+Slae of goods 1 16,043,030 1 68,526,775 - -
+Purchase of goods 1 14,427,073 1 70,637,836 1 14,427,073 1 70,637,836
+Rendering of services 4 48,517,061 3 69,622,900 2 75,103,254 2 17,458,010
+Receiving of services 5 15,229,124 4 24,256,233 1 86,652,597 2 23,397,249
+Guarantee fees paid/(received) - - - -
+Equity Accounted Investees
+(Purchase)/sale of goods - - - -
+(Receiving)/rendering of services - - - -
+Key Management Personal (KMP)
+Sale of goods - - - -
+Rendering of services - - - -
+Directors fees 1 5,725,000 1 6,175,000 1 5,725,000 1 6,175,000
+Close Family Members of KMP
+(Purchase)/sale of goods - - - -
+(Receiving)/rendering of services - - - -
+Post Employee Benefit Plan
+(Receiving)/rendering of services - - - -
+12 No circumstances have arisen since the date of the statement of financial position which would require adjustment to or disclosure
+in the financial statements.
+ODEL PLC | Interim Report | 2026/2027 Page ~ 14 ~
+NOTES TO THE FINANCIAL STATEMENT
+Six months ended 30th September 2026
+13 Segment Information
+Odel group is organised into business units based on its products and services and has two reportable segments, as follows,
+* Fashion Retailing Segment which offers various fashion related clothing, accessories and sport ware foot ware etc., to wide range of customers.
+* The investment property segment consists of land that holds for capital appreciation purpose.
+The Management team monitors the operating results of its business units separately for the purpose of making decisions about resource allocation
+and performance assessment. Segment performance is evaluated based on profit or loss and is measured consistently with profit or loss in the
+consolidated financial statements
+Fashion Retail Investment * Other Total Segments Adjustments / Consolidated
+Quarter ended 30th September
+Property Elimination Financial
+2026
+Statements
+LKR LKR LKR LKR LKR LKR
+Revenue
+External Customers 1 ,712,609,932 - 1 34,400,388 1,847,010,320 - 1 ,847,010,320
+Inter Company 4 7,586,481 - 9 9,219,488 1 46,805,969 (146,805,969) -
+Total Revenue 1 ,760,196,412 - 2 33,619,876 1 ,993,816,288 ( 146,805,969) 1 ,847,010,320
+Other Operating Income 3,515,906 - - 3 ,515,906 - 3 ,515,906
+EBIT ( 270,544,509) - - ( 270,544,509) - ( 270,544,509)
+Amortisation and depreciation 2 72,893,556 - - 2 72,893,556 - 2 72,893,556
+Segment Profit ( 704,063,623) - - ( 704,063,623) - ( 704,063,623)
+Fashion Retail Investment * Other Total Segments Adjustments / Consolidated
+Six months ended 30th
+Property Elimination Financial
+September 2026
+Statements
+LKR LKR LKR LKR LKR LKR
+Revenue
+External Customers 3 ,388,283,493 - 2 73,659,020 3,661,942,513 - 3 ,661,942,513
+Inter Company 1 13,631,491 - 1 91,593,540 3 05,225,031 (305,225,031) -
+Total Revenue 3 ,501,914,984 - 4 65,252,560 3 ,967,167,544 ( 305,225,031) 3 ,661,942,513
+Other Operating Income 5,111,080 - - 5 ,111,080 - 5 ,111,080
+EBIT ( 529,986,218) - - ( 529,986,218) - ( 529,986,218)
+Amortisation and depreciation 4 90,155,541 - - 4 90,155,541 - 4 90,155,541
+Segment Profit ( 1,414,145,675) - - ( 1,414,145,675) ( 1,414,145,675)
+Non-Current Assets (excluding
+financial assets, goodwill and 2 5,498,676,598 - - 25,498,676,598 - 2 5,498,676,598
+deferred tax assets)
+Total Liabilities 3 9,080,089,912 - - 39,080,089,912 - 3 9,080,089,912
+* Amount classified under "Other" category in above table, consists of commission / rental income etc…
+ODEL PLC | Interim Report | 2026/2027 Page ~15~
+NOTES TO THE FINANCIAL STATEMENT
+Name of company Auditors
+Odel PLC Ernst & Young
+Chartered Accountants,
+Rotunda Towers, No. 109,
+Legal form Galle Road,
+Public Limited Liability Company Colombo 03.
+Incorporated in Sri Lanka in 1990
+Registered office of the company
+# 475/32, Secretaries and registrars
+Kotte Road, Softlogic Corporate Services (Pvt) Ltd
+Rajagiriya. No 14, De Fonseka Place,
+Colombo 5.
+Company registration No.
+PV 7206 PQ
+Bankers
+Directors Bank of Ceylon
+Mr. A. K. Pathirage - Chairman/Executive Director Commercial Bank
+Dr. I.C.R De Silva - Non-Executive Non-Independent Director DFCC Bank
+Mr. H.K. Kaimal - Non-Executive Non-Independent Director Hatton National Bank
+Mr. M.I. Furkan - Independent Non-Executive Director Nation Trust Bank
+Mr. D.Y. Christostom - Non-Executive Non-Independent Director Sampath Bank
+Dr. T. Mendis - Senior Independent Non-Executive Director (Appointed w.e.f. 03rd February 2026) Seylan Bank
+Union Bank
+National Development Bank
+Board Audit Committee (BAC) Cargill's Bank
+Mr. M.I. Furkan - Chairman
+Mr. H.K. Kaimal
+Dr. T. Mendis
+Investor Relations
+Odel PLC
+475/32, Kotte Road,
+Remuneration Committee Rajagiriya.
+Dr. T. Mendis - Chairman Tel: 0115885000
+Dr. I.C.R. De Silva web: www.odel.lk
+Mr. H.K Kaimal
+Mr. M.I. Furkan
+Related Party Transactions Review Committee
+Mr. M.I. Furkan - Chairman
+Dr. I.C.R. De Silva
+Mr. H.K. Kaimal
+Dr. T. Mendis
+Nominations and Governance Committee
+Dr. T. Mendis - Chairman
+Dr. I.C.R. De Silva
+Mr. H.K Kaimal
+Mr. I. Furkan

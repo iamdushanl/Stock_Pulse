@@ -1,0 +1,7 @@
+strategy,horizon,net_cagr_pct,net_sharpe_ratio,max_drawdown_pct,turnover_pct,spearman_rank_ic,precision_at_10,verification_status
+LightGBM_20d (Cleaned),20 trading days,55.55,1.21,-20.34,33.9,0.0848,0.5275,VERIFIED WITH LIMITATIONS
+Random_Forest_5d (Cleaned),5 trading days,64.72,1.87,-20.2,21.5,0.1224,0.5123,NOT VERIFIED (Unviable Turnover / Cost Sensitivity)
+Ridge_Regression_60d (Cleaned),60 trading days,77.86,1.67,-3.3,51.4,0.2678,0.573,VERIFIED WITH LIMITATIONS
+Equal_Weighted_SP20,Passive holding,48.2,0.82,-12.4,0.0,0.0,0.5,BENCHMARK
+Official_ASPI_Index,Market index,46.67,0.79,-14.1,0.0,0.0,0.485,BENCHMARK
+Simple_Momentum_21d,20 trading days,14.25,0.12,-28.5,52.3,-0.0686,0.4754,BASELINE (Failed)

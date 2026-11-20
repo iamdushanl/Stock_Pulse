@@ -1,0 +1,36 @@
+{
+  "evaluation_target": "LightGBM_Fwd_Return_20d (Cleaned, Anomaly-Free, Statutory Fees)",
+  "bootstrap_method": "Circular Block Bootstrap (B=1,000 trials, block_size=3 periods)",
+  "cagr_distribution_pct": {
+    "point_estimate": 55.55,
+    "mean_bootstrap": 59.6,
+    "ci_95_lower": -9.71,
+    "ci_95_upper": 164.09,
+    "probability_cagr_beats_aspi": 57.3
+  },
+  "sharpe_distribution": {
+    "point_estimate": 1.21,
+    "ci_95_lower": -0.6,
+    "ci_95_upper": 3.13,
+    "probability_sharpe_positive": 92.4
+  },
+  "max_drawdown_distribution_pct": {
+    "point_estimate": -20.34,
+    "ci_95_lower": -41.6,
+    "ci_95_upper": -10.31
+  },
+  "cross_sectional_ic_stability": {
+    "mean_spearman_rank_ic": 0.0848,
+    "std_spearman_rank_ic": 0.216,
+    "t_statistic": 8.3936,
+    "p_value": 5.957097e-16,
+    "fraction_positive_dates_pct": 64.63,
+    "statistically_significant_at_1pct": true
+  },
+  "selection_bias_and_multiple_testing_audit": {
+    "hypotheses_tested_count": 12,
+    "bonferroni_adjusted_alpha": 0.004166666666666667,
+    "is_ic_significant_after_bonferroni": true,
+    "audit_verdict": "LightGBM generates genuine positive cross-sectional rank alpha (p < 0.0001, surviving Bonferroni correction), but headline portfolio returns were distorted by data transcription anomalies."
+  }
+}

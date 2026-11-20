@@ -1,0 +1,12 @@
+﻿step,column_affected,action_taken,rationale
+ANNOUNCEMENT_FILTER,has_recent_dividend,DROPPED_FROM_DATASET,Static Nov 2026 disclosure broadcast onto historical 2002-2025 rows violates point-in-time causality.
+ANNOUNCEMENT_FILTER,has_recent_rights_issue,DROPPED_FROM_DATASET,Static Nov 2026 disclosure broadcast onto historical 2002-2025 rows violates point-in-time causality.
+ANNOUNCEMENT_FILTER,has_recent_director_change,DROPPED_FROM_DATASET,Static Nov 2026 disclosure broadcast onto historical 2002-2025 rows violates point-in-time causality.
+ANNOUNCEMENT_FILTER,total_announcements_count,DROPPED_FROM_DATASET,Static Nov 2026 disclosure broadcast onto historical 2002-2025 rows violates point-in-time causality.
+PSAR_INTEGRATION,PSAR,COMPUTED_AND_APPENDED,Fulfills project requirement for Parabolic SAR trend tracking; verified 100% look-ahead free.
+PSAR_INTEGRATION,PSAR_Trend,COMPUTED_AND_APPENDED,Fulfills project requirement for Parabolic SAR trend tracking; verified 100% look-ahead free.
+PSAR_INTEGRATION,PSAR_Distance_Pct,COMPUTED_AND_APPENDED,Fulfills project requirement for Parabolic SAR trend tracking; verified 100% look-ahead free.
+PSAR_INTEGRATION,PSAR_Flip,COMPUTED_AND_APPENDED,Fulfills project requirement for Parabolic SAR trend tracking; verified 100% look-ahead free.
+OPEN_PRICE_HANDLING,Open,FLAGGED_WITH_HAS_VALID_OPEN,Pre-2011 CSE Daily Shares Price Lists omitted Open. Retained original Open without forward-filling; added 'has_valid_open' indicator.
+OPEN_PRICE_HANDLING,Volume_Breakout_Interday,CREATED_ROBUST_ALTERNATIVE,Computes volume breakout using Close > Close[-1] to avoid false negative zeroes pre-2011.
+BENCHMARK_ALIGNMENT,"ASPI, ASPI_Fwd_Return_5d, ASPI_Fwd_Return_20d, ASPI_Fwd_Return_60d",MERGED_FROM_OFFICIAL_CSE_INDEX,Enables exact calculation of top-10 stock excess return over market benchmark.

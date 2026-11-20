@@ -1,0 +1,35 @@
+{
+  "generated_at_utc": "2026-11-13T07:25:39.616737+00:00",
+  "total_disclosures_assessed": 80,
+  "total_companies_covered": 78,
+  "total_financial_facts_final": 2453,
+  "duplicate_facts_deduplicated": 0,
+  "validation_status_breakdown": {
+    "ok": 2382,
+    "review": 71
+  },
+  "audit_disposition_breakdown": {
+    "verified_valid": 2314,
+    "financial_risk_negative_ocf": 44,
+    "requires_manual_verification": 67,
+    "accounting_presentation_difference": 24,
+    "financial_risk_negative_equity": 4
+  },
+  "balance_sheet_reconciliation_summary": {
+    "total_balance_sheets_evaluated": 140,
+    "reconciliation_breakdown": {
+      "reconciled_exact": 96,
+      "unreconciled_review": 21,
+      "reconciled_with_nci": 8,
+      "reconciled_within_tolerance": 15
+    },
+    "reconciliation_success_rate": "85.0%"
+  },
+  "coverage_summary": {
+    "total_securities_in_universe": 331,
+    "covered_full_or_core": 75,
+    "missing_in_current_interim_cycle": 0,
+    "unresolved_extraction": 0,
+    "inactive_or_delisted": 0
+  }
+}

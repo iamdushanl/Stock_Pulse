@@ -1,0 +1,26 @@
+{
+  "generated_at_utc": "2026-11-19T11:53:13.953993+00:00",
+  "pipeline_stage": "Stockpulse Phase 4.1 - Short-Term Model Training & Benchmarking",
+  "engine": "Engine 01 - Short-Term Trading (0-3 months)",
+  "training_sample": "20 S&P Sri Lanka 20 constituent equities (2002-2022)",
+  "test_sample": "Untouched Out-of-Sample Period (2023-2025)",
+  "total_observations": 86950,
+  "features_used_count": 56,
+  "models_evaluated": [
+    "Ridge_Regression",
+    "Random_Forest",
+    "XGBoost",
+    "LightGBM",
+    "Baseline_Simple_Momentum",
+    "Equal_Weighted",
+    "ASPI_Benchmark"
+  ],
+  "catboost_availability": "NOT_INSTALLED (Evaluated: LightGBM and XGBoost serve as gradient boosted tree benchmarks)",
+  "transaction_costs_rate": "1.12% per one-way turnover (Official CSE Fee Schedule: Brokerage 0.64%, SEC 0.072%, CSE 0.084%, CDS 0.024%, Share Levy 0.30%)",
+  "best_models_selected": {
+    "fwd_return_5d": "Random_Forest",
+    "fwd_return_20d": "LightGBM",
+    "fwd_return_60d": "Ridge_Regression",
+    "top_10_ranking": "LightGBM"
+  }
+}

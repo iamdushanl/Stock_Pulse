@@ -1,0 +1,4 @@
+calendar_year,trading_days,lightgbm_20d_net_return_pct,random_forest_5d_net_return_pct,ridge_60d_net_return_pct,simple_momentum_net_return_pct,aspi_benchmark_return_pct,lightgbm_excess_over_aspi_pct
+2023 (AUDIT NOTE),0,N/A - DATA MISSING,N/A - DATA MISSING,N/A - DATA MISSING,N/A - DATA MISSING,N/A - DATA MISSING,Upstream dataset contains zero rows for 2023. Test window effectively spans 2024-2025.
+2024,240,64.71,99.97,68.75,8.79,49.23,15.48
+2025,238,43.67,32.43,86.45,4.75,38.39,5.28

@@ -1,0 +1,805 @@
+{
+  "generated_at_utc": "2026-11-13T06:42:08.659560+00:00",
+  "total_pdfs_in_scope": 80,
+  "total_pdfs_processed_successfully": 69,
+  "total_pdfs_failed_or_scanned": 11,
+  "unique_companies_covered": 68,
+  "total_facts_extracted": 1876,
+  "duplicate_facts_detected_and_deduplicated": 1252,
+  "validation_status_breakdown": {
+    "ok": 1776,
+    "review": 100
+  },
+  "review_flags_count": 34,
+  "review_flags": [
+    {
+      "symbol": "WIND",
+      "company_code": "53540",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (64,671,548,594) != Liab (6,073,203,650) + Eq (27,000,384,936). Diff=31,597,960,008",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "WIND",
+      "company_code": "53540",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (44,082,043,817) != Liab (5,737,359,430) + Eq (25,388,415,989). Diff=12,956,268,398",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "UDPL",
+      "company_code": "53516",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (9,805,266) != Liab (3,903,118) + Eq (5,427,548). Diff=474,600",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "UDPL",
+      "company_code": "53516",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (9,403,989) != Liab (3,774,095) + Eq (5,165,373). Diff=464,521",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "TSML",
+      "company_code": "53512",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (2,799,517) != Liab (636,694) + Eq (1,878,446). Diff=284,377",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "RCL",
+      "company_code": "53498",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (37,946,260) != Liab (36,201,720) + Eq (25,721,938). Diff=23,977,398",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "RCL",
+      "company_code": "53498",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (37,147,448) != Liab (37,397,748) + Eq (25,093,214). Diff=25,343,514",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "CPRT",
+      "company_code": "53491",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (17,818,749) != Liab (53,893,280) + Eq (-37,774,904). Diff=1,700,373",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "CPRT",
+      "company_code": "53491",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (15,215,393) != Liab (48,797,400) + Eq (-35,386,145). Diff=1,804,138",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "JETS",
+      "company_code": "53469",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (6,032) != Liab (4,704) + Eq (4,789,210). Diff=4,787,882",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "JETS",
+      "company_code": "53469",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (6,326,093) != Liab (1,795) + Eq (6,324). Diff=6,317,974",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "SMOT",
+      "company_code": "53463",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (12,843,962,741) != Liab (4,687,650,248) + Eq (6,110,282,304). Diff=2,046,030,189",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "SMOT",
+      "company_code": "53463",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (6,812,849,114) != Liab (8,122,994,454) + Eq (4,720,968,287). Diff=6,031,113,627",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "TJL",
+      "company_code": "53433",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (64,568,626) != Liab (30,743,141) + Eq (64,568,626). Diff=30,743,141",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "TJL",
+      "company_code": "53433",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (55,171,681) != Liab (23,725,655) + Eq (55,171,681). Diff=23,725,655",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "CTHR",
+      "company_code": "53421",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (162,953,077) != Liab (107,293,177) + Eq (39,378,358). Diff=16,281,542",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "CTHR",
+      "company_code": "53421",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (158,253,542) != Liab (104,558,962) + Eq (37,293,001). Diff=16,401,579",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "EBCR",
+      "company_code": "53420",
+      "flag": "GROSS_PROFIT_EXCEEDS_REVENUE",
+      "detail": "Current Gross Profit (2,730,845) > Revenue (1)",
+      "metric": "gross_profit",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "KCAB",
+      "company_code": "53411",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (19,983,779) != Liab (3,737,484) + Eq (19,983,779). Diff=3,737,484",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "KCAB",
+      "company_code": "53411",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (19,233,116) != Liab (3,920,709) + Eq (19,233,116). Diff=3,920,709",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "LWL",
+      "company_code": "53409",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (64,748,913) != Liab (19,422,816) + Eq (22,690,168). Diff=22,635,929",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "LWL",
+      "company_code": "53409",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (61,395,917) != Liab (20,541,781) + Eq (22,320,085). Diff=18,534,051",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "PARQ",
+      "company_code": "53402",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (16,846,655) != Liab (11,808,508) + Eq (4,250,409). Diff=787,738",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "PARQ",
+      "company_code": "53402",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (14,760,612) != Liab (10,163,128) + Eq (3,887,130). Diff=710,354",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "ONAL",
+      "company_code": "53396",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (6,823,797) != Liab (2,166,451) + Eq (6,823,797). Diff=2,166,451",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "ONAL",
+      "company_code": "53396",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (6,760,347) != Liab (2,090,706) + Eq (6,760,347). Diff=2,090,706",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "HHL",
+      "company_code": "53394",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (129,973,617) != Liab (20,923,115) + Eq (57,576,846). Diff=51,473,656",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "HHL",
+      "company_code": "53394",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (100,153,720) != Liab (11,804,677) + Eq (50,951,929). Diff=37,397,114",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "TAP",
+      "company_code": "53376",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (38,565,270) != Liab (3,803) + Eq (6,758,171). Diff=31,803,296",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "TAP",
+      "company_code": "53376",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (39,988,563) != Liab (3,803) + Eq (8,658,875). Diff=31,325,885",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "MULL",
+      "company_code": "53375",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (585,445) != Liab (500,395) + Eq (-164,950). Diff=250,000",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "MULL",
+      "company_code": "53375",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (565,603) != Liab (451,009) + Eq (-135,406). Diff=250,000",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "GREG",
+      "company_code": "53374",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Current balance sheet mismatch: Assets (28,629,888) != Liab (3,803) + Eq (11,986,313). Diff=16,639,772",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    },
+    {
+      "symbol": "GREG",
+      "company_code": "53374",
+      "flag": "BS_EQUATION_MISMATCH",
+      "detail": "Comparative balance sheet mismatch: Assets (32,970,048) != Liab (3,803) + Eq (13,498,127). Diff=19,468,118",
+      "metric": "balance_sheet_equation",
+      "validation_status": "review"
+    }
+  ],
+  "financial_risk_observations_count": 47,
+  "financial_risk_observations": [
+    {
+      "symbol": "SIL",
+      "company_name": "SAMSON INTERNATIONAL PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -29280.0,
+      "detail": "Negative cash flow generated from operations: -29,280"
+    },
+    {
+      "symbol": "KPHL",
+      "company_name": "KAPRUKA HOLDINGS PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -42593018.0,
+      "detail": "Negative cash flow generated from operations: -42,593,018"
+    },
+    {
+      "symbol": "CARE",
+      "company_name": "PRINTCARE  PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -336613.0,
+      "detail": "Negative cash flow generated from operations: -336,613"
+    },
+    {
+      "symbol": "WIND",
+      "company_name": "WINDFORCE PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -6989578100.0,
+      "detail": "Negative cash flow generated from operations: -6,989,578,100"
+    },
+    {
+      "symbol": "ASCO",
+      "company_name": "LANKA REALTY INVESTMENTS PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -241252.0,
+      "detail": "Negative cash flow generated from operations: -241,252"
+    },
+    {
+      "symbol": "ASCO",
+      "company_name": "LANKA REALTY INVESTMENTS PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -30866.0,
+      "detail": "Negative cash flow generated from operations: -30,866"
+    },
+    {
+      "symbol": "ECL",
+      "company_name": "E-CHANNELLING PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -2701398.0,
+      "detail": "Negative cash flow generated from operations: -2,701,398"
+    },
+    {
+      "symbol": "RCL",
+      "company_name": "ROYAL CERAMICS LANKA PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -872565.0,
+      "detail": "Negative cash flow generated from operations: -872,565"
+    },
+    {
+      "symbol": "PMB",
+      "company_name": "PMF FINANCE PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -652147.0,
+      "detail": "Negative cash flow generated from operations: -652,147"
+    },
+    {
+      "symbol": "PMB",
+      "company_name": "PMF FINANCE PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -2165862.0,
+      "detail": "Negative cash flow generated from operations: -2,165,862"
+    },
+    {
+      "symbol": "CPRT",
+      "company_name": "KERNER HAUS GLOBAL SOLUTIONS PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_EQUITY",
+      "metric": "total_equity",
+      "value": -37774904.0,
+      "detail": "Company has negative total equity (accumulated losses exceed capital): -37,774,904"
+    },
+    {
+      "symbol": "CPRT",
+      "company_name": "KERNER HAUS GLOBAL SOLUTIONS PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -1448843.0,
+      "detail": "Negative cash flow generated from operations: -1,448,843"
+    },
+    {
+      "symbol": "CPRT",
+      "company_name": "KERNER HAUS GLOBAL SOLUTIONS PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_EQUITY",
+      "metric": "total_equity",
+      "value": -35386145.0,
+      "detail": "Company has negative total equity (accumulated losses exceed capital): -35,386,145"
+    },
+    {
+      "symbol": "CFIN",
+      "company_name": "CENTRAL FINANCE COMPANY PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -2725979.0,
+      "detail": "Negative cash flow generated from operations: -2,725,979"
+    },
+    {
+      "symbol": "CFIN",
+      "company_name": "CENTRAL FINANCE COMPANY PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -807373.0,
+      "detail": "Negative cash flow generated from operations: -807,373"
+    },
+    {
+      "symbol": "SINS",
+      "company_name": "SINGER (SRI LANKA) PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -3614031.0,
+      "detail": "Negative cash flow generated from operations: -3,614,031"
+    },
+    {
+      "symbol": "SINS",
+      "company_name": "SINGER (SRI LANKA) PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -9311674.0,
+      "detail": "Negative cash flow generated from operations: -9,311,674"
+    },
+    {
+      "symbol": "MSL",
+      "company_name": "MERCANTILE SHIPPING COMPANY PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -4735307.0,
+      "detail": "Negative cash flow generated from operations: -4,735,307"
+    },
+    {
+      "symbol": "MSL",
+      "company_name": "MERCANTILE SHIPPING COMPANY PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -972381.0,
+      "detail": "Negative cash flow generated from operations: -972,381"
+    },
+    {
+      "symbol": "ALHP",
+      "company_name": "ANILANA HOTELS AND PROPERTIES PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_EQUITY",
+      "metric": "total_equity",
+      "value": -703341634.0,
+      "detail": "Company has negative total equity (accumulated losses exceed capital): -703,341,634"
+    },
+    {
+      "symbol": "ALHP",
+      "company_name": "ANILANA HOTELS AND PROPERTIES PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -26229254.0,
+      "detail": "Negative cash flow generated from operations: -26,229,254"
+    },
+    {
+      "symbol": "PACK",
+      "company_name": "EX-PACK CORRUGATED CARTONS PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -126855.0,
+      "detail": "Negative cash flow generated from operations: -126,855"
+    },
+    {
+      "symbol": "PACK",
+      "company_name": "EX-PACK CORRUGATED CARTONS PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -324954.0,
+      "detail": "Negative cash flow generated from operations: -324,954"
+    },
+    {
+      "symbol": "SMOT",
+      "company_name": "SATHOSA MOTORS PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -1341917218.0,
+      "detail": "Negative cash flow generated from operations: -1,341,917,218"
+    },
+    {
+      "symbol": "CIND",
+      "company_name": "CENTRAL INDUSTRIES PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -288119.0,
+      "detail": "Negative cash flow generated from operations: -288,119"
+    },
+    {
+      "symbol": "COLO",
+      "company_name": "C M HOLDINGS PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -143852.0,
+      "detail": "Negative cash flow generated from operations: -143,852"
+    },
+    {
+      "symbol": "CTLD",
+      "company_name": "C T LAND DEVELOPMENT PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -190384.0,
+      "detail": "Negative cash flow generated from operations: -190,384"
+    },
+    {
+      "symbol": "CHOT",
+      "company_name": "CEYLON HOTELS CORPORATION PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -50747.0,
+      "detail": "Negative cash flow generated from operations: -50,747"
+    },
+    {
+      "symbol": "KHC",
+      "company_name": "THE KANDY HOTELS COMPANY (1938) PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -59358.0,
+      "detail": "Negative cash flow generated from operations: -59,358"
+    },
+    {
+      "symbol": "KHC",
+      "company_name": "THE KANDY HOTELS COMPANY (1938) PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -15179.0,
+      "detail": "Negative cash flow generated from operations: -15,179"
+    },
+    {
+      "symbol": "EBCR",
+      "company_name": "E B CREASY & COMPANY PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -1225944.0,
+      "detail": "Negative cash flow generated from operations: -1,225,944"
+    },
+    {
+      "symbol": "LWL",
+      "company_name": "LANKA WALLTILES PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -1607122.0,
+      "detail": "Negative cash flow generated from operations: -1,607,122"
+    },
+    {
+      "symbol": "TILE",
+      "company_name": "LANKA TILES PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -339024.0,
+      "detail": "Negative cash flow generated from operations: -339,024"
+    },
+    {
+      "symbol": "PARQ",
+      "company_name": "SWISSTEK (CEYLON) PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -2450009.0,
+      "detail": "Negative cash flow generated from operations: -2,450,009"
+    },
+    {
+      "symbol": "HHL",
+      "company_name": "HEMAS HOLDINGS PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -5197940.0,
+      "detail": "Negative cash flow generated from operations: -5,197,940"
+    },
+    {
+      "symbol": "UBF",
+      "company_name": "UB FINANCE PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -187396375.0,
+      "detail": "Negative cash flow generated from operations: -187,396,375"
+    },
+    {
+      "symbol": "WLTH",
+      "company_name": "WEALTHTRUST SECURITIES PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -1007644076.0,
+      "detail": "Negative cash flow generated from operations: -1,007,644,076"
+    },
+    {
+      "symbol": "WLTH",
+      "company_name": "WEALTHTRUST SECURITIES PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -943071388.0,
+      "detail": "Negative cash flow generated from operations: -943,071,388"
+    },
+    {
+      "symbol": "TAP",
+      "company_name": "AMBEON CAPITAL PLC ",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -1333965.0,
+      "detail": "Negative cash flow generated from operations: -1,333,965"
+    },
+    {
+      "symbol": "MULL",
+      "company_name": "MULLER AND PHIPPS (CEYLON) PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_EQUITY",
+      "metric": "total_equity",
+      "value": -164950.0,
+      "detail": "Company has negative total equity (accumulated losses exceed capital): -164,950"
+    },
+    {
+      "symbol": "MULL",
+      "company_name": "MULLER AND PHIPPS (CEYLON) PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_EQUITY",
+      "metric": "total_equity",
+      "value": -135406.0,
+      "detail": "Company has negative total equity (accumulated losses exceed capital): -135,406"
+    },
+    {
+      "symbol": "GREG",
+      "company_name": "AMBEON HOLDINGS PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -796102.0,
+      "detail": "Negative cash flow generated from operations: -796,102"
+    },
+    {
+      "symbol": "GREG",
+      "company_name": "AMBEON HOLDINGS PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -111171.0,
+      "detail": "Negative cash flow generated from operations: -111,171"
+    },
+    {
+      "symbol": "LUMX",
+      "company_name": "LUMINEX PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -201438165.0,
+      "detail": "Negative cash flow generated from operations: -201,438,165"
+    },
+    {
+      "symbol": "LUMX",
+      "company_name": "LUMINEX PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -356004238.0,
+      "detail": "Negative cash flow generated from operations: -356,004,238"
+    },
+    {
+      "symbol": "PHAR",
+      "company_name": "COLOMBO CITY HOLDINGS PLC",
+      "period": "Current",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -50185.0,
+      "detail": "Negative cash flow generated from operations: -50,185"
+    },
+    {
+      "symbol": "PHAR",
+      "company_name": "COLOMBO CITY HOLDINGS PLC",
+      "period": "Comparative",
+      "observation": "FINANCIAL_RISK_NEGATIVE_OPERATING_CASH_FLOW",
+      "metric": "operating_cashflow",
+      "value": -31552.0,
+      "detail": "Negative cash flow generated from operations: -31,552"
+    }
+  ],
+  "scanned_pages_count": 52,
+  "failed_documents_summary": [
+    {
+      "company_code": "53548",
+      "symbol": "BERU",
+      "company_name": "BERUWALA RESORTS PLC",
+      "source_pdf": "53548_1201_1794392093492.09.2026_Final.pdf",
+      "failure_reason": "No core financial facts extracted (IS=True, BS=True, CF=True)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53544",
+      "symbol": "MARA",
+      "company_name": "MARAWILA RESORTS PLC",
+      "source_pdf": "53544_564_1794389551070.09.2026_V2.pdf",
+      "failure_reason": "No core financial facts extracted (IS=True, BS=True, CF=True)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53537",
+      "symbol": "CIT",
+      "company_name": "COLOMBO INVESTMENT TRUST PLC",
+      "source_pdf": "53537_610_1794387950397.09.2026.pdf",
+      "failure_reason": "No core financial facts extracted (IS=True, BS=True, CF=True)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53523",
+      "symbol": "HAYC",
+      "company_name": "HAYCARB PLC",
+      "source_pdf": "53523_494_1794314107858.pdf",
+      "failure_reason": "No core financial facts extracted (IS=True, BS=False, CF=False)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53486",
+      "symbol": "ASHO",
+      "company_name": "LANKA ASHOK LEYLAND PLC",
+      "source_pdf": "53486_695_1794304453428.09.2026.pdf",
+      "failure_reason": "No core financial facts extracted (IS=True, BS=True, CF=True)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53479",
+      "symbol": "EML",
+      "company_name": "E M L CONSULTANTS PLC",
+      "source_pdf": "53479_2386_1794303113050.09.2026.pdf",
+      "failure_reason": "No core financial facts extracted (IS=True, BS=True, CF=False)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53455",
+      "symbol": "MGT",
+      "company_name": "HAYLEYS FABRIC PLC",
+      "source_pdf": "53455_403_1794219843336.pdf",
+      "failure_reason": "No core financial facts extracted (IS=True, BS=True, CF=True)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53431",
+      "symbol": "HEXP",
+      "company_name": "HAYLEYS FIBRE PLC",
+      "source_pdf": "53431_768_1793962588259.09.2026.pdf",
+      "failure_reason": "No core financial facts extracted (IS=True, BS=True, CF=True)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53390",
+      "symbol": "TKYO",
+      "company_name": "TOKYO CEMENT COMPANY (LANKA) PLC",
+      "source_pdf": "53390_688_1793870119340.pdf",
+      "failure_reason": "Entire PDF is scanned image (12/12 pages scanned)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53388",
+      "symbol": "CFI",
+      "company_name": "COLOMBO FORT INVESTMENTS PLC",
+      "source_pdf": "53388_609_1793871480191.09.2026.pdf",
+      "failure_reason": "No core financial facts extracted (IS=True, BS=True, CF=True)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    },
+    {
+      "company_code": "53384",
+      "symbol": "LHL",
+      "company_name": "THE LIGHTHOUSE HOTEL PLC",
+      "source_pdf": "53384_562_1793870278944.pdf",
+      "failure_reason": "Entire PDF is scanned image (14/14 pages scanned)",
+      "timestamp_utc": "2026-11-13T06:42:08.659560+00:00"
+    }
+  ]
+}
