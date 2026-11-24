@@ -1,0 +1,9 @@
+dataset,sample_rows,date_col,date_min_sampled,date_max_sampled,unique_companies_sampled,close_col,nan_close,zero_close,open_col,nan_open,open_pct_missing,duplicate_code_date,issue_summary,nan_pct,inf_count,duplicate_rows
+ZIP_1991-2000,2282,,unknown,unknown,-1,,-1.0,-1.0,,-1.0,-1.0,-1.0,,,,
+ZIP_2001-2010,5000,,unknown,unknown,-1,,-1.0,-1.0,,-1.0,-1.0,-1.0,,,,
+ZIP_2011-2020,5000,,unknown,unknown,-1,,-1.0,-1.0,,-1.0,-1.0,-1.0,,,,
+ZIP_2021-2025,5000,,unknown,unknown,-1,,-1.0,-1.0,,-1.0,-1.0,-1.0,,,,
+features_01_short_term_trading,86950,,2002-01-02 00:00:00,2025-12-31 00:00:00,20,,,,,,,,,1.27,0.0,0.0
+features_02_medium_term_growth,86950,,2002-01-02 00:00:00,2025-12-31 00:00:00,20,,,,,,,,HIGH_NAN,39.25,0.0,0.0
+features_03_long_term_wealth,86950,,2002-01-02 00:00:00,2025-12-31 00:00:00,20,,,,,,,,HIGH_NAN,53.98,0.0,0.0
+prepared_training_dataset,86950,,2002-01-02 00:00:00,2025-12-31 00:00:00,20,,,,,,,,,1.19,0.0,0.0

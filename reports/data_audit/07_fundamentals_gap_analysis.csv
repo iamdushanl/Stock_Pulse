@@ -1,0 +1,6 @@
+file,path,exists,status,rows,columns,col_names,summary,total_pdfs_found
+financial_facts_final,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\cse_live\phase2_extraction\financial_facts_final.csv,False,MISSING,,,,,
+balance_sheet_reconciliation,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\cse_live\phase2_extraction\balance_sheet_reconciliation.csv,True,OK,140.0,15.0,company_code|symbol|company_name|period_end|consolidation_scope|total_assets|total_liabilities|total_equity|non_controlling_interest|difference|difference_percentage|tolerance_used|validation_status|comparative_flag|notes,,
+validation_report_final,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\cse_live\phase2_extraction\validation_report_final.json,True,OK,1.0,9.0,,"{'generated_at_utc': '2026-11-13T07:25:39.616737+00:00', 'total_disclosures_assessed': 80, 'total_companies_covered': 78, 'total_financial_facts_final': 2453, 'duplicate_facts_deduplicated': 0, 'validation_status_breakdown': {'ok': 2382, 'review': 71}, 'audit_disposition_breakdown': {'verified_valid",
+extraction_summary,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\cse_live\phase2_extraction\extraction_summary.csv,False,MISSING,,,,,
+pdf_summary,,,INFO,,,,,90.0

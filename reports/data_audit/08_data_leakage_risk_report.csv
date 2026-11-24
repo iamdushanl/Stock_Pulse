@@ -1,0 +1,9 @@
+module,num_issues,severity,issues
+utils/features.py,0.0,LOW,none
+utils/targets.py,0.0,LOW,none
+utils/data_cleaning.py,0.0,LOW,none
+utils/data_loader.py,1.0,HIGH,STATIC_2025_FLAG
+technical_indicators_v2,1.0,MEDIUM,FUTURE_KEYWORD_IN_FEATURE(future_)
+phase3_feature_engineering,,UNKNOWN,code_not_read
+prepared_training_dataset.parquet,0.0,LOW,none
+features_01_short_term_trading.parquet,4.0,HIGH,"STATIC_COLS:['has_recent_dividend', 'has_recent_rights_issue', 'has_recent_director_change', 'total_announcements_count'];"

@@ -1,0 +1,9 @@
+priority,data_item,description,source,engines_benefited,estimated_effort,current_gap,blocking
+1,Full CSE universe daily prices,"OHLCV prices for all 281+ listed companies (not just SP20), 2001-2025",CSE Data Library / Bloomberg / Refinitiv,"1,2,3",High,Only 20 SP20 companies in Phase 3 feature matrices,True
+2,Historical financial statements (5-year series),"Annual/semi-annual IS, BS, CF for all companies, 2018-2024",CSE EDGAR / Annual Reports PDFs,"2,3",Very High,Only single-period snapshots from Phase 2 PDF extraction,True
+2,2023 trading data gap resolution,2023 appears missing from test dataset (zero rows confirmed in Phase 3.5),CSE Data Library historical archive,"1,2,3",Medium,Test set claims 2023-2025 but has zero 2023 rows,True
+3,Pre-2011 Open price data,Open prices missing for 60.56% of 2002-2011 observations,CSE Data Library / historical price vendors,"1,2,3",Medium,"ATR, NATR, PSAR rely on Open; pre-2011 technical indicators unreliable",False
+3,Analyst consensus estimates,"EPS estimates, target prices, buy/sell/hold consensus",Bloomberg / FactSet / Reuters,"1,2",High,No analyst data present in any dataset,False
+4,Macroeconomic indicators,"LKR interest rates, inflation (CCPI), GDP growth, USD/LKR FX","CBSL, World Bank, IMF","2,3",Low,No macro data in feature matrices,False
+4,Corporate action completeness verification,"Confirm all rights issues, splits, bonuses are captured and price-adjusted",CSE published corporate action notices,"1,2,3",Medium,"Bad ticks identified: COMB Aug 2024, JKH Sept-Nov 2024",False
+5,Sector/industry classification for all companies,GICS or CSESEC sector mapping for 281+ companies,"GICS-Daily.xlsx (exists for some), CSE website","1,2,3",Low,GICS available but coverage unknown beyond SP20,False

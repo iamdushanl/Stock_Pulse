@@ -1,0 +1,9 @@
+module,source,file_path,status,size_bytes,num_functions,has_psar,has_sma,has_rsi,has_macd,has_bollinger,has_atr,has_stochastic,groupby_isolated,uses_shift_neg,has_sort_before_roll,has_inf_guard,leakage_risk,notes
+technical_indicators_v2,local,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\phase3_5_validation\technical_indicators_v2.py,OK,4499.0,2.0,True,False,True,False,False,False,False,True,0.0,False,False,LOW,
+technical_indicators,local,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\phase3_feature_engineering\technical_indicators.py,OK,8959.0,1.0,False,True,True,True,True,True,True,True,0.0,True,False,LOW,PSAR_MISSING;
+phase3_feature_engineering,local,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\phase3_feature_engineering\phase3_feature_engineering.py,FILE_MISSING,,,,,,,,,,,,,,,
+github:utils/features.py,github,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\reports\data_audit\_tmp_features.py,OK,4504.0,2.0,False,True,True,True,True,True,True,True,0.0,False,True,LOW,PSAR_MISSING;
+github:utils/targets.py,github,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\reports\data_audit\_tmp_targets.py,OK,3037.0,2.0,False,True,False,False,False,False,False,True,3.0,False,True,MEDIUM,PSAR_MISSING;FORWARD_SHIFT_DETECTED;
+github:utils/data_cleaning.py,github,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\reports\data_audit\_tmp_data_cleaning.py,OK,7599.0,3.0,False,False,False,False,False,False,False,True,0.0,True,True,LOW,PSAR_MISSING;
+github:utils/data_loader.py,github,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\reports\data_audit\_tmp_data_loader.py,OK,49304.0,17.0,False,False,True,False,False,False,False,False,0.0,True,False,LOW,PSAR_MISSING;GROUPBY_BOUNDARY_RISK;
+github:utils/model_trainer.py,github,c:\Users\HP\Downloads\Stockpulse_CSE_Enrichment_Pack\reports\data_audit\_tmp_model_trainer.py,OK,3869.0,3.0,False,True,True,True,True,True,False,False,0.0,False,False,LOW,PSAR_MISSING;GROUPBY_BOUNDARY_RISK;
