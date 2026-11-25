@@ -3,16 +3,13 @@ import numpy as np
 
 def generate_technical_features(df):
     """
-    Generate technical indicators for the cleaned dataframe.
-    Calculations are applied per CompanyCode.
+    Generate technical indicators per distinct SecurityID (or CompanyCode if single-class).
     """
     print("Generating technical features...")
     df_feat = df.copy()
-    
-    # We will use pandas groupby and apply for calculating indicators per stock
-    # To optimize speed, we define a function to apply to each group
-    
-    def apply_indicators(group, company_code):
+    group_key = 'SecurityID' if 'SecurityID' in df_feat.columns else 'CompanyCode'
+
+    def apply_indicators(group, group_val):
         group = group.copy()
         
         # 1. Moving Averages
@@ -74,17 +71,14 @@ def generate_technical_features(df):
         # Volume ratio (current volume vs 20d average)
         group['Volume_Ratio'] = group['ShareVolume'] / group['Volume_SMA_20'].replace(0, np.nan)
         
-        # Explicitly restore CompanyCode
-        group['CompanyCode'] = company_code
+        # Explicitly preserve group identity key
+        group[group_key] = group_val
         
         return group
     
-    # Apply the function per company
-    # This might take a minute on a large dataset
-    # We loop over groupby to avoid Pandas index exclusion behavior and preserve CompanyCode
     clean_dfs = []
-    for company, group in df_feat.groupby('CompanyCode'):
-        processed_group = apply_indicators(group, company)
+    for key_val, group in df_feat.groupby(group_key):
+        processed_group = apply_indicators(group, key_val)
         clean_dfs.append(processed_group)
         
     df_feat = pd.concat(clean_dfs, ignore_index=True)

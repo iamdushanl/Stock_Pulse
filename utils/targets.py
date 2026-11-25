@@ -53,10 +53,11 @@ def generate_targets(df):
         
         return group
         
+    group_key = 'SecurityID' if 'SecurityID' in df_targets.columns else 'CompanyCode'
     target_dfs = []
-    for company, group in df_targets.groupby('CompanyCode'):
+    for key_val, group in df_targets.groupby(group_key):
         processed_group = apply_targets(group)
-        processed_group['CompanyCode'] = company
+        processed_group[group_key] = key_val
         target_dfs.append(processed_group)
         
     df_targets = pd.concat(target_dfs, ignore_index=True)

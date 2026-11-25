@@ -23,10 +23,11 @@ import os
 import warnings
 import zipfile
 from pathlib import Path
-from typing import Optional, Union
+from typing import Iterator, Optional, Sequence, Union
 
 import numpy as np
 import pandas as pd
+import pyarrow.parquet as pq
 
 try:
     from tqdm.auto import tqdm
@@ -38,12 +39,28 @@ except ImportError:
 logger = logging.getLogger(__name__)
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Constants
+# Constants & Configurable Paths
 # ══════════════════════════════════════════════════════════════════════════════
 
-DEFAULT_BASE_PATH = r"c:\Users\HP\Documents\Stock_pulse\Dataset\2025 Q4"
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_RAW_SOURCE_PATH = str(_REPO_ROOT / "01_existing_cse_sources")
+DEFAULT_PHASE1_PATH = os.environ.get(
+    "STOCKPULSE_PHASE1_DIR",
+    str(_REPO_ROOT / "Dataset" / "processed" / "phase1"),
+)
+DEFAULT_PHASE1B_PATH = os.environ.get(
+    "STOCKPULSE_PHASE1B_DIR",
+    str(_REPO_ROOT / "Dataset" / "processed" / "phase1b"),
+)
+DEFAULT_BASE_PATH = DEFAULT_RAW_SOURCE_PATH
 BASE_PATH = DEFAULT_BASE_PATH  # Convenience alias used by notebooks
-CACHE_FILENAME = "consolidated_daily_prices.parquet"
+CACHE_FILENAME = "cse_daily_prices_validated.parquet"
+
+_REQUIRED_PRICE_COLUMNS = [
+    "Date", "CompanyCode", "MainType", "SubType",
+    "Open", "High", "Low", "Close",
+    "TradeVolume", "ShareVolume", "Turnover", "Era",
+]
 
 # ZIP archive definitions — (zip_name, internal_subfolder)
 ZIP_CONFIGS = [
@@ -67,7 +84,7 @@ ZIP_CONFIGS = [
 
 # Unified output columns for load_all_daily_prices()
 UNIFIED_COLUMNS = [
-    "Date", "CompanyCode", "ShortName", "MainType", "SubType",
+    "Date", "CompanyCode", "SecurityID", "ShortName", "MainType", "SubType",
     "Open", "High", "Low", "Close",
     "TradeVolume", "ShareVolume", "Turnover", "Era",
 ]
@@ -77,12 +94,80 @@ UNIFIED_COLUMNS = [
 # Internal Helpers
 # ══════════════════════════════════════════════════════════════════════════════
 
-def _resolve_base(base_path: Optional[str] = None) -> Path:
-    """Resolve and validate the dataset base directory."""
-    p = Path(base_path) if base_path else Path(DEFAULT_BASE_PATH)
+def _resolve_base(base_path: Optional[Union[str, Path]] = None) -> Path:
+    """Resolve and validate the raw CSE dataset source directory (never silently falls back)."""
+    p = Path(base_path) if base_path is not None else Path(DEFAULT_BASE_PATH)
     if not p.exists():
-        raise FileNotFoundError(f"Dataset directory not found: {p}")
+        raise FileNotFoundError(
+            f"CSE dataset directory not found: {p}. "
+            "No silent fallback to SP20 is permitted."
+        )
     return p
+
+
+def _resolve_parquet_path(
+    path: Optional[Union[str, Path]],
+    default_dir: str,
+    filename: str,
+) -> Path:
+    """Resolve a Parquet file path from an explicit file, directory, or configured Phase directory."""
+    if path is None:
+        candidate = Path(default_dir) / filename
+    else:
+        p = Path(path)
+        candidate = p if p.suffix.lower() == ".parquet" else (p / filename)
+
+    if not candidate.exists():
+        raise FileNotFoundError(
+            f"Required Phase dataset not found: {candidate}. "
+            "Run Phase 1A/1B reconstruction or pass an explicit path; silent SP20 fallback is disabled."
+        )
+    return candidate
+
+
+def _parse_date_arg(val: Optional[Union[str, pd.Timestamp]], param_name: str) -> Optional[pd.Timestamp]:
+    """Validate and parse an optional date filter boundary."""
+    if val is None:
+        return None
+    ts = pd.to_datetime(val, errors="coerce")
+    if pd.isna(ts):
+        raise ValueError(f"Invalid date for '{param_name}': {val!r}")
+    return pd.Timestamp(ts)
+
+
+def _normalize_str_filter(
+    values: Optional[Union[str, Sequence[str]]],
+    param_name: str,
+) -> Optional[list[str]]:
+    """Validate and normalize string list filters."""
+    if values is None:
+        return None
+    if isinstance(values, str):
+        items = [values.strip().upper()]
+    elif isinstance(values, (list, tuple, set, pd.Index, np.ndarray)):
+        items = [str(v).strip().upper() for v in values]
+    else:
+        raise TypeError(f"'{param_name}' must be a string or sequence of strings")
+    items = [v for v in items if v]
+    if not items:
+        raise ValueError(f"'{param_name}' filter cannot be empty")
+    return sorted(set(items))
+
+
+def _ensure_security_id(df: pd.DataFrame) -> pd.DataFrame:
+    """Attach canonical SecurityID = '<CompanyCode>-<MainType>-<SubType>' without dropping classes."""
+    if df.empty:
+        if "SecurityID" not in df.columns:
+            df = df.copy()
+            df["SecurityID"] = pd.Series(dtype="object")
+        return df
+    if "SecurityID" not in df.columns:
+        df = df.copy()
+        code = df["CompanyCode"].astype(str).str.strip().str.upper()
+        mtype = df["MainType"].fillna("N").astype(str).str.strip().str.upper()
+        stype = df["SubType"].fillna("0000").astype(str).str.strip()
+        df["SecurityID"] = code + "-" + mtype + "-" + stype
+    return df
 
 
 def _read_excel_or_csv(file_bytes: bytes, filename: str,
@@ -303,55 +388,291 @@ def _parse_modern_era_file(file_bytes: bytes, filename: str) -> pd.DataFrame:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Main Daily Prices Loader
+# Phase 1A / Phase 1B Full CSE Dataset Loaders (Primary API)
+# ══════════════════════════════════════════════════════════════════════════════
+
+def _filter_daily_prices_frame(
+    df: pd.DataFrame,
+    companies_list: Optional[list[str]],
+    sec_types_list: Optional[list[str]],
+    sec_ids_list: Optional[list[str]],
+    start_ts: Optional[pd.Timestamp],
+    end_ts: Optional[pd.Timestamp],
+) -> pd.DataFrame:
+    """Apply consistent filtering and type preservation to a daily prices DataFrame."""
+    df["Date"] = pd.to_datetime(df["Date"])
+    df = _ensure_security_id(df)
+    mask = pd.Series(True, index=df.index)
+    if companies_list is not None:
+        mask &= df["CompanyCode"].astype(str).str.upper().isin(companies_list)
+    if sec_types_list is not None:
+        mask &= df["MainType"].astype(str).str.upper().isin(sec_types_list)
+    if sec_ids_list is not None:
+        mask &= df["SecurityID"].astype(str).str.upper().isin(sec_ids_list)
+    if start_ts is not None:
+        mask &= df["Date"] >= start_ts
+    if end_ts is not None:
+        mask &= df["Date"] <= end_ts
+    return df.loc[mask].reset_index(drop=True)
+
+
+def load_cse_daily_prices(
+    companies: Optional[Union[str, Sequence[str]]] = None,
+    start_date: Optional[Union[str, pd.Timestamp]] = None,
+    end_date: Optional[Union[str, pd.Timestamp]] = None,
+    security_types: Optional[Union[str, Sequence[str]]] = None,
+    security_ids: Optional[Union[str, Sequence[str]]] = None,
+    path: Optional[Union[str, Path]] = None,
+    columns: Optional[Sequence[str]] = None,
+    incremental_by_year: bool = False,
+    chunk_size: Optional[int] = None,
+) -> Union[pd.DataFrame, Iterator[pd.DataFrame]]:
+    """
+    Load the full reconstructed CSE historical daily prices dataset from
+    ``Dataset/processed/phase1/cse_daily_prices_validated.parquet`` (or an explicit path).
+
+    Preserves all share classes (N, X, R, W, P, D, B, U) and delisted securities.
+    Never silently falls back to the SP20 subset.
+    """
+    if incremental_by_year and chunk_size is not None:
+        raise ValueError("Specify at most one of 'incremental_by_year' or 'chunk_size'")
+    if chunk_size is not None and (not isinstance(chunk_size, int) or chunk_size <= 0):
+        raise ValueError(f"'chunk_size' must be a positive integer, got {chunk_size!r}")
+
+    parquet_path = _resolve_parquet_path(path, DEFAULT_PHASE1_PATH, CACHE_FILENAME)
+    companies_list = _normalize_str_filter(companies, "companies")
+    sec_types_list = _normalize_str_filter(security_types, "security_types")
+    sec_ids_list   = _normalize_str_filter(security_ids, "security_ids")
+    start_ts = _parse_date_arg(start_date, "start_date")
+    end_ts   = _parse_date_arg(end_date, "end_date")
+    if start_ts is not None and end_ts is not None and start_ts > end_ts:
+        raise ValueError(f"start_date ({start_ts.date()}) must be <= end_date ({end_ts.date()})")
+
+    schema = pq.read_schema(parquet_path)
+    schema_cols = set(schema.names)
+    missing_req = [c for c in _REQUIRED_PRICE_COLUMNS if c not in schema_cols]
+    if missing_req:
+        raise ValueError(
+            f"Daily prices Parquet {parquet_path} failed schema validation; missing: {missing_req}"
+        )
+
+    read_cols = None
+    if columns is not None:
+        read_cols = list(columns)
+        # Ensure filter & identity keys exist for filtering, then project back cleanly
+        internal_needed = []
+        for req in ("Date", "CompanyCode", "MainType", "SubType"):
+            if req not in read_cols and req in schema_cols:
+                internal_needed.append(req)
+        unknown = [c for c in read_cols if c not in schema_cols and c != "SecurityID"]
+        if unknown:
+            raise ValueError(f"Requested unknown column(s): {unknown}")
+        pq_cols = [c for c in dict.fromkeys(read_cols + internal_needed) if c in schema_cols]
+    else:
+        pq_cols = None
+
+    pa_filters = []
+    if companies_list is not None:
+        pa_filters.append(("CompanyCode", "in", companies_list))
+    if sec_types_list is not None:
+        pa_filters.append(("MainType", "in", sec_types_list))
+    if start_ts is not None:
+        pa_filters.append(("Date", ">=", start_ts))
+    if end_ts is not None:
+        pa_filters.append(("Date", "<=", end_ts))
+
+    def _project(frame: pd.DataFrame) -> pd.DataFrame:
+        if read_cols is not None:
+            return frame[read_cols].copy()
+        return frame
+
+    if incremental_by_year:
+        def _iter_years() -> Iterator[pd.DataFrame]:
+            min_yr = start_ts.year if start_ts is not None else 1990
+            max_yr = end_ts.year if end_ts is not None else 2030
+            if "Year" in schema_cols:
+                yrs_raw = pd.read_parquet(parquet_path, columns=["Year"])["Year"].dropna().unique()
+                years = sorted(int(y) for y in yrs_raw if min_yr <= int(y) <= max_yr)
+            else:
+                years = list(range(min_yr, max_yr + 1))
+            for yr in years:
+                yr_filters = pa_filters + ([("Year", "==", yr)] if "Year" in schema_cols else [])
+                chunk = pd.read_parquet(parquet_path, columns=pq_cols, filters=yr_filters or None)
+                chunk = _filter_daily_prices_frame(
+                    chunk, companies_list, sec_types_list, sec_ids_list, start_ts, end_ts
+                )
+                if not chunk.empty:
+                    yield _project(chunk)
+        return _iter_years()
+
+    if chunk_size is not None:
+        def _iter_chunks() -> Iterator[pd.DataFrame]:
+            pf = pq.ParquetFile(parquet_path)
+            for batch in pf.iter_batches(batch_size=chunk_size, columns=pq_cols):
+                chunk = batch.to_pandas()
+                chunk = _filter_daily_prices_frame(
+                    chunk, companies_list, sec_types_list, sec_ids_list, start_ts, end_ts
+                )
+                if not chunk.empty:
+                    yield _project(chunk)
+        return _iter_chunks()
+
+    df = pd.read_parquet(parquet_path, columns=pq_cols, filters=pa_filters or None)
+    df = _filter_daily_prices_frame(
+        df, companies_list, sec_types_list, sec_ids_list, start_ts, end_ts
+    )
+    return _project(df)
+
+
+def load_cse_security_master(
+    path: Optional[Union[str, Path]] = None,
+    active_status: Optional[str] = None,
+    companies: Optional[Union[str, Sequence[str]]] = None,
+) -> pd.DataFrame:
+    """Load Phase 1A/1B CSE security master (auto-prefers Phase 1B enriched master if explicitly pointed)."""
+    if path is None:
+        p1b = Path(DEFAULT_PHASE1B_PATH) / "cse_security_master_enriched.parquet"
+        p1a = Path(DEFAULT_PHASE1_PATH) / "cse_security_master.parquet"
+        target = p1a if p1a.exists() else p1b
+        if not target.exists():
+            raise FileNotFoundError(
+                f"Security master not found at {p1a} or {p1b}."
+            )
+    else:
+        p = Path(path)
+        target = p if p.suffix.lower() == ".parquet" else (p / "cse_security_master.parquet")
+        if not target.exists() and p.is_dir() and (p / "cse_security_master_enriched.parquet").exists():
+            target = p / "cse_security_master_enriched.parquet"
+        if not target.exists():
+            raise FileNotFoundError(f"Security master Parquet not found: {target}")
+
+    df = pd.read_parquet(target)
+    companies_list = _normalize_str_filter(companies, "companies")
+    if companies_list is not None:
+        df = df[df["CompanyCode"].astype(str).str.upper().isin(companies_list)]
+    if active_status is not None:
+        st_norm = active_status.strip().title()
+        if st_norm not in ("Listed", "Delisted"):
+            raise ValueError(f"active_status must be 'Listed' or 'Delisted', got {active_status!r}")
+        status_col = "HistoricalStatus" if "HistoricalStatus" in df.columns else "HistoricalActiveStatus"
+        df = df[df[status_col].astype(str).str.title() == st_norm]
+    return df.reset_index(drop=True)
+
+
+def load_cse_corporate_actions(
+    path: Optional[Union[str, Path]] = None,
+    action_category: Optional[Union[str, Sequence[str]]] = None,
+    companies: Optional[Union[str, Sequence[str]]] = None,
+    start_date: Optional[Union[str, pd.Timestamp]] = None,
+    end_date: Optional[Union[str, pd.Timestamp]] = None,
+) -> pd.DataFrame:
+    """Load CSE corporate actions dataset (defaults to Phase 1 cse_corporate_actions.parquet)."""
+    target = _resolve_parquet_path(path, DEFAULT_PHASE1_PATH, "cse_corporate_actions.parquet")
+    df = pd.read_parquet(target)
+    if action_category is not None:
+        cats = _normalize_str_filter(action_category, "action_category")
+        cat_col = "ActionCategory" if "ActionCategory" in df.columns else (
+            "actioncategory" if "actioncategory" in df.columns else "EventType"
+        )
+        df = df[df[cat_col].astype(str).str.upper().isin(cats)]
+    if companies is not None:
+        comps = _normalize_str_filter(companies, "companies")
+        if "CompanyCode" in df.columns:
+            df = df[df["CompanyCode"].astype(str).str.upper().isin(comps)]
+        elif "company id" in df.columns or "security" in df.columns:
+            sec_col = "company id" if "company id" in df.columns else "security"
+            codes = df[sec_col].astype(str).str.upper().str.split(r"[-.\s]").str[0]
+            df = df[codes.isin(comps)]
+    start_ts = _parse_date_arg(start_date, "start_date")
+    end_ts   = _parse_date_arg(end_date, "end_date")
+    if start_ts is not None and end_ts is not None and start_ts > end_ts:
+        raise ValueError(f"start_date ({start_ts.date()}) must be <= end_date ({end_ts.date()})")
+    if start_ts is not None or end_ts is not None:
+        dt_col = next((c for c in ("ExDate", "EffectiveDate", "effective date", "date of ex") if c in df.columns), None)
+        if dt_col is not None:
+            dts = pd.to_datetime(df[dt_col], errors="coerce")
+            if start_ts is not None:
+                df = df[dts >= start_ts]
+            if end_ts is not None:
+                df = df[dts <= end_ts]
+    return df.reset_index(drop=True)
+
+
+def load_cse_market_calendar(
+    path: Optional[Union[str, Path]] = None,
+    start_date: Optional[Union[str, pd.Timestamp]] = None,
+    end_date: Optional[Union[str, pd.Timestamp]] = None,
+) -> pd.DataFrame:
+    """Load verified CSE market trading calendar (1991–2025)."""
+    target = _resolve_parquet_path(path, DEFAULT_PHASE1_PATH, "cse_market_calendar.parquet")
+    df = pd.read_parquet(target)
+    df["Date"] = pd.to_datetime(df["Date"])
+    start_ts = _parse_date_arg(start_date, "start_date")
+    end_ts   = _parse_date_arg(end_date, "end_date")
+    if start_ts is not None and end_ts is not None and start_ts > end_ts:
+        raise ValueError(f"start_date ({start_ts.date()}) must be <= end_date ({end_ts.date()})")
+    if start_ts is not None:
+        df = df[df["Date"] >= start_ts]
+    if end_ts is not None:
+        df = df[df["Date"] <= end_ts]
+    return df.sort_values("Date").reset_index(drop=True)
+
+
+def load_sp20_daily_prices(
+    base_path: Optional[Union[str, Path]] = None,
+    adjusted: bool = True,
+) -> pd.DataFrame:
+    """
+    Explicitly load the legacy 20-company SP20 Excel dataset for historical comparison only.
+    Never called as a fallback by load_cse_daily_prices() or load_all_daily_prices().
+    """
+    base = _resolve_base(base_path)
+    fname = "SP20_CSE_Dataset_2001_2025_Adjusted.xlsx" if adjusted else "SP20_CSE_Dataset_2001_2025.xlsx"
+    fpath = base / fname
+    if not fpath.exists():
+        raise FileNotFoundError(f"Explicit SP20 dataset not found: {fpath}")
+    logger.info("Explicitly loading historical SP20 comparison dataset: %s", fpath)
+    df = pd.read_excel(fpath, sheet_name="Full_Dataset_2001_2025", engine="openpyxl")
+    df["Date"] = pd.to_datetime(df["Date"])
+    return df
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Main Daily Prices Loader (Phase 1 Parquet Primary; Legacy Raw ZIP Compatible)
 # ══════════════════════════════════════════════════════════════════════════════
 
 def load_all_daily_prices(
-    base_path: Optional[str] = None,
+    base_path: Optional[Union[str, Path]] = None,
     force_reload: bool = False,
-    cache_path: Optional[str] = None,
+    cache_path: Optional[Union[str, Path]] = None,
 ) -> pd.DataFrame:
     """
-    Load all daily share prices from CSE ZIP archives (1991–2025).
+    Load all daily share prices across the full CSE universe (1990–2025).
 
-    Checks for a Parquet cache first.  If the cache exists and
-    ``force_reload`` is False, the cached DataFrame is returned
-    immediately.  Otherwise, all ZIPs are parsed and the result is
-    cached to Parquet.
-
-    Parameters
-    ----------
-    base_path : str or None
-        Path to the ``Dataset`` directory.  Defaults to
-        ``DEFAULT_BASE_PATH``.
-    force_reload : bool, default False
-        If True, ignore the cache and re-parse everything.
-    cache_path : str or None
-        Override the default Parquet cache path.
-
-    Returns
-    -------
-    pd.DataFrame
-        Unified daily prices with columns defined by
-        :data:`UNIFIED_COLUMNS`.
+    By default (when ``cache_path`` or Phase 1 Parquet is available and ``force_reload``
+    is False), loads ``Dataset/processed/phase1/cse_daily_prices_validated.parquet``.
+    Explicit ``base_path`` validation raises ``FileNotFoundError`` if missing;
+    never silently falls back to the 20-company SP20 Excel dataset.
     """
+    if cache_path is not None:
+        return load_cse_daily_prices(path=cache_path)
+
+    if base_path is None and not force_reload:
+        return load_cse_daily_prices()
+
     base = _resolve_base(base_path)
-    parquet_path = Path(cache_path) if cache_path else base / CACHE_FILENAME
+    if not force_reload and (base / CACHE_FILENAME).exists():
+        return load_cse_daily_prices(path=base / CACHE_FILENAME)
 
-    # ── Try cache ──
-    if not force_reload and parquet_path.exists():
-        logger.info("Loading cached daily prices from %s", parquet_path)
-        print(f"📦 Loading cached data from {parquet_path.name}...")
-        df = pd.read_parquet(parquet_path)
-        print(f"   ✅ Loaded {len(df):,} rows, "
-              f"{df['CompanyCode'].nunique():,} companies")
-        return df
+    parquet_path = Path(DEFAULT_PHASE1_PATH) / CACHE_FILENAME
+    if not force_reload and base == Path(DEFAULT_RAW_SOURCE_PATH) and parquet_path.exists():
+        return load_cse_daily_prices(path=parquet_path)
 
-    # ── Parse all ZIPs ──
-    print("🔄 Parsing daily price files from ZIP archives...")
+    # Otherwise parse raw ZIPs from ``base`` explicitly (never fall back to SP20)
+    logger.info("Parsing daily price files from ZIP archives in %s...", base)
     all_frames: list[pd.DataFrame] = []
 
-    for zip_name, subfolder in tqdm(ZIP_CONFIGS, desc="ZIP archives"):
+    for zip_name, _ in tqdm(ZIP_CONFIGS, desc="ZIP archives"):
         zip_path = base / zip_name
         if not zip_path.exists():
             logger.warning("ZIP not found: %s", zip_path)
@@ -361,7 +682,6 @@ def load_all_daily_prices(
 
         try:
             with zipfile.ZipFile(zip_path, "r") as zf:
-                # List data files inside the ZIP (filter to xls/xlsx/csv)
                 data_files = [
                     name for name in zf.namelist()
                     if (
@@ -371,9 +691,7 @@ def load_all_daily_prices(
                     )
                 ]
 
-                for fname in tqdm(data_files,
-                                  desc=f"  {zip_name[:40]}",
-                                  leave=False):
+                for fname in tqdm(data_files, desc=f"  {zip_name[:40]}", leave=False):
                     try:
                         raw = zf.read(fname)
                         basename = os.path.basename(fname)
@@ -385,100 +703,28 @@ def load_all_daily_prices(
 
                         if not df.empty:
                             all_frames.append(df)
-                            logger.info(
-                                "  Parsed %s: %d rows", basename, len(df),
-                            )
-
                     except Exception as e:
-                        logger.warning(
-                            "  ⚠ Failed to parse %s: %s", fname, e,
-                        )
+                        logger.warning("Failed to parse %s: %s", fname, e)
                         continue
-
-        except zipfile.BadZipFile:
-            logger.error("Bad ZIP file: %s", zip_path)
-            continue
         except Exception as e:
             logger.error("Error processing ZIP %s: %s", zip_path, e)
             continue
 
     if not all_frames:
-        logger.error("No data loaded from any ZIP archive!")
-        return pd.DataFrame(columns=UNIFIED_COLUMNS)
+        raise RuntimeError(
+            f"No daily price records parsed from raw archives in {base}. "
+            "Use load_sp20_daily_prices() explicitly if SP20 comparison is desired."
+        )
 
-    # ── Concatenate ──
-    print("🔗 Concatenating all price data...")
     combined = pd.concat(all_frames, ignore_index=True)
-
-    # ── Clean-up ──
     combined["Date"] = pd.to_datetime(combined["Date"], errors="coerce")
     combined = combined.dropna(subset=["Date", "CompanyCode"])
-
-    # ── BUG FIX: Remove dates before 1991 (Unix epoch junk) ──
-    pre_1991 = combined["Date"] < "1991-01-01"
-    if pre_1991.any():
-        logger.warning(
-            "Removing %d rows with Date < 1991-01-01 (epoch junk)",
-            pre_1991.sum(),
-        )
-        combined = combined[~pre_1991]
-
-    # ── BUG FIX: Remove junk CompanyCodes ──
-    junk_codes = {"rows", "nan", "none", "null", ""}
-    junk_mask = combined["CompanyCode"].str.lower().str.strip().isin(junk_codes)
-    if junk_mask.any():
-        logger.warning(
-            "Removing %d rows with junk CompanyCode values",
-            junk_mask.sum(),
-        )
-        combined = combined[~junk_mask]
-
-    # ── BUG FIX: Drop rows where Close is NaN ──
-    close_na = combined["Close"].isna()
-    if close_na.any():
-        logger.warning(
-            "Removing %d rows with NaN Close price", close_na.sum()
-        )
-        combined = combined[~close_na]
-
-    # ── BUG FIX: Deduplicate (Date, CompanyCode) pairs ──
-    # Keep the entry with the highest ShareVolume (primary share class)
-    before_dedup = len(combined)
-    combined["_sort_vol"] = combined["ShareVolume"].fillna(0)
-    combined = combined.sort_values(
-        ["CompanyCode", "Date", "_sort_vol"], ascending=[True, True, False]
-    )
+    combined = combined[combined["Date"] >= "1990-01-01"]
+    combined = _ensure_security_id(combined)
     combined = combined.drop_duplicates(
-        subset=["Date", "CompanyCode"], keep="first"
+        subset=["CompanyCode", "Date", "MainType", "SubType"], keep="first"
     )
-    combined = combined.drop(columns=["_sort_vol"])
-    after_dedup = len(combined)
-    if before_dedup != after_dedup:
-        logger.warning(
-            "Deduplicated %d rows (kept highest-volume entry per day)",
-            before_dedup - after_dedup,
-        )
-
-    combined = combined.sort_values(["CompanyCode", "Date"]).reset_index(
-        drop=True
-    )
-
-    # Ensure correct column order
-    combined = combined[UNIFIED_COLUMNS]
-
-    # ── Save cache ──
-    try:
-        parquet_path.parent.mkdir(parents=True, exist_ok=True)
-        combined.to_parquet(parquet_path, index=False, engine="pyarrow")
-        print(f"💾 Cached to {parquet_path.name}")
-    except Exception as e:
-        logger.warning("Failed to write cache: %s", e)
-
-    print(f"✅ Loaded {len(combined):,} rows, "
-          f"{combined['CompanyCode'].nunique():,} companies, "
-          f"{combined['Date'].min().date()} – {combined['Date'].max().date()}")
-
-    return combined
+    return combined.sort_values(["CompanyCode", "Date"]).reset_index(drop=True)
 
 
 # ══════════════════════════════════════════════════════════════════════════════

@@ -47,8 +47,10 @@ def generate_recommendations(df_current, model, feature_cols, min_price=1.0, max
         labels=['Low', 'Medium', 'High', 'Very High']
     )
     
-    output_cols = [
-        'CompanyCode', 'Date', 'Close', 'Uptrend_Probability', 'Confidence',
+    base_cols = ['SecurityID', 'CompanyCode', 'MainType', 'SubType']
+    id_cols = [c for c in base_cols if c in recommendations.columns]
+    output_cols = id_cols + [
+        'Date', 'Close', 'Uptrend_Probability', 'Confidence',
         'Vol_63d', 'RSI_14', 'MACD', 'Dist_SMA50'
     ]
     
