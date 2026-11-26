@@ -52,6 +52,10 @@ DEFAULT_PHASE1B_PATH = os.environ.get(
     "STOCKPULSE_PHASE1B_DIR",
     str(_REPO_ROOT / "Dataset" / "processed" / "phase1b"),
 )
+DEFAULT_PHASE2_PATH = os.environ.get(
+    "STOCKPULSE_PHASE2_DIR",
+    str(_REPO_ROOT / "Dataset" / "processed" / "phase2"),
+)
 DEFAULT_BASE_PATH = DEFAULT_RAW_SOURCE_PATH
 BASE_PATH = DEFAULT_BASE_PATH  # Convenience alias used by notebooks
 CACHE_FILENAME = "cse_daily_prices_validated.parquet"
@@ -616,6 +620,84 @@ def load_cse_market_calendar(
     if end_ts is not None:
         df = df[df["Date"] <= end_ts]
     return df.sort_values("Date").reset_index(drop=True)
+
+
+def load_cse_sector_mapping(
+    path: Optional[Union[str, Path]] = None,
+) -> pd.DataFrame:
+    """Load Phase 1B historical sector mapping table without backfilling unverified snapshots."""
+    target = _resolve_parquet_path(path, DEFAULT_PHASE1B_PATH, "cse_sector_mapping.parquet")
+    return pd.read_parquet(target)
+
+
+def load_cse_total_return_history(
+    path: Optional[Union[str, Path]] = None,
+    companies: Optional[Union[str, Sequence[str]]] = None,
+    security_ids: Optional[Union[str, Sequence[str]]] = None,
+    start_date: Optional[Union[str, pd.Timestamp]] = None,
+    end_date: Optional[Union[str, pd.Timestamp]] = None,
+    columns: Optional[Sequence[str]] = None,
+) -> pd.DataFrame:
+    """Load Phase 1B total-return history with optional company/SecurityID/date filtering."""
+    target = _resolve_parquet_path(path, DEFAULT_PHASE1B_PATH, "cse_total_return_history.parquet")
+    comps = _normalize_str_filter(companies, "companies")
+    sids = _normalize_str_filter(security_ids, "security_ids")
+    start_ts = _parse_date_arg(start_date, "start_date")
+    end_ts = _parse_date_arg(end_date, "end_date")
+    pa_filters = []
+    if comps is not None:
+        pa_filters.append(("CompanyCode", "in", comps))
+    if start_ts is not None:
+        pa_filters.append(("Date", ">=", start_ts))
+    if end_ts is not None:
+        pa_filters.append(("Date", "<=", end_ts))
+    df = pd.read_parquet(target, columns=list(columns) if columns is not None else None, filters=pa_filters or None)
+    df["Date"] = pd.to_datetime(df["Date"])
+    if sids is not None and "SecurityID" in df.columns:
+        df = df[df["SecurityID"].astype(str).str.upper().isin(sids)].reset_index(drop=True)
+    return df
+
+
+def load_phase2a_features(
+    table: str = "technical",
+    path: Optional[Union[str, Path]] = None,
+    companies: Optional[Union[str, Sequence[str]]] = None,
+    security_ids: Optional[Union[str, Sequence[str]]] = None,
+    columns: Optional[Sequence[str]] = None,
+    start_date: Optional[Union[str, pd.Timestamp]] = None,
+    end_date: Optional[Union[str, pd.Timestamp]] = None,
+) -> pd.DataFrame:
+    """
+    Load one of the Phase 2A feature tables ('technical', 'price_volume', 'market_relative').
+    Validates existence and preserves exact schemas/dtypes.
+    """
+    table_map = {
+        "technical": "cse_technical_features.parquet",
+        "price_volume": "cse_price_volume_features.parquet",
+        "market_relative": "cse_market_relative_features.parquet",
+    }
+    key = table.strip().lower()
+    if key not in table_map:
+        raise ValueError(f"Unknown Phase 2A table {table!r}; expected one of {sorted(table_map)}")
+    target = _resolve_parquet_path(path, DEFAULT_PHASE2_PATH, table_map[key])
+    comps = _normalize_str_filter(companies, "companies")
+    sids = _normalize_str_filter(security_ids, "security_ids")
+    start_ts = _parse_date_arg(start_date, "start_date")
+    end_ts = _parse_date_arg(end_date, "end_date")
+    if start_ts is not None and end_ts is not None and start_ts > end_ts:
+        raise ValueError(f"start_date ({start_ts.date()}) must be <= end_date ({end_ts.date()})")
+    pa_filters = []
+    if comps is not None:
+        pa_filters.append(("CompanyCode", "in", comps))
+    if start_ts is not None:
+        pa_filters.append(("Date", ">=", start_ts))
+    if end_ts is not None:
+        pa_filters.append(("Date", "<=", end_ts))
+    df = pd.read_parquet(target, columns=list(columns) if columns is not None else None, filters=pa_filters or None)
+    df["Date"] = pd.to_datetime(df["Date"])
+    if sids is not None and "SecurityID" in df.columns:
+        df = df[df["SecurityID"].astype(str).str.upper().isin(sids)].reset_index(drop=True)
+    return df
 
 
 def load_sp20_daily_prices(
